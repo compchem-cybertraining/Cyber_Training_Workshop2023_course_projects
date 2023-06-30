@@ -1,0 +1,14 @@
+Creating shell using molden_methods.molden_file_to_libint_shell
+Done with creating shell. Elapsed time: 0.03292560577392578
+Reading energies and eigenvectors....
+Done with reading energies and eigenvectors. Elapsed time: 0.03269553184509277
+Computing atomic orbital overlap matrix...
+Diagonal elements of the MO overlap matrix
+[1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j
+ 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j 1.+0.j]
+Done! Elpased time for computing overlaps: 0.02945399284362793
