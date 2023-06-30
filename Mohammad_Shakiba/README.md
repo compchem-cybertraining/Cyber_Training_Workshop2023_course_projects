@@ -77,6 +77,13 @@ V_         | S1&2 | 1               # H1,2
 V_         | S2&1 | 1               # H2,1
 ------------------------
 end-hamiltonian-section
+
+LABELS-SECTION
+q0 = q[0.0]
+q1 = q[2.5]
+flux1 = flux[14.0,1]
+flux2 = flux[-14.0,-1]
+end-labels-section
 ```
 
 Quantics input file, `model_2.inp`, initial wave function and single-particle basis functions:
