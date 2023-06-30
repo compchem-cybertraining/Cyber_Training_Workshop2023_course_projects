@@ -1,0 +1,27 @@
+ ------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+           
+ /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+ ---------------------------------------------------------------------------
+  
+ Subroutine         Calls N       cpu/N          cpu     %cpu        Clock
+ PropWF                   1      5.9071          5.907    93.2         25.899
+ SIL                   1999      0.0020          3.901    61.6          3.910
+ Funkex               26865      0.0001          3.007    47.4          3.014
+ HunPhi                4004      0.0002          0.793    12.5          0.797
+ Output                1001      0.0003          0.306     4.8          0.313
+ GenOPER                  1      0.1810          0.181     2.9          0.334
+ CalcOPs                  1      0.0770          0.077     1.2          0.136
+ Init_WF                  1      0.0090          0.009     0.1          0.046
+ PhiHunPhi             4004      0.0000          0.010     0.2          0.010
+ GenDVR                   1      0.0040          0.004     0.1          0.015
+ HPhi                  4004      0.0000          0.008     0.1          0.007
+ Calcha                4004      0.0000          0.007     0.1          0.007
+ PhiHPhi               4004      0.0000          0.006     0.1          0.006
+ Density                  1      0.0000          0.000     0.0          0.000
+
+Total (cpu,wall)        6.338       35.937   (     0h :  0m :  36s)
+
+
+ ---------------------------------------------------------------------------
+ ------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:47 2023
+           

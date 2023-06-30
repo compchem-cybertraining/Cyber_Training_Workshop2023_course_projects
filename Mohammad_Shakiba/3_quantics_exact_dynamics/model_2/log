@@ -1,0 +1,1393 @@
+
+                   ------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+ /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+
+ PID =199350
+
+Program name: /projects/academic/alexeyak/mohammad/software/quantics2.1/bin/binary/x86_64/quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: 
+/projects/academic/alexeyak/mohammad/software/quantics2.1/operators                                                                                                                                     
+--------------------------------------------------------------------------------
+
+Compiled: Mon Jun 26 09:14:07 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ****** 
+-w
+
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+input     : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2.inp
+DVR file  : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+OPER file : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+.op file  : /projects/academic/alexeyak/mohammad/software/quantics2.1/operators/.op
+INWF file : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2
+cross-ref : /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2/restart
+
+overwrite enabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2/dvr
+                                                         Jun 30 15:40:11
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :    7
+ Maximum no. of states (MAXSTA)    :    2
+
+** Array dimensions **
+
+length of complex      array (used):         705          0.011 MB
+length of real         array (used):         711          0.005 MB
+length of integer      array (used):         354          0.001 MB
+ 
+Memory size (core / data) (in Mb):      0.018 /      0.019
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ x              1    FFT  351    -20.000     20.000   0.114286     27.411
+ el             2    el     2
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2/oper
+                                                         Jun 30 15:40:11
+########################################################################
+
+Opening operator file:/projects/academic/alexeyak/mohammad/workshop_23/Cyber_Training_Workshop2023_course_projects/Mohammad_Shakiba/3_quantics_exact_dynamics/model_2.op
+
+Parameter values taken from .op file 
+
+Parameter values taken from .op file 
+
+***** Hamiltonian title *****
+
+Holestein, Model 2: E_n=[0.0, 0.0], x_n=[0.0, 2.5], k_n=[0.002, 0.003], V=0.001 
+H_{nn} = E_n + 0.5*k_n*(x-x_n)^2                                                
+H_{n,n+1} = H_{n+1,n} = V                                                       
+
+***** End Hamiltonian title *****
+
+Operator labels taken from input file
+
+Operator labels taken from .op file 
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :    7
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   28
+ Maximum no. of Hamiltonians (MAXHAM)    :    5
+
+** Array dimensions **
+
+length of real         array (used):        1062          0.008 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.008 /      0.206
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+WARNING: Mass for DOF   1 not set. Set to 1 by default.
+
+#####  Removed operators (h-terms)  #####
+     h   f  af  nf   m  md Typ Sym   Shift      Term 
+     6   K       0   0   0   1    E0
+    10   K       0   0   0   1    E1
+ --- Number of removed terms =      2
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       x               1.0000
+    2       el              1.0000
+
+Mode     DOFs
+   1    1=x       
+  Multi-set Operator 
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /projects/academic/alexeyak/mohammad/software/quantics2.1/source/surfaces/splines
+
+Number of Hamiltonians defined:     5
+    1     system               usediag 
+    2     flux11                nodiag 
+    3     flux12                nodiag 
+    4     flux21                nodiag 
+    5     flux22                nodiag 
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 30 15:40:11
+########################################################################
+
+**** Reading OPER file ****
+Holestein, Model 2: E_n=[0.0, 0.0], x_n=[0.0, 2.5], k_n=[0.002, 0.003], V=0.001
+H_{nn} = E_n + 0.5*k_n*(x-x_n)^2
+H_{n,n+1} = H_{n+1,n} = V
+
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N   n1 n2     dof's
+
+   1    351    1  1     1
+
+ Total grid size       :      351     3.510E+02
+
+***** Length of psi vector *****
+
+Number of MCTDH coefficients for state  1:         1
+Number of MCTDH coefficients for state  2:         1
+
+
+Overall length of A-vector        :        2
+Length of phi vector for mode    1:      702
+                                  --------
+Length of wavefunction vector   :      704
+
+workcdim   :       702
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :    7
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   28
+ Maximum no. of Hamiltonians (MAXHAM)    :    5
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         704          0.011 MB
+length of complex      array (used):        2114          0.032 MB
+length of real         array (used):      248891          1.899 MB
+length of integer      array (used):         356          0.001 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      1.954 /      1.974
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+
+Initial State =     1
+
+*** SPFs for State =     1 ***
+  1  x          gauss   1  p0 =   0.00000  x0 =  -4.00000  dx =   2.00000
+  2  el         Initial state
+
+*** SPFs for State =     2 ***
+  1  x          gauss   1  p0 =   0.00000  x0 =  -4.00000  dx =   2.00000
+  2  el       
+
+**** Reading OPER file ****
+Holestein, Model 2: E_n=[0.0, 0.0], x_n=[0.0, 2.5], k_n=[0.002, 0.003], V=0.001
+H_{nn} = E_n + 0.5*k_n*(x-x_n)^2
+H_{n,n+1} = H_{n+1,n} = V
+
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 30 15:40:11
+########################################################################
+
+**** Reading OPER file ****
+Holestein, Model 2: E_n=[0.0, 0.0], x_n=[0.0, 2.5], k_n=[0.002, 0.003], V=0.001
+H_{nn} = E_n + 0.5*k_n*(x-x_n)^2
+H_{n,n+1} = H_{n+1,n} = V
+
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+  
+
+WARNING in subroutine Chkprop:
+Integrator doesn't support imp-ortho.Switching imp-ortho off.
+------------------------------------
+  
+ hopsdim  =     248525        1.896 MB
+ dgldim   =        704        0.011 MB
+ pmatdim  =          4      0.000 MB
+ hpsidim  =          0      0.000 MB
+ hlochdim =          1      0.000 MB
+ mfsumdim =          1        0.000 MB
+ intpsidim=      10340      0.158 MB
+ workcdim =        256      0.004 MB
+ workrdim =          1      0.000 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :    7
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   28
+ Maximum no. of Hamiltonians (MAXHAM)    :    5
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         704          0.011 MB
+length of complex      array (used):       11324          0.173 MB
+length of real         array (used):      250667          1.912 MB
+length of integer      array (used):         359          0.001 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      2.108 /      2.150
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+Holestein, Model 2: E_n=[0.0, 0.0], x_n=[0.0, 2.5], k_n=[0.002, 0.003], V=0.001
+H_{nn} = E_n + 0.5*k_n*(x-x_n)^2
+H_{n,n+1} = H_{n+1,n} = V
+
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:11 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+Numerically exact calculation
+Electronic states in multi-set formalism.
+
+***** Integrator algorithm *****
+
+Numerically exact calculation
+SIL integrator, order: 15  accuracy: 1.00E-06  initial step:  1.000 fs
+Arnoldi-SIL (complex, CSIL) used.
+Using operator symmetries
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Auto        file opened  (once)
+Expectation file opened
+Steps       file opened
+
+ time[fs]        1.000
+ time[fs]        2.000
+ time[fs]        3.000
+ time[fs]        4.000
+ time[fs]        5.000
+ time[fs]        6.000
+ time[fs]        7.000
+ time[fs]        8.000
+ time[fs]        9.000
+ time[fs]       10.000
+ time[fs]       11.000
+ time[fs]       12.000
+ time[fs]       13.000
+ time[fs]       14.000
+ time[fs]       15.000
+ time[fs]       16.000
+ time[fs]       17.000
+ time[fs]       18.000
+ time[fs]       19.000
+ time[fs]       20.000
+ time[fs]       21.000
+ time[fs]       22.000
+ time[fs]       23.000
+ time[fs]       24.000
+ time[fs]       25.000
+ time[fs]       26.000
+ time[fs]       27.000
+ time[fs]       28.000
+ time[fs]       29.000
+ time[fs]       30.000
+ time[fs]       31.000
+ time[fs]       32.000
+ time[fs]       33.000
+ time[fs]       34.000
+ time[fs]       35.000
+ time[fs]       36.000
+ time[fs]       37.000
+ time[fs]       38.000
+ time[fs]       39.000
+ time[fs]       40.000
+ time[fs]       41.000
+ time[fs]       42.000
+ time[fs]       43.000
+ time[fs]       44.000
+ time[fs]       45.000
+ time[fs]       46.000
+ time[fs]       47.000
+ time[fs]       48.000
+ time[fs]       49.000
+ time[fs]       50.000
+ time[fs]       51.000
+ time[fs]       52.000
+ time[fs]       53.000
+ time[fs]       54.000
+ time[fs]       55.000
+ time[fs]       56.000
+ time[fs]       57.000
+ time[fs]       58.000
+ time[fs]       59.000
+ time[fs]       60.000
+ time[fs]       61.000
+ time[fs]       62.000
+ time[fs]       63.000
+ time[fs]       64.000
+ time[fs]       65.000
+ time[fs]       66.000
+ time[fs]       67.000
+ time[fs]       68.000
+ time[fs]       69.000
+ time[fs]       70.000
+ time[fs]       71.000
+ time[fs]       72.000
+ time[fs]       73.000
+ time[fs]       74.000
+ time[fs]       75.000
+ time[fs]       76.000
+ time[fs]       77.000
+ time[fs]       78.000
+ time[fs]       79.000
+ time[fs]       80.000
+ time[fs]       81.000
+ time[fs]       82.000
+ time[fs]       83.000
+ time[fs]       84.000
+ time[fs]       85.000
+ time[fs]       86.000
+ time[fs]       87.000
+ time[fs]       88.000
+ time[fs]       89.000
+ time[fs]       90.000
+ time[fs]       91.000
+ time[fs]       92.000
+ time[fs]       93.000
+ time[fs]       94.000
+ time[fs]       95.000
+ time[fs]       96.000
+ time[fs]       97.000
+ time[fs]       98.000
+ time[fs]       99.000
+ time[fs]      100.000
+ time[fs]      101.000
+ time[fs]      102.000
+ time[fs]      103.000
+ time[fs]      104.000
+ time[fs]      105.000
+ time[fs]      106.000
+ time[fs]      107.000
+ time[fs]      108.000
+ time[fs]      109.000
+ time[fs]      110.000
+ time[fs]      111.000
+ time[fs]      112.000
+ time[fs]      113.000
+ time[fs]      114.000
+ time[fs]      115.000
+ time[fs]      116.000
+ time[fs]      117.000
+ time[fs]      118.000
+ time[fs]      119.000
+ time[fs]      120.000
+ time[fs]      121.000
+ time[fs]      122.000
+ time[fs]      123.000
+ time[fs]      124.000
+ time[fs]      125.000
+ time[fs]      126.000
+ time[fs]      127.000
+ time[fs]      128.000
+ time[fs]      129.000
+ time[fs]      130.000
+ time[fs]      131.000
+ time[fs]      132.000
+ time[fs]      133.000
+ time[fs]      134.000
+ time[fs]      135.000
+ time[fs]      136.000
+ time[fs]      137.000
+ time[fs]      138.000
+ time[fs]      139.000
+ time[fs]      140.000
+ time[fs]      141.000
+ time[fs]      142.000
+ time[fs]      143.000
+ time[fs]      144.000
+ time[fs]      145.000
+ time[fs]      146.000
+ time[fs]      147.000
+ time[fs]      148.000
+ time[fs]      149.000
+ time[fs]      150.000
+ time[fs]      151.000
+ time[fs]      152.000
+ time[fs]      153.000
+ time[fs]      154.000
+ time[fs]      155.000
+ time[fs]      156.000
+ time[fs]      157.000
+ time[fs]      158.000
+ time[fs]      159.000
+ time[fs]      160.000
+ time[fs]      161.000
+ time[fs]      162.000
+ time[fs]      163.000
+ time[fs]      164.000
+ time[fs]      165.000
+ time[fs]      166.000
+ time[fs]      167.000
+ time[fs]      168.000
+ time[fs]      169.000
+ time[fs]      170.000
+ time[fs]      171.000
+ time[fs]      172.000
+ time[fs]      173.000
+ time[fs]      174.000
+ time[fs]      175.000
+ time[fs]      176.000
+ time[fs]      177.000
+ time[fs]      178.000
+ time[fs]      179.000
+ time[fs]      180.000
+ time[fs]      181.000
+ time[fs]      182.000
+ time[fs]      183.000
+ time[fs]      184.000
+ time[fs]      185.000
+ time[fs]      186.000
+ time[fs]      187.000
+ time[fs]      188.000
+ time[fs]      189.000
+ time[fs]      190.000
+ time[fs]      191.000
+ time[fs]      192.000
+ time[fs]      193.000
+ time[fs]      194.000
+ time[fs]      195.000
+ time[fs]      196.000
+ time[fs]      197.000
+ time[fs]      198.000
+ time[fs]      199.000
+ time[fs]      200.000
+ time[fs]      201.000
+ time[fs]      202.000
+ time[fs]      203.000
+ time[fs]      204.000
+ time[fs]      205.000
+ time[fs]      206.000
+ time[fs]      207.000
+ time[fs]      208.000
+ time[fs]      209.000
+ time[fs]      210.000
+ time[fs]      211.000
+ time[fs]      212.000
+ time[fs]      213.000
+ time[fs]      214.000
+ time[fs]      215.000
+ time[fs]      216.000
+ time[fs]      217.000
+ time[fs]      218.000
+ time[fs]      219.000
+ time[fs]      220.000
+ time[fs]      221.000
+ time[fs]      222.000
+ time[fs]      223.000
+ time[fs]      224.000
+ time[fs]      225.000
+ time[fs]      226.000
+ time[fs]      227.000
+ time[fs]      228.000
+ time[fs]      229.000
+ time[fs]      230.000
+ time[fs]      231.000
+ time[fs]      232.000
+ time[fs]      233.000
+ time[fs]      234.000
+ time[fs]      235.000
+ time[fs]      236.000
+ time[fs]      237.000
+ time[fs]      238.000
+ time[fs]      239.000
+ time[fs]      240.000
+ time[fs]      241.000
+ time[fs]      242.000
+ time[fs]      243.000
+ time[fs]      244.000
+ time[fs]      245.000
+ time[fs]      246.000
+ time[fs]      247.000
+ time[fs]      248.000
+ time[fs]      249.000
+ time[fs]      250.000
+ time[fs]      251.000
+ time[fs]      252.000
+ time[fs]      253.000
+ time[fs]      254.000
+ time[fs]      255.000
+ time[fs]      256.000
+ time[fs]      257.000
+ time[fs]      258.000
+ time[fs]      259.000
+ time[fs]      260.000
+ time[fs]      261.000
+ time[fs]      262.000
+ time[fs]      263.000
+ time[fs]      264.000
+ time[fs]      265.000
+ time[fs]      266.000
+ time[fs]      267.000
+ time[fs]      268.000
+ time[fs]      269.000
+ time[fs]      270.000
+ time[fs]      271.000
+ time[fs]      272.000
+ time[fs]      273.000
+ time[fs]      274.000
+ time[fs]      275.000
+ time[fs]      276.000
+ time[fs]      277.000
+ time[fs]      278.000
+ time[fs]      279.000
+ time[fs]      280.000
+ time[fs]      281.000
+ time[fs]      282.000
+ time[fs]      283.000
+ time[fs]      284.000
+ time[fs]      285.000
+ time[fs]      286.000
+ time[fs]      287.000
+ time[fs]      288.000
+ time[fs]      289.000
+ time[fs]      290.000
+ time[fs]      291.000
+ time[fs]      292.000
+ time[fs]      293.000
+ time[fs]      294.000
+ time[fs]      295.000
+ time[fs]      296.000
+ time[fs]      297.000
+ time[fs]      298.000
+ time[fs]      299.000
+ time[fs]      300.000
+ time[fs]      301.000
+ time[fs]      302.000
+ time[fs]      303.000
+ time[fs]      304.000
+ time[fs]      305.000
+ time[fs]      306.000
+ time[fs]      307.000
+ time[fs]      308.000
+ time[fs]      309.000
+ time[fs]      310.000
+ time[fs]      311.000
+ time[fs]      312.000
+ time[fs]      313.000
+ time[fs]      314.000
+ time[fs]      315.000
+ time[fs]      316.000
+ time[fs]      317.000
+ time[fs]      318.000
+ time[fs]      319.000
+ time[fs]      320.000
+ time[fs]      321.000
+ time[fs]      322.000
+ time[fs]      323.000
+ time[fs]      324.000
+ time[fs]      325.000
+ time[fs]      326.000
+ time[fs]      327.000
+ time[fs]      328.000
+ time[fs]      329.000
+ time[fs]      330.000
+ time[fs]      331.000
+ time[fs]      332.000
+ time[fs]      333.000
+ time[fs]      334.000
+ time[fs]      335.000
+ time[fs]      336.000
+ time[fs]      337.000
+ time[fs]      338.000
+ time[fs]      339.000
+ time[fs]      340.000
+ time[fs]      341.000
+ time[fs]      342.000
+ time[fs]      343.000
+ time[fs]      344.000
+ time[fs]      345.000
+ time[fs]      346.000
+ time[fs]      347.000
+ time[fs]      348.000
+ time[fs]      349.000
+ time[fs]      350.000
+ time[fs]      351.000
+ time[fs]      352.000
+ time[fs]      353.000
+ time[fs]      354.000
+ time[fs]      355.000
+ time[fs]      356.000
+ time[fs]      357.000
+ time[fs]      358.000
+ time[fs]      359.000
+ time[fs]      360.000
+ time[fs]      361.000
+ time[fs]      362.000
+ time[fs]      363.000
+ time[fs]      364.000
+ time[fs]      365.000
+ time[fs]      366.000
+ time[fs]      367.000
+ time[fs]      368.000
+ time[fs]      369.000
+ time[fs]      370.000
+ time[fs]      371.000
+ time[fs]      372.000
+ time[fs]      373.000
+ time[fs]      374.000
+ time[fs]      375.000
+ time[fs]      376.000
+ time[fs]      377.000
+ time[fs]      378.000
+ time[fs]      379.000
+ time[fs]      380.000
+ time[fs]      381.000
+ time[fs]      382.000
+ time[fs]      383.000
+ time[fs]      384.000
+ time[fs]      385.000
+ time[fs]      386.000
+ time[fs]      387.000
+ time[fs]      388.000
+ time[fs]      389.000
+ time[fs]      390.000
+ time[fs]      391.000
+ time[fs]      392.000
+ time[fs]      393.000
+ time[fs]      394.000
+ time[fs]      395.000
+ time[fs]      396.000
+ time[fs]      397.000
+ time[fs]      398.000
+ time[fs]      399.000
+ time[fs]      400.000
+ time[fs]      401.000
+ time[fs]      402.000
+ time[fs]      403.000
+ time[fs]      404.000
+ time[fs]      405.000
+ time[fs]      406.000
+ time[fs]      407.000
+ time[fs]      408.000
+ time[fs]      409.000
+ time[fs]      410.000
+ time[fs]      411.000
+ time[fs]      412.000
+ time[fs]      413.000
+ time[fs]      414.000
+ time[fs]      415.000
+ time[fs]      416.000
+ time[fs]      417.000
+ time[fs]      418.000
+ time[fs]      419.000
+ time[fs]      420.000
+ time[fs]      421.000
+ time[fs]      422.000
+ time[fs]      423.000
+ time[fs]      424.000
+ time[fs]      425.000
+ time[fs]      426.000
+ time[fs]      427.000
+ time[fs]      428.000
+ time[fs]      429.000
+ time[fs]      430.000
+ time[fs]      431.000
+ time[fs]      432.000
+ time[fs]      433.000
+ time[fs]      434.000
+ time[fs]      435.000
+ time[fs]      436.000
+ time[fs]      437.000
+ time[fs]      438.000
+ time[fs]      439.000
+ time[fs]      440.000
+ time[fs]      441.000
+ time[fs]      442.000
+ time[fs]      443.000
+ time[fs]      444.000
+ time[fs]      445.000
+ time[fs]      446.000
+ time[fs]      447.000
+ time[fs]      448.000
+ time[fs]      449.000
+ time[fs]      450.000
+ time[fs]      451.000
+ time[fs]      452.000
+ time[fs]      453.000
+ time[fs]      454.000
+ time[fs]      455.000
+ time[fs]      456.000
+ time[fs]      457.000
+ time[fs]      458.000
+ time[fs]      459.000
+ time[fs]      460.000
+ time[fs]      461.000
+ time[fs]      462.000
+ time[fs]      463.000
+ time[fs]      464.000
+ time[fs]      465.000
+ time[fs]      466.000
+ time[fs]      467.000
+ time[fs]      468.000
+ time[fs]      469.000
+ time[fs]      470.000
+ time[fs]      471.000
+ time[fs]      472.000
+ time[fs]      473.000
+ time[fs]      474.000
+ time[fs]      475.000
+ time[fs]      476.000
+ time[fs]      477.000
+ time[fs]      478.000
+ time[fs]      479.000
+ time[fs]      480.000
+ time[fs]      481.000
+ time[fs]      482.000
+ time[fs]      483.000
+ time[fs]      484.000
+ time[fs]      485.000
+ time[fs]      486.000
+ time[fs]      487.000
+ time[fs]      488.000
+ time[fs]      489.000
+ time[fs]      490.000
+ time[fs]      491.000
+ time[fs]      492.000
+ time[fs]      493.000
+ time[fs]      494.000
+ time[fs]      495.000
+ time[fs]      496.000
+ time[fs]      497.000
+ time[fs]      498.000
+ time[fs]      499.000
+ time[fs]      500.000
+ time[fs]      501.000
+ time[fs]      502.000
+ time[fs]      503.000
+ time[fs]      504.000
+ time[fs]      505.000
+ time[fs]      506.000
+ time[fs]      507.000
+ time[fs]      508.000
+ time[fs]      509.000
+ time[fs]      510.000
+ time[fs]      511.000
+ time[fs]      512.000
+ time[fs]      513.000
+ time[fs]      514.000
+ time[fs]      515.000
+ time[fs]      516.000
+ time[fs]      517.000
+ time[fs]      518.000
+ time[fs]      519.000
+ time[fs]      520.000
+ time[fs]      521.000
+ time[fs]      522.000
+ time[fs]      523.000
+ time[fs]      524.000
+ time[fs]      525.000
+ time[fs]      526.000
+ time[fs]      527.000
+ time[fs]      528.000
+ time[fs]      529.000
+ time[fs]      530.000
+ time[fs]      531.000
+ time[fs]      532.000
+ time[fs]      533.000
+ time[fs]      534.000
+ time[fs]      535.000
+ time[fs]      536.000
+ time[fs]      537.000
+ time[fs]      538.000
+ time[fs]      539.000
+ time[fs]      540.000
+ time[fs]      541.000
+ time[fs]      542.000
+ time[fs]      543.000
+ time[fs]      544.000
+ time[fs]      545.000
+ time[fs]      546.000
+ time[fs]      547.000
+ time[fs]      548.000
+ time[fs]      549.000
+ time[fs]      550.000
+ time[fs]      551.000
+ time[fs]      552.000
+ time[fs]      553.000
+ time[fs]      554.000
+ time[fs]      555.000
+ time[fs]      556.000
+ time[fs]      557.000
+ time[fs]      558.000
+ time[fs]      559.000
+ time[fs]      560.000
+ time[fs]      561.000
+ time[fs]      562.000
+ time[fs]      563.000
+ time[fs]      564.000
+ time[fs]      565.000
+ time[fs]      566.000
+ time[fs]      567.000
+ time[fs]      568.000
+ time[fs]      569.000
+ time[fs]      570.000
+ time[fs]      571.000
+ time[fs]      572.000
+ time[fs]      573.000
+ time[fs]      574.000
+ time[fs]      575.000
+ time[fs]      576.000
+ time[fs]      577.000
+ time[fs]      578.000
+ time[fs]      579.000
+ time[fs]      580.000
+ time[fs]      581.000
+ time[fs]      582.000
+ time[fs]      583.000
+ time[fs]      584.000
+ time[fs]      585.000
+ time[fs]      586.000
+ time[fs]      587.000
+ time[fs]      588.000
+ time[fs]      589.000
+ time[fs]      590.000
+ time[fs]      591.000
+ time[fs]      592.000
+ time[fs]      593.000
+ time[fs]      594.000
+ time[fs]      595.000
+ time[fs]      596.000
+ time[fs]      597.000
+ time[fs]      598.000
+ time[fs]      599.000
+ time[fs]      600.000
+ time[fs]      601.000
+ time[fs]      602.000
+ time[fs]      603.000
+ time[fs]      604.000
+ time[fs]      605.000
+ time[fs]      606.000
+ time[fs]      607.000
+ time[fs]      608.000
+ time[fs]      609.000
+ time[fs]      610.000
+ time[fs]      611.000
+ time[fs]      612.000
+ time[fs]      613.000
+ time[fs]      614.000
+ time[fs]      615.000
+ time[fs]      616.000
+ time[fs]      617.000
+ time[fs]      618.000
+ time[fs]      619.000
+ time[fs]      620.000
+ time[fs]      621.000
+ time[fs]      622.000
+ time[fs]      623.000
+ time[fs]      624.000
+ time[fs]      625.000
+ time[fs]      626.000
+ time[fs]      627.000
+ time[fs]      628.000
+ time[fs]      629.000
+ time[fs]      630.000
+ time[fs]      631.000
+ time[fs]      632.000
+ time[fs]      633.000
+ time[fs]      634.000
+ time[fs]      635.000
+ time[fs]      636.000
+ time[fs]      637.000
+ time[fs]      638.000
+ time[fs]      639.000
+ time[fs]      640.000
+ time[fs]      641.000
+ time[fs]      642.000
+ time[fs]      643.000
+ time[fs]      644.000
+ time[fs]      645.000
+ time[fs]      646.000
+ time[fs]      647.000
+ time[fs]      648.000
+ time[fs]      649.000
+ time[fs]      650.000
+ time[fs]      651.000
+ time[fs]      652.000
+ time[fs]      653.000
+ time[fs]      654.000
+ time[fs]      655.000
+ time[fs]      656.000
+ time[fs]      657.000
+ time[fs]      658.000
+ time[fs]      659.000
+ time[fs]      660.000
+ time[fs]      661.000
+ time[fs]      662.000
+ time[fs]      663.000
+ time[fs]      664.000
+ time[fs]      665.000
+ time[fs]      666.000
+ time[fs]      667.000
+ time[fs]      668.000
+ time[fs]      669.000
+ time[fs]      670.000
+ time[fs]      671.000
+ time[fs]      672.000
+ time[fs]      673.000
+ time[fs]      674.000
+ time[fs]      675.000
+ time[fs]      676.000
+ time[fs]      677.000
+ time[fs]      678.000
+ time[fs]      679.000
+ time[fs]      680.000
+ time[fs]      681.000
+ time[fs]      682.000
+ time[fs]      683.000
+ time[fs]      684.000
+ time[fs]      685.000
+ time[fs]      686.000
+ time[fs]      687.000
+ time[fs]      688.000
+ time[fs]      689.000
+ time[fs]      690.000
+ time[fs]      691.000
+ time[fs]      692.000
+ time[fs]      693.000
+ time[fs]      694.000
+ time[fs]      695.000
+ time[fs]      696.000
+ time[fs]      697.000
+ time[fs]      698.000
+ time[fs]      699.000
+ time[fs]      700.000
+ time[fs]      701.000
+ time[fs]      702.000
+ time[fs]      703.000
+ time[fs]      704.000
+ time[fs]      705.000
+ time[fs]      706.000
+ time[fs]      707.000
+ time[fs]      708.000
+ time[fs]      709.000
+ time[fs]      710.000
+ time[fs]      711.000
+ time[fs]      712.000
+ time[fs]      713.000
+ time[fs]      714.000
+ time[fs]      715.000
+ time[fs]      716.000
+ time[fs]      717.000
+ time[fs]      718.000
+ time[fs]      719.000
+ time[fs]      720.000
+ time[fs]      721.000
+ time[fs]      722.000
+ time[fs]      723.000
+ time[fs]      724.000
+ time[fs]      725.000
+ time[fs]      726.000
+ time[fs]      727.000
+ time[fs]      728.000
+ time[fs]      729.000
+ time[fs]      730.000
+ time[fs]      731.000
+ time[fs]      732.000
+ time[fs]      733.000
+ time[fs]      734.000
+ time[fs]      735.000
+ time[fs]      736.000
+ time[fs]      737.000
+ time[fs]      738.000
+ time[fs]      739.000
+ time[fs]      740.000
+ time[fs]      741.000
+ time[fs]      742.000
+ time[fs]      743.000
+ time[fs]      744.000
+ time[fs]      745.000
+ time[fs]      746.000
+ time[fs]      747.000
+ time[fs]      748.000
+ time[fs]      749.000
+ time[fs]      750.000
+ time[fs]      751.000
+ time[fs]      752.000
+ time[fs]      753.000
+ time[fs]      754.000
+ time[fs]      755.000
+ time[fs]      756.000
+ time[fs]      757.000
+ time[fs]      758.000
+ time[fs]      759.000
+ time[fs]      760.000
+ time[fs]      761.000
+ time[fs]      762.000
+ time[fs]      763.000
+ time[fs]      764.000
+ time[fs]      765.000
+ time[fs]      766.000
+ time[fs]      767.000
+ time[fs]      768.000
+ time[fs]      769.000
+ time[fs]      770.000
+ time[fs]      771.000
+ time[fs]      772.000
+ time[fs]      773.000
+ time[fs]      774.000
+ time[fs]      775.000
+ time[fs]      776.000
+ time[fs]      777.000
+ time[fs]      778.000
+ time[fs]      779.000
+ time[fs]      780.000
+ time[fs]      781.000
+ time[fs]      782.000
+ time[fs]      783.000
+ time[fs]      784.000
+ time[fs]      785.000
+ time[fs]      786.000
+ time[fs]      787.000
+ time[fs]      788.000
+ time[fs]      789.000
+ time[fs]      790.000
+ time[fs]      791.000
+ time[fs]      792.000
+ time[fs]      793.000
+ time[fs]      794.000
+ time[fs]      795.000
+ time[fs]      796.000
+ time[fs]      797.000
+ time[fs]      798.000
+ time[fs]      799.000
+ time[fs]      800.000
+ time[fs]      801.000
+ time[fs]      802.000
+ time[fs]      803.000
+ time[fs]      804.000
+ time[fs]      805.000
+ time[fs]      806.000
+ time[fs]      807.000
+ time[fs]      808.000
+ time[fs]      809.000
+ time[fs]      810.000
+ time[fs]      811.000
+ time[fs]      812.000
+ time[fs]      813.000
+ time[fs]      814.000
+ time[fs]      815.000
+ time[fs]      816.000
+ time[fs]      817.000
+ time[fs]      818.000
+ time[fs]      819.000
+ time[fs]      820.000
+ time[fs]      821.000
+ time[fs]      822.000
+ time[fs]      823.000
+ time[fs]      824.000
+ time[fs]      825.000
+ time[fs]      826.000
+ time[fs]      827.000
+ time[fs]      828.000
+ time[fs]      829.000
+ time[fs]      830.000
+ time[fs]      831.000
+ time[fs]      832.000
+ time[fs]      833.000
+ time[fs]      834.000
+ time[fs]      835.000
+ time[fs]      836.000
+ time[fs]      837.000
+ time[fs]      838.000
+ time[fs]      839.000
+ time[fs]      840.000
+ time[fs]      841.000
+ time[fs]      842.000
+ time[fs]      843.000
+ time[fs]      844.000
+ time[fs]      845.000
+ time[fs]      846.000
+ time[fs]      847.000
+ time[fs]      848.000
+ time[fs]      849.000
+ time[fs]      850.000
+ time[fs]      851.000
+ time[fs]      852.000
+ time[fs]      853.000
+ time[fs]      854.000
+ time[fs]      855.000
+ time[fs]      856.000
+ time[fs]      857.000
+ time[fs]      858.000
+ time[fs]      859.000
+ time[fs]      860.000
+ time[fs]      861.000
+ time[fs]      862.000
+ time[fs]      863.000
+ time[fs]      864.000
+ time[fs]      865.000
+ time[fs]      866.000
+ time[fs]      867.000
+ time[fs]      868.000
+ time[fs]      869.000
+ time[fs]      870.000
+ time[fs]      871.000
+ time[fs]      872.000
+ time[fs]      873.000
+ time[fs]      874.000
+ time[fs]      875.000
+ time[fs]      876.000
+ time[fs]      877.000
+ time[fs]      878.000
+ time[fs]      879.000
+ time[fs]      880.000
+ time[fs]      881.000
+ time[fs]      882.000
+ time[fs]      883.000
+ time[fs]      884.000
+ time[fs]      885.000
+ time[fs]      886.000
+ time[fs]      887.000
+ time[fs]      888.000
+ time[fs]      889.000
+ time[fs]      890.000
+ time[fs]      891.000
+ time[fs]      892.000
+ time[fs]      893.000
+ time[fs]      894.000
+ time[fs]      895.000
+ time[fs]      896.000
+ time[fs]      897.000
+ time[fs]      898.000
+ time[fs]      899.000
+ time[fs]      900.000
+ time[fs]      901.000
+ time[fs]      902.000
+ time[fs]      903.000
+ time[fs]      904.000
+ time[fs]      905.000
+ time[fs]      906.000
+ time[fs]      907.000
+ time[fs]      908.000
+ time[fs]      909.000
+ time[fs]      910.000
+ time[fs]      911.000
+ time[fs]      912.000
+ time[fs]      913.000
+ time[fs]      914.000
+ time[fs]      915.000
+ time[fs]      916.000
+ time[fs]      917.000
+ time[fs]      918.000
+ time[fs]      919.000
+ time[fs]      920.000
+ time[fs]      921.000
+ time[fs]      922.000
+ time[fs]      923.000
+ time[fs]      924.000
+ time[fs]      925.000
+ time[fs]      926.000
+ time[fs]      927.000
+ time[fs]      928.000
+ time[fs]      929.000
+ time[fs]      930.000
+ time[fs]      931.000
+ time[fs]      932.000
+ time[fs]      933.000
+ time[fs]      934.000
+ time[fs]      935.000
+ time[fs]      936.000
+ time[fs]      937.000
+ time[fs]      938.000
+ time[fs]      939.000
+ time[fs]      940.000
+ time[fs]      941.000
+ time[fs]      942.000
+ time[fs]      943.000
+ time[fs]      944.000
+ time[fs]      945.000
+ time[fs]      946.000
+ time[fs]      947.000
+ time[fs]      948.000
+ time[fs]      949.000
+ time[fs]      950.000
+ time[fs]      951.000
+ time[fs]      952.000
+ time[fs]      953.000
+ time[fs]      954.000
+ time[fs]      955.000
+ time[fs]      956.000
+ time[fs]      957.000
+ time[fs]      958.000
+ time[fs]      959.000
+ time[fs]      960.000
+ time[fs]      961.000
+ time[fs]      962.000
+ time[fs]      963.000
+ time[fs]      964.000
+ time[fs]      965.000
+ time[fs]      966.000
+ time[fs]      967.000
+ time[fs]      968.000
+ time[fs]      969.000
+ time[fs]      970.000
+ time[fs]      971.000
+ time[fs]      972.000
+ time[fs]      973.000
+ time[fs]      974.000
+ time[fs]      975.000
+ time[fs]      976.000
+ time[fs]      977.000
+ time[fs]      978.000
+ time[fs]      979.000
+ time[fs]      980.000
+ time[fs]      981.000
+ time[fs]      982.000
+ time[fs]      983.000
+ time[fs]      984.000
+ time[fs]      985.000
+ time[fs]      986.000
+ time[fs]      987.000
+ time[fs]      988.000
+ time[fs]      989.000
+ time[fs]      990.000
+ time[fs]      991.000
+ time[fs]      992.000
+ time[fs]      993.000
+ time[fs]      994.000
+ time[fs]      995.000
+ time[fs]      996.000
+ time[fs]      997.000
+ time[fs]      998.000
+ time[fs]      999.000
+ time[fs]     1000.000
+
+***** Integration method *****
+
+Integration method used for the exact wavefunction :
+Short iterative Lanczos-Arnoldi with variable order.
+Maximum order employed:  15
+Maximum order allowed:   15
+
+Number of successful Lanczos steps:          1000
+Number of failed but fixed Lanczos steps:     999
+
+
+***** Overall Timing *****
+
+Total cpu time     [s] :          6.35
+Total system time  [s] :         36.05
+Total time      [h:m:s] :    0 :  0 : 36.05
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "srv-p22-13" ----------Fri Jun 30 15:40:47 2023
+
