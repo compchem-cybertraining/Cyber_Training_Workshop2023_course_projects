@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --account=cyberwksp21
+#SBATCH --partition=valhalla  --qos=valhalla
+#SBATCH --clusters=faculty
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=12
+##SBATCH -C CPU-E5-2650v4
+
+export NWCHEM_BASIS_LIBRARY=/projects/academic/alexeyak/mohammad/software/nwchem/src/basis/libraries.bse/
+export NWCHEM=/projects/academic/alexeyak/mohammad/software/nwchem/bin/LINUX64/nwchem
+export OMP_NUM_THREADS=1
+
+mpirun -n ${SLURM_NTASKS} ${NWCHEM} input.nw
+
