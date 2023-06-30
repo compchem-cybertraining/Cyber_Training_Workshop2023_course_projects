@@ -1,0 +1,15 @@
+#!/bin/bash 
+#SBATCH --image docker:cp2k/cp2k:2022.1
+#SBATCH --nodes 1
+#SBATCH --cpus-per-task 1
+#SBATCH --ntasks-per-node 128 
+#SBATCH --constraint cpu 
+#SBATCH --qos regular
+#SBATCH --time 11:15:00
+
+module load conda
+conda activate /global/u2/t/taras/work/sww/step_2/libra-env/
+export PYTHONPATH=/gobal/u2/t/taras/work/sww/step_2/libra-env/libra/_build/src:$PYTHONPATH
+
+
+python run.py
