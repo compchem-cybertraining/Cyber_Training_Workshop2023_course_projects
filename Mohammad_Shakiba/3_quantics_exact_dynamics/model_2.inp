@@ -1,0 +1,33 @@
+RUN-SECTION
+name = model_2  propagate
+tfinal = 1000.0  tout = 1.0  tpsi = 1.0
+psi auto steps gridpop
+exact   expect = flux11,flux12,flux21,flux22
+end-run-section
+
+OPERATOR-SECTION
+opname = model_2
+alter-labels
+CAPl_x = CAP[-15.0 0.00005 3 -1]
+CAPr_x = CAP[15.0 0.00005 3]
+end-alter-labels
+end-operator-section
+
+SPF-BASIS-SECTION
+multi-set
+  x = 1, 1
+end-spf-basis-section
+
+PRIMITIVE-BASIS-SECTION
+  x  fft  351  -20.0  20.0
+  el  el  2
+end-primitive-basis-section
+
+INIT_WF-SECTION
+build
+init_state = 1
+  x  Gauss  -4.0  0.0  0.5
+end-build
+end-init_wf-section
+
+end-input

@@ -1,0 +1,10 @@
+#!/bin/bash 
+#SBATCH --image docker:cp2k/cp2k:2022.1
+#SBATCH --nodes 1
+#SBATCH --cpus-per-task 1
+#SBATCH --ntasks-per-node 128 
+#SBATCH --constraint cpu 
+#SBATCH --qos regular
+#SBATCH --time 12:00:00
+
+srun shifter --entrypoint cp2k -i Diamond_Ph_O_Ca_MD-1.restart -o md.out
