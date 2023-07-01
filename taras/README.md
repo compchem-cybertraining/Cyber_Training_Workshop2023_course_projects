@@ -12,6 +12,7 @@ src
 |-step_1
 |-step_2
 |-step_3
+|-step_4
 
 ### journal
 
@@ -40,9 +41,7 @@ journal/
 ├── jun_21
 └── jun_22
 
-## Project description
-
-To be done :)
+## Project description can be found in the presentation.pdf
 
 
 
