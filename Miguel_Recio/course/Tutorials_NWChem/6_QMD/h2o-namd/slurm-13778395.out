@@ -1,0 +1,11 @@
+SLURM_JOBID=13778395
+SLURM_JOB_NODELIST=cpn-p27-27
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/13778395
+working directory=/user/mrecio/Tutorials_NWChem/6_QMD/h2o-namd
+mkdir: cannot create directory '/user/mrecio/work-dir': File exists
+mkdir: cannot create directory '/user/mrecio/work-dir/gam-scr': File exists
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCRconfig   2) gentoo/2023.01   3) StdEnv/2023.01

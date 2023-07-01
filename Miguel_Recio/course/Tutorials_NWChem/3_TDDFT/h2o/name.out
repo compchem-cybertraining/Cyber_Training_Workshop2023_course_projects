@@ -1,0 +1,5 @@
+SLURM_JOBID=13773191
+SLURM_JOB_NODELIST=cpn-p27-19
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/13773191
+working directory=/user/mrecio/Tutorials_NWChem/3_TDDFT/h2o

@@ -1,0 +1,38 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"openmpi/4.1.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "openmpi/4.1.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Lmod has detected the following error: The following module(s) are unknown:
+"imkl/2022.0.1"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "imkl/2022.0.1"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+
+Currently Loaded Modules:
+  1) gcc/11.2.0
+
+ 
+
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem: error while loading shared libraries: libmkl_gf_ilp64.so.2: cannot open shared object file: No such file or directory
+srun: error: cpn-p27-19: tasks 0-5: Exited with exit code 127
+srun: launch/slurm: _step_signal: Terminating StepId=13773191.0

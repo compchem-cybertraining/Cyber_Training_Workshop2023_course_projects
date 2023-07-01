@@ -1,0 +1,35 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) CCRconfig   2) gentoo/2023.01   3) StdEnv/2023.01
+
+Currently Loaded Modules:
+  1) CCRconfig               7) libevent/2.1.12  (H)
+  2) gentoo/2023.01 (S,os)   8) ucx/1.11.2       (H)
+  3) StdEnv/2023.01 (S)      9) libfabric/1.13.2 (H)
+  4) gcccore/11.2.0 (H,t)   10) pmix/4.1.0
+  5) gcc/11.2.0     (t)     11) openmpi/4.1.1    (m)
+  6) hwloc/2.5.0    (H)     12) imkl/2022.0.1    (math)
+
+  Where:
+   H:     Hidden Module
+   S:     Module is Sticky, requires --force to unload or purge
+   m:     MPI implementations
+   math:  Mathematical libraries
+   os:    Base OS
+   t:     Tools for development
+
+ 
+
+
+
+
+
+
+
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+libgomp: Invalid value for environment variable OMP_PROC_BIND
+libgomp: Invalid value for environment variable OMP_PROC_BIND

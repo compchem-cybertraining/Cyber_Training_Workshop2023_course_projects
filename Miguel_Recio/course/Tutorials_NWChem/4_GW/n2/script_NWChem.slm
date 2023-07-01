@@ -1,0 +1,40 @@
+#!/bin/bash
+#SBATCH --partition=valhalla  --qos=valhalla
+#SBATCH --clusters=faculty
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=6
+#SBATCH --cpus-per-task=2
+#SBATCH -C CPU-E5-2620v3
+#SBATCH --output=out
+#SBATCH --error=err
+
+echo "SLURM_JOBID="$SLURM_JOBID
+echo "SLURM_JOB_NODELIST="$SLURM_JOB_NODELIST
+echo "SLURM_NNODES="$SLURM_NNODES
+echo "SLURMTMPDIR="$SLURMTMPDIR
+echo "working directory="$SLURM_SUBMIT_DIR
+
+module purge
+module load gcc/11.2.0
+module load openmpi/4.1.1
+module load imkl/2022.0.1
+#module load mkl/2020.2
+#source /util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mkl/bin/mklvars.sh intel64
+#export LD_LIBRARY_PATH=/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mkl/lib/intel64_lin:$LD_LIBRARY_PATH
+#export LIBRARY_PATH=/util/academic/intel/20.2/compilers_and_libraries_2020.2.254/linux/mkl/lib/intel64_lin:$LIBRARY_PATH
+
+
+module list
+
+export LD_LIBRARY_PATH=${LIBRARY_PATH}:${CMAKE_LIBRARY_PATH}
+export NWCHEM_BASIS_LIBRARY=/projects/academic/cyberwksp21/Software/nwchem_gcc/libraries.bse/
+export NWCHEM=/projects/academic/cyberwksp21/Software/nwchem_gcc/bin/nwchem
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
+export OMP_PROC_BIND=cores
+
+#mpirun -n ${SLURM_NTASKS} --bind-to core \
+#       --map-by socket:pe=${OMP_NUM_THREADS} \
+#       --rank-by core \
+#       ${NWCHEM} hexacene
+srun --mpi=pmi2 --cpu-bind core \
+       ${NWCHEM} n2.nw 
