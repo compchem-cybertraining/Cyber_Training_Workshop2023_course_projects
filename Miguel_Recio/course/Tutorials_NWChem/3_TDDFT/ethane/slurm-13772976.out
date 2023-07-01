@@ -1,0 +1,5 @@
+SLURM_JOBID=13772976
+SLURM_JOB_NODELIST=cpn-p27-15
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/13772976
+working directory=/user/mrecio/Tutorials_NWChem/3_TDDFT/ethane

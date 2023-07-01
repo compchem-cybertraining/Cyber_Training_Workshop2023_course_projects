@@ -1,0 +1,391 @@
+
+                   ------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:15 2023
+
+ /user/mrecio/QUANTICS/but_stick
+
+ PID = 26494
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+******* OPTIONS ****** 
+-w
+
+
+Task: gendvr genoper geninwf diagonalisation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/but_stick
+input     : /user/mrecio/QUANTICS/but_stick.inp
+DVR file  : /user/mrecio/QUANTICS/but_stick
+OPER file : /user/mrecio/QUANTICS/but_stick
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/but_stick
+cross-ref : /user/mrecio/QUANTICS/but_stick/restart
+
+overwrite enabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/but_stick/dvr
+                                                         Jun 14 15:21:16
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):        9747          0.074 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.074 /      0.079
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ el             1    el     2
+ Q_1            2    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_2            3    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_3            4    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_4            5    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_5            6    HO    35     -7.504      7.504   0.441413      7.504   1.0000
+ Q_6            7    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_7            8    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_8            9    HO    15     -4.500      4.500   0.642856      4.500   1.0000
+ Q_9           10    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_10          11    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_11          12    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_12          13    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_13          14    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_14          15    HO    15     -4.500      4.500   0.642856      4.500   1.0000
+ Q_15          16    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_16          17    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_17          18    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_18          19    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/but_stick/oper
+                                                         Jun 14 15:21:16
+########################################################################
+
+Opening operator file:/user/mrecio/QUANTICS/C4H4_linear.op
+
+Parameter values taken from .op file 
+
+Parameter values taken from .op file 
+
+***** Hamiltonian title *****
+
+Butatriene linear model with 5 modes                                            
+see: Cattarius et al. JCP 115, 2088-2100 (2001)                                 
+
+***** End Hamiltonian title *****
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   54
+
+** Array dimensions **
+
+length of real         array (used):        9962          0.076 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.076 /      0.375
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+WARNING: Mass for DOF   2 not set. Set to 1 by default.
+WARNING: Mass for DOF   3 not set. Set to 1 by default.
+WARNING: Mass for DOF   4 not set. Set to 1 by default.
+WARNING: Mass for DOF   5 not set. Set to 1 by default.
+WARNING: Mass for DOF   6 not set. Set to 1 by default.
+WARNING: Mass for DOF   7 not set. Set to 1 by default.
+WARNING: Mass for DOF   8 not set. Set to 1 by default.
+WARNING: Mass for DOF   9 not set. Set to 1 by default.
+WARNING: Mass for DOF  10 not set. Set to 1 by default.
+WARNING: Mass for DOF  11 not set. Set to 1 by default.
+WARNING: Mass for DOF  12 not set. Set to 1 by default.
+WARNING: Mass for DOF  13 not set. Set to 1 by default.
+WARNING: Mass for DOF  14 not set. Set to 1 by default.
+WARNING: Mass for DOF  15 not set. Set to 1 by default.
+WARNING: Mass for DOF  16 not set. Set to 1 by default.
+WARNING: Mass for DOF  17 not set. Set to 1 by default.
+WARNING: Mass for DOF  18 not set. Set to 1 by default.
+WARNING: Mass for DOF  19 not set. Set to 1 by default.
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       el              1.0000
+    2       Q_1             1.0000
+    3       Q_2             1.0000
+    4       Q_3             1.0000
+    5       Q_4             1.0000
+    6       Q_5             1.0000
+    7       Q_6             1.0000
+    8       Q_7             1.0000
+    9       Q_8             1.0000
+   10       Q_9             1.0000
+   11       Q_10            1.0000
+   12       Q_11            1.0000
+   13       Q_12            1.0000
+   14       Q_13            1.0000
+   15       Q_14            1.0000
+   16       Q_15            1.0000
+   17       Q_16            1.0000
+   18       Q_17            1.0000
+   19       Q_18            1.0000
+
+Mode     DOFs
+   1    6=Q_5      15=Q_14    
+  Multi-set Operator 
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 14 15:21:16
+########################################################################
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N   n1 n2     dof's
+
+   1    525    1  1     6 15
+
+ Total grid size       :      525     5.250E+02
+
+***** Length of psi vector *****
+
+Number of MCTDH coefficients for state  1:         1
+Number of MCTDH coefficients for state  2:         1
+
+
+Overall length of A-vector        :        2
+Length of phi vector for mode    1:     1050
+                                  --------
+Length of wavefunction vector   :     1052
+
+workcdim   :      1050
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   54
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        1052          0.016 MB
+length of complex      array (used):        1160          0.018 MB
+length of real         array (used):        7187          0.055 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.105 /      0.199
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+
+Initial State =     2
+
+*** SPFs for State =     1 ***
+  1  el       
+  6  Q_5        gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   1.41421
+ 15  Q_14       gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   1.41421
+
+*** SPFs for State =     2 ***
+  1  el         Initial state
+  6  Q_5        gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   1.41421
+ 15  Q_14       gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   1.41421
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Diagonalising Hamiltonian 
+                                                         Jun 14 15:21:16
+########################################################################
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+ hopsdim  =       3783        0.029 MB
+ dgldim   =       1052        0.016 MB
+ pmatdim  =          1      0.000 MB
+ hpsidim  =          1      0.000 MB
+ hlochdim =          1      0.000 MB
+ mfsumdim =          1        0.000 MB
+ intpsidim=       2100      0.032 MB
+ workcdim =          1      0.000 MB
+ workrdim =        299      0.002 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in Hamiltonian DIAGONALISATION *****                          
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   54
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        1052          0.016 MB
+length of complex      array (used):        2130          0.033 MB
+length of real         array (used):        8367          0.064 MB
+length of integer      array (used):          57          0.000 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.129 /      0.255
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+
+***** Calculation type *****
+
+Hamiltonian diagonalisation.
+Numerically exact calculation
+Electronic states in multi-set formalism.
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Output      file opened
+Check       file opened
+Eigenvalue  file opened
+Number of Lanczos iterations:      50
+Number of eigenvalues found:       30
+Length of Lanczos vectors:       1050
+
+***** God's final message *****
+
+Program terminated normally.
+
+***** Overall Timing *****
+
+Total cpu time     [s] :          0.14
+Total system time  [s] :          0.99
+Total time      [h:m:s] :    0 :  0 :  0.99
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+

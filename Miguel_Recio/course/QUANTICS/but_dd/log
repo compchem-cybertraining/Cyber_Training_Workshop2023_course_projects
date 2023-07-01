@@ -1,0 +1,692 @@
+
+                   ------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:12 2023
+
+ /user/mrecio/QUANTICS/but_dd
+
+ PID = 15622
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+   Butatriene test dynamics
+
+########################################################################
+
+******* OPTIONS ****** 
+-w
+
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/but_dd
+input     : /user/mrecio/QUANTICS/but_dd.inp
+DVR file  : /user/mrecio/QUANTICS/but_dd
+OPER file : /user/mrecio/QUANTICS/but_dd
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/but_dd
+cross-ref : /user/mrecio/QUANTICS/but_dd/restart
+
+overwrite enabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/but_dd/dvr
+                                                         Jun 15 15:39:12
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :   29
+ Maximum no. of states (MAXSTA)    :    2
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):         273          0.002 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.002 /      0.008
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ 1B2U           1  point    1      0.000          -         -         -
+ 2B3U           2  point    1      0.000          -         -         -
+ 3B3G           3  point    1      0.000          -         -         -
+ 4B2G           4  point    1      0.000          -         -         -
+ 5AU            5    GWP  101     -2.000      2.000   0.040000
+ 6B2G           6  point    1      0.000          -         -         -
+ 7B3U           7  point    1      0.000          -         -         -
+ 8AG            8  point    1      0.000          -         -         -
+ 9B3G           9  point    1      0.000          -         -         -
+ 10B2U         10  point    1      0.000          -         -         -
+ 11B1U         11  point    1      0.000          -         -         -
+ 12AG          12  point    1      0.000          -         -         -
+ 13B1U         13  point    1      0.000          -         -         -
+ 14AG          14    GWP  101     -4.000      4.000   0.080000
+ 15AG          15  point    1      0.000          -         -         -
+ 16B1U         16  point    1      0.000          -         -         -
+ 17B3G         17  point    1      0.000          -         -         -
+ 18B2U         18  point    1      0.000          -         -         -
+ el            19    el     2
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/but_dd/oper
+                                                         Jun 15 15:39:13
+########################################################################
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :   29
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   23
+
+** Array dimensions **
+
+length of real         array (used):         491          0.004 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.004 /      0.280
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+    21   1   1   0   0   0   0    KEgwp*freq0_1
+    22   2   2   0   0   0   0    KEgwp*freq0_2
+    23   3   3   0   0   0   0    KEgwp*freq0_3
+    24   4   4   0   0   0   0    KEgwp*freq0_4
+    26   6   6   0   0   0   0    KEgwp*freq0_6
+    27   7   7   0   0   0   0    KEgwp*freq0_7
+    28   8   8   0   0   0   0    KEgwp*freq0_8
+    29   9   9   0   0   0   0    KEgwp*freq0_9
+    30  10  10   0   0   0   0    KEgwp*freq0_10
+    31  11  11   0   0   0   0    KEgwp*freq0_11
+    32  12  12   0   0   0   0    KEgwp*freq0_12
+    33  13  13   0   0   0   0    KEgwp*freq0_13
+    35  15  15   0   0   0   0    KEgwp*freq0_15
+    36  16  16   0   0   0   0    KEgwp*freq0_16
+    37  17  17   0   0   0   0    KEgwp*freq0_17
+    38  18  18   0   0   0   0    KEgwp*freq0_18
+
+*** Opening existing SQL DB  ***
+
+*** Checking DB Entries ***
+                 PES       Included
+           Adiab PES       Included
+            Gradient       Included
+      Adiab Gradient       Included
+             Hessian       Included
+       Adiab Hessian       Included
+              Dipole        Not Included
+        Adiab Dipole        Not Included
+           MO Coeffs       Included
+                 NAC       Included
+          ADT Matrix       Included
+        Normal Modes       Included
+                 SOC        Not Included
+           Adiab SOC        Not Included
+                CSOC        Not Included
+          Adiab CSOC        Not Included
+               Coord        Not Included
+   Symmetry replicas        Not Included
+
+Using old DB :/user/mrecio/QUANTICS/but_dddata
+NREC         :        10
+
+Opening trafo file: /user/mrecio/QUANTICS/but_dddata/but_fc_cas_freq.out
+               Input file format: Molpro
+               Ab initio type:    5
+
+Before orthonormalisation
+off diagonal sum =   9.855639011621E-05
+on diagonal sum  =   1.000000000000E+00
+After orthonormalisation
+off diagonal sum =   2.775557561563E-16
+on diagonal sum  =   1.000000000000E+00
+
+ Frequencies read (in cm-1)
+    157.56    212.37    238.65    473.94    757.79    808.94    811.34    908.47
+   1093.73   1108.92   1518.12   1617.48   1717.56   2171.44   3328.13   3329.83
+   3415.46   3415.56
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       1B2U            1.0000
+    2       2B3U            1.0000
+    3       3B3G            1.0000
+    4       4B2G            1.0000
+    5       5AU             1.0000
+    6       6B2G            1.0000
+    7       7B3U            1.0000
+    8       8AG             1.0000
+    9       9B3G            1.0000
+   10       10B2U           1.0000
+   11       11B1U           1.0000
+   12       12AG            1.0000
+   13       13B1U           1.0000
+   14       14AG            1.0000
+   15       15AG            1.0000
+   16       16B1U           1.0000
+   17       17B3G           1.0000
+   18       18B2U           1.0000
+   19       el              1.0000
+
+Mode     DOFs
+   1    5=5AU      14=14AG    
+   2   19=el      
+
+GWP integrals set up with moments to order:  2
+
+A cut through the full PES is taken
+
+The following coordinates are fixed:
+1B2U             =           0.00000000
+2B3U             =           0.00000000
+3B3G             =           0.00000000
+4B2G             =           0.00000000
+6B2G             =           0.00000000
+7B3U             =           0.00000000
+8AG              =           0.00000000
+9B3G             =           0.00000000
+10B2U            =           0.00000000
+11B1U            =           0.00000000
+12AG             =           0.00000000
+13B1U            =           0.00000000
+15AG             =           0.00000000
+16B1U            =           0.00000000
+17B3G            =           0.00000000
+18B2U            =           0.00000000
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+***** Direct Dynamics Calculation *****
+
+Quantum Chemistry Program : MOLPRO
+Quantum Chemistry Method : CAS
+Submission Command : /user/gworth/bin/run_molpro15  $job    $jobdir
+Maximum no. of records in DB:      10000
+
+*** Atom data *** 
+Name          Mass    
+c         21894.1667
+c         21894.1667
+c         21894.1667
+c         21894.1667
+h          1837.2893
+h          1837.2893
+h          1837.2893
+h          1837.2893
+
+Normal mode Coordinates Used.
+Trafo File: but_fc_cas_freq.out
+
+
+********* MULTIDIMENSIONAL POTENTIALS *********
+
+-------  qchem1  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem1&2  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem2  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 15 15:39:14
+########################################################################
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N    n      dof's
+
+   1      2   20       5  14
+   2      2    2      19
+
+ Total grid size       :        4     4.000E+00
+
+***** Length of psi vector *****
+
+Overall length of A-vector        :       40
+Length of phi vector for mode    1:       40
+Length of phi vector for mode    2:        4
+                                  --------
+Length of wavefunction vector   :       84
+
+workcdim   :        84
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :   29
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   23
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):          84          0.001 MB
+length of complex      array (used):        4538          0.069 MB
+length of real         array (used):         364          0.003 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.075 /      0.245
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+  1  1B2U      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  2  2B3U      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  3  3B3G      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  4  4B2G      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  5  5AU       GWP sigma =  0.7071 xi = -6.3000 xf =  7.0000 dx =  0.7000
+  6  6B2G      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  7  7B3U      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  8  8AG       GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+  9  9B3G      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 10  10B2U     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 11  11B1U     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 12  12AG      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 13  13B1U     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 14  14AG      GWP sigma =  0.7071 xi = -6.3000 xf =  7.0000 dx =  0.7000
+ 15  15AG      GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 16  16B1U     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 17  17B3G     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 18  18B2U     GWP sigma =  0.7071 xi =  0.0000 xf = -0.7000 dx =  0.7000
+ 19  el        initial state:       2
+
+*** Frozen GWPs (diagonal) ***
+
+**** Initial GWP arranged in shells **** 
+mode state   shell subshell
+  1  1          2    2   Partially Filled. Filled =   25   (Nspf =    20)
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+*** Opening existing SQL DB  ***
+
+*** Checking DB Entries ***
+                 PES       Included
+           Adiab PES       Included
+            Gradient       Included
+      Adiab Gradient       Included
+             Hessian       Included
+       Adiab Hessian       Included
+              Dipole        Not Included
+        Adiab Dipole        Not Included
+           MO Coeffs       Included
+                 NAC       Included
+          ADT Matrix       Included
+        Normal Modes       Included
+                 SOC        Not Included
+           Adiab SOC        Not Included
+                CSOC        Not Included
+          Adiab CSOC        Not Included
+               Coord        Not Included
+   Symmetry replicas        Not Included
+
+Using old DB :/user/mrecio/QUANTICS/but_dddata
+NREC         :        10
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 15 15:39:14
+########################################################################
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+                                                        Butatriene test dynamics
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:14 2023
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+  
+ hopsdim  =         34        0.000 MB
+ dgldim   =         84        0.001 MB
+ pmatdim  =       1612      0.025 MB
+ hpsidim  =         12      0.000 MB
+ hlochdim =       1212      0.018 MB
+ mfsumdim =          1        0.000 MB
+ intpsidim=        588      0.009 MB
+ workcdim =     349752      5.337 MB
+ workrdim =        160      0.001 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :   29
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   23
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):          84          0.001 MB
+length of complex      array (used):      351635          5.366 MB
+length of real         array (used):        1035          0.008 MB
+length of integer      array (used):         147          0.001 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      5.377 /      5.770
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+*** Opening existing SQL DB  ***
+
+*** Checking DB Entries ***
+                 PES       Included
+           Adiab PES       Included
+            Gradient       Included
+      Adiab Gradient       Included
+             Hessian       Included
+       Adiab Hessian       Included
+              Dipole        Not Included
+        Adiab Dipole        Not Included
+           MO Coeffs       Included
+                 NAC       Included
+          ADT Matrix       Included
+        Normal Modes       Included
+                 SOC        Not Included
+           Adiab SOC        Not Included
+                CSOC        Not Included
+          Adiab CSOC        Not Included
+               Coord        Not Included
+   Symmetry replicas        Not Included
+
+Using old DB :/user/mrecio/QUANTICS/but_dddata
+NREC         :        10
+
+**** RSTINFO: Reading RESTART file ****
+                                                        Butatriene test dynamics
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:14 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+G-MCTDH calculation
+Direct dynamics calculation
+Electronic states in single-set formalism.
+
+***** DD algorithm *****
+
+Using global diabatic picture
+DBmin parameter :   0.200000
+Storing DB in memory
+Using local DBs for each GWP. Size:    10
+Using Hessian updating
+Shepard Interpolation parameters :
+     Confidence radius defined by nearest     6 points
+     Power laws for inner and outer weights:    24    4
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are computed at each integration step 
+RK integrator with improved orthogonality
+RK5 integrator, accuracy: 1.00E-06  initial step: 0.00E+00 fs
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+GWPs propagated using diagonal FG
+Phaseless GWPs with non-propagated scalar parameters
+GWPs follow vMCG trajectories
+CX formulation uses dynamic uncorrelated GWPs
+GWP parameter coupling allocated dynamically. Eps =  0.1000E-05
+Using local harmonic approximation of PES
+Expansion around centre of GWP on RHS
+GWP EOMs solved using Tikhonov regularisation
+GWP overlap matrix inverted using SVD.
+Projector uses inverse of overlap matrix
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+Parameter used to regularise inverse C-matrix      :  1.000E-08
+Parameter used to regularise inverse overlap matrix:  1.000E-08
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Auto        file opened  (once)
+Steps       file opened
+
+ time[fs]        0.500
+ time[fs]        1.000
+ time[fs]        1.500
+ time[fs]        2.000
+ time[fs]        2.500
+ time[fs]        3.000
+ time[fs]        3.500
+ time[fs]        4.000
+ time[fs]        4.500
+ time[fs]        5.000
+ time[fs]        5.500
+ time[fs]        6.000
+ time[fs]        6.500
+ time[fs]        7.000
+ time[fs]        7.500
+ time[fs]        8.000
+ time[fs]        8.500
+ time[fs]        9.000
+ time[fs]        9.500
+ time[fs]       10.000
+ time[fs]       10.500
+ time[fs]       11.000
+ time[fs]       11.500
+ time[fs]       12.000
+ time[fs]       12.500
+ time[fs]       13.000
+ time[fs]       13.500
+ time[fs]       14.000
+ time[fs]       14.500
+ time[fs]       15.000
+ time[fs]       15.500
+ time[fs]       16.000
+ time[fs]       16.500
+ time[fs]       17.000
+ time[fs]       17.500
+ time[fs]       18.000
+ time[fs]       18.500
+ time[fs]       19.000
+ time[fs]       19.500
+ time[fs]       20.000
+ time[fs]       20.500
+ time[fs]       21.000
+ time[fs]       21.500
+ time[fs]       22.000
+ time[fs]       22.500
+ time[fs]       23.000
+ time[fs]       23.500
+ time[fs]       24.000
+ time[fs]       24.500
+ time[fs]       25.000
+ time[fs]       25.500
+ time[fs]       26.000
+ time[fs]       26.500
+ time[fs]       27.000
+ time[fs]       27.500
+ time[fs]       28.000
+ time[fs]       28.500
+ time[fs]       29.000
+ time[fs]       29.500
+ time[fs]       30.000
+ time[fs]       30.500
+ time[fs]       31.000
+ time[fs]       31.500
+ time[fs]       32.000
+ time[fs]       32.500
+ time[fs]       33.000
+ time[fs]       33.500
+ time[fs]       34.000
+ time[fs]       34.500
+ time[fs]       35.000
+ time[fs]       35.500
+ time[fs]       36.000
+ time[fs]       36.500
+ time[fs]       37.000
+ time[fs]       37.500
+ time[fs]       38.000
+ time[fs]       38.500
+RMS(Ecalc - Emodel) / eV:    0.08119240
+Propagating diabatic states to DB record:          11   from: 8
+ time[fs]       39.000
+ time[fs]       39.500
+ time[fs]       40.000
+ time[fs]       40.500
+ time[fs]       41.000
+ time[fs]       41.500
+ time[fs]       42.000
+ time[fs]       42.500
+ time[fs]       43.000
+ time[fs]       43.500
+ time[fs]       44.000
+ time[fs]       44.500
+ time[fs]       45.000
+ time[fs]       45.500
+ time[fs]       46.000
+ time[fs]       46.500
+ time[fs]       47.000
+ time[fs]       47.500
+ time[fs]       48.000
+ time[fs]       48.500
+ time[fs]       49.000
+ time[fs]       49.500
+ time[fs]       50.000
+
+***** Integration method *****
+
+Integration method used for the complete ODE:
+Runge-Kutta order 5 (RK5) from ODESIM
+with improved orthogonality
+
+Total number of RK5 steps:        2528
+Number of accepted RK5 steps:     2508
+Number of rejected RK5 steps:       20
+
+
+**** GWP basis dynamic coupling ****
+ mode      Ndyn /   N      Tmax Cmin
+    1         40 /   40      4.224  0.613798E-05
+
+
+*** DD DB Written ***
+No. Entries:      11
+
+***** Overall Timing *****
+
+Total cpu time     [s] :        118.70
+Total system time  [s] :        141.87
+Total time      [h:m:s] :    0 :  2 : 21.87
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:41:34 2023
+

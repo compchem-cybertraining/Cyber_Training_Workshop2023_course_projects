@@ -1,0 +1,567 @@
+
+                   ------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:07 2023
+
+ /user/mrecio/QUANTICS/ferretti
+
+ PID =  5437
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/ferretti
+input     : /user/mrecio/QUANTICS/ferretti.inp
+DVR file  : /user/mrecio/QUANTICS/ferretti
+OPER file : /user/mrecio/QUANTICS/ferretti
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/ferretti
+cross-ref : /user/mrecio/QUANTICS/ferretti/restart
+
+overwrite disabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/ferretti/dvr
+                                                         Jun 15 14:52:07
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :    8
+ Maximum no. of states (MAXSTA)    :    3
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):      217858          1.662 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      1.662 /      1.664
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ x              1    HO   250     -2.857      6.857   0.039015     97.146  20.0000
+ y              2    HO   100     -2.639      2.639   0.053320     68.098  25.8013
+ el             3    el     3
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/ferretti/oper
+                                                         Jun 15 14:52:07
+########################################################################
+
+Opening operator file:/user/mrecio/QUANTICS/ferretti.op
+
+Parameter values taken from .op file 
+
+Parameter values taken from .op file 
+
+***** Hamiltonian title *****
+
+Conical intersection model                                                      
+Ferreti et al.,JCP, 104, 5517 (1996)                                            
+coupling parameter gamma=0.03                                                   
+
+***** End Hamiltonian title *****
+
+Operator labels taken from .op file 
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :    8
+ Maximum no. of states (MAXSTA)    :    3
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   25
+
+** Array dimensions **
+
+length of real         array (used):      218209          1.665 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      1.665 /      1.882
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       x           20000.0000
+    2       y            6667.0000
+    3       el              1.0000
+
+Mode     DOFs
+   1    1=x       
+   2    2=y       
+  Multi-set Operator 
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 15 14:52:08
+########################################################################
+
+**** Reading OPER file ****
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N   n1 n2 n3     dof's
+
+   1    250    1  8  8     1
+   2    100    1  8  8     2
+
+ Total grid size       :    25000     2.500E+04
+
+***** Length of psi vector *****
+
+Number of MCTDH coefficients for state  1:         1
+Number of MCTDH coefficients for state  2:        64
+Number of MCTDH coefficients for state  3:        64
+
+
+Overall length of A-vector        :      129
+Length of phi vector for mode    1:     4250
+Length of phi vector for mode    2:     1700
+                                  --------
+Length of wavefunction vector   :     6079
+
+workcdim   :      6079
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :    8
+ Maximum no. of states (MAXSTA)    :    3
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   25
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        6079          0.093 MB
+length of complex      array (used):       12039          0.184 MB
+length of real         array (used):      147076          1.122 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      1.491 /      1.448
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+
+Initial State =     3
+
+*** SPFs for State =     1 ***
+  1  x          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   6.32456
+  2  y          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   7.18349
+  3  el       
+
+*** SPFs for State =     2 ***
+  1  x          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   6.32456
+  2  y          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   7.18349
+  3  el       
+
+*** SPFs for State =     3 ***
+  1  x          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   6.32456
+  2  y          gauss   1  p0 =   0.00000  x0 =   0.00000  dx =   7.18349
+  3  el         Initial state
+
+**** Reading OPER file ****
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 15 14:52:08
+########################################################################
+
+**** Reading OPER file ****
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+  
+
+WARNING in subroutine Chkprop:
+Integrator chosen for SPFs doesn't support imp-ortho.Switching imp-ortho off.
+------------------------------------
+  
+ hopsdim  =      74083        0.565 MB
+ dgldim   =       6079        0.093 MB
+ pmatdim  =        514      0.008 MB
+ hpsidim  =       5600      0.085 MB
+ hlochdim =        256      0.004 MB
+ mfsumdim =     101150        1.543 MB
+ intpsidim=      42500      0.648 MB
+ intrdim  =         52        0.000 MB
+ workcdim =          1      0.000 MB
+ workrdim =        195      0.001 MB
+ workidim =        128      0.000 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :    8
+ Maximum no. of states (MAXSTA)    :    3
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   25
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):        6079          0.093 MB
+length of complex      array (used):       72442          1.105 MB
+length of real         array (used):      149453          1.140 MB
+length of integer      array (used):         135          0.001 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      2.432 /      4.125
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+Electronic states in multi-set formalism.
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are kept constant.
+CMF stepsize is adaptive (error control for A and phi).
+CMF accuracy: 1.00E-06,      Initial stepsize:  0.500 fs
+For SPFs, For spfs, BS integrator
+order:  8,  accuracy: 1.00E-06,  initial step:  0.250 fs
+For A-coefficients, SIL integrator
+order:  12,  accuracy: 1.00E-06,  initial step:  0.250 fs
+error criterion: standard
+Standard-SIL (real) used.
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Auto        file opened  (once)
+Steps       file opened
+Update      file opened
+
+ time[fs]        0.500
+ time[fs]        1.000
+ time[fs]        1.500
+ time[fs]        2.000
+ time[fs]        2.500
+ time[fs]        3.000
+ time[fs]        3.500
+ time[fs]        4.000
+ time[fs]        4.500
+ time[fs]        5.000
+ time[fs]        5.500
+ time[fs]        6.000
+ time[fs]        6.500
+ time[fs]        7.000
+ time[fs]        7.500
+ time[fs]        8.000
+ time[fs]        8.500
+ time[fs]        9.000
+ time[fs]        9.500
+ time[fs]       10.000
+ time[fs]       10.500
+ time[fs]       11.000
+ time[fs]       11.500
+ time[fs]       12.000
+ time[fs]       12.500
+ time[fs]       13.000
+ time[fs]       13.500
+ time[fs]       14.000
+ time[fs]       14.500
+ time[fs]       15.000
+ time[fs]       15.500
+ time[fs]       16.000
+ time[fs]       16.500
+ time[fs]       17.000
+ time[fs]       17.500
+ time[fs]       18.000
+ time[fs]       18.500
+ time[fs]       19.000
+ time[fs]       19.500
+ time[fs]       20.000
+ time[fs]       20.500
+ time[fs]       21.000
+ time[fs]       21.500
+ time[fs]       22.000
+ time[fs]       22.500
+ time[fs]       23.000
+ time[fs]       23.500
+ time[fs]       24.000
+ time[fs]       24.500
+ time[fs]       25.000
+ time[fs]       25.500
+ time[fs]       26.000
+ time[fs]       26.500
+ time[fs]       27.000
+ time[fs]       27.500
+ time[fs]       28.000
+ time[fs]       28.500
+ time[fs]       29.000
+ time[fs]       29.500
+ time[fs]       30.000
+ time[fs]       30.500
+ time[fs]       31.000
+ time[fs]       31.500
+ time[fs]       32.000
+ time[fs]       32.500
+ time[fs]       33.000
+ time[fs]       33.500
+ time[fs]       34.000
+ time[fs]       34.500
+ time[fs]       35.000
+ time[fs]       35.500
+ time[fs]       36.000
+ time[fs]       36.500
+ time[fs]       37.000
+ time[fs]       37.500
+ time[fs]       38.000
+ time[fs]       38.500
+ time[fs]       39.000
+ time[fs]       39.500
+ time[fs]       40.000
+ time[fs]       40.500
+ time[fs]       41.000
+ time[fs]       41.500
+ time[fs]       42.000
+ time[fs]       42.500
+ time[fs]       43.000
+ time[fs]       43.500
+ time[fs]       44.000
+ time[fs]       44.500
+ time[fs]       45.000
+ time[fs]       45.500
+ time[fs]       46.000
+ time[fs]       46.500
+ time[fs]       47.000
+ time[fs]       47.500
+ time[fs]       48.000
+ time[fs]       48.500
+ time[fs]       49.000
+ time[fs]       49.500
+ time[fs]       50.000
+ time[fs]       50.500
+ time[fs]       51.000
+ time[fs]       51.500
+ time[fs]       52.000
+ time[fs]       52.500
+ time[fs]       53.000
+ time[fs]       53.500
+ time[fs]       54.000
+ time[fs]       54.500
+ time[fs]       55.000
+ time[fs]       55.500
+ time[fs]       56.000
+ time[fs]       56.500
+ time[fs]       57.000
+ time[fs]       57.500
+ time[fs]       58.000
+ time[fs]       58.500
+ time[fs]       59.000
+ time[fs]       59.500
+ time[fs]       60.000
+ time[fs]       60.500
+ time[fs]       61.000
+ time[fs]       61.500
+ time[fs]       62.000
+ time[fs]       62.500
+ time[fs]       63.000
+ time[fs]       63.500
+ time[fs]       64.000
+ time[fs]       64.500
+ time[fs]       65.000
+ time[fs]       65.500
+ time[fs]       66.000
+ time[fs]       66.500
+ time[fs]       67.000
+ time[fs]       67.500
+ time[fs]       68.000
+ time[fs]       68.500
+ time[fs]       69.000
+ time[fs]       69.500
+ time[fs]       70.000
+ time[fs]       70.500
+ time[fs]       71.000
+ time[fs]       71.500
+ time[fs]       72.000
+ time[fs]       72.500
+ time[fs]       73.000
+ time[fs]       73.500
+ time[fs]       74.000
+ time[fs]       74.500
+ time[fs]       75.000
+ time[fs]       75.500
+ time[fs]       76.000
+ time[fs]       76.500
+ time[fs]       77.000
+ time[fs]       77.500
+ time[fs]       78.000
+ time[fs]       78.500
+ time[fs]       79.000
+ time[fs]       79.500
+ time[fs]       80.000
+
+***** Integration method *****
+
+Integration method used for the MCTDH-coefficients:
+Short iterative Lanczos (real) with variable order.
+Maximum order employed:   6
+Maximum order allowed:   12
+
+Integration method used for the single-particle functions:
+Bulirsch-Stoer (BS) with polynomial extrapolation.
+Optimal column:  8
+
+Number of succesful large BS steps:             1152
+Number of failed but fixed large BS steps:         0
+Total number of small BS steps:                22798
+
+Number of successful Lanczos steps:             537
+Number of failed but fixed Lanczos steps:         0
+
+***** Update times *****
+
+Number of successful update steps:   178
+Number of failed update steps:         1
+Mean update time (in fs):        0.44944
+Standard deviation (in fs):      0.10042
+
+
+***** Overall Timing *****
+
+Total cpu time     [s] :         38.89
+Total system time  [s] :         48.36
+Total time      [h:m:s] :    0 :  0 : 48.36
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:56 2023
+

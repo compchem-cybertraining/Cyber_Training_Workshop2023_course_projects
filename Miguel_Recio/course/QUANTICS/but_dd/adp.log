@@ -1,0 +1,80 @@
+
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:44:54 2023
+
+ /user/mrecio/QUANTICS/but_dd
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+Program name: adpop
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :        181
+ real*8     :       3323
+ integer    :         26
+ logical    :          2
+ complex*8  :         86
+ real*4     :        204
+ Total   :         31096 Bytes ,      0.03 MB
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:39:13 2023
+
+
+*** Opening existing SQL DB  ***
+
+*** Checking DB Entries ***
+                 PES       Included
+           Adiab PES       Included
+            Gradient       Included
+      Adiab Gradient       Included
+             Hessian       Included
+       Adiab Hessian       Included
+              Dipole        Not Included
+        Adiab Dipole        Not Included
+           MO Coeffs       Included
+                 NAC       Included
+          ADT Matrix       Included
+        Normal Modes       Included
+                 SOC        Not Included
+           Adiab SOC        Not Included
+                CSOC        Not Included
+          Adiab CSOC        Not Included
+               Coord        Not Included
+   Symmetry replicas        Not Included
+
+Using old DB :/user/mrecio/QUANTICS/but_dddata
+NREC         :        11
+Quick Algorithm 
+Tolerance :  0.100000000000E-05
+ Total griddim =       10201    0.1020E+05
+ Time     included / grid  
+
+
+# ***** Overall Timing *****
+
+# Total cpu time     [s] :          1.35
+# Total system time  [s] :          0.03
+# Total time     [h:m:s] :    0 :  0 :  1.4
+
+
+------ Host: "cpn-p27-15" ----------Thu Jun 15 15:44:57 2023
+                   
+ /user/mrecio/QUANTICS/but_dd
+

@@ -1,0 +1,120 @@
+
+                   ------ Host: "cpn-p27-15" ----------Wed Jun 14 14:41:25 2023
+
+ /user/mrecio/QUANTICS/butatriene/butatriene
+
+ PID = 17778
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 TEST RUN                 ###############
+
+  Butatrien, B2u, linear coupling
+
+########################################################################
+
+******* OPTIONS ****** 
+-t
+
+
+Task: gendvr genoper geninwf propagation test
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/butatriene/butatriene
+input     : /user/mrecio/QUANTICS/butatriene/butatriene.inp
+DVR file  : /user/mrecio/QUANTICS/butatriene/butatriene
+OPER file : /user/mrecio/QUANTICS/butatriene/butatriene
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/butatriene/butatriene
+cross-ref : /user/mrecio/QUANTICS/butatriene/butatriene/restart
+
+overwrite disabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/butatriene/butatriene/dvr
+                                                         Jun 14 14:41:25
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):        9747          0.074 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.074 /      0.079
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ el             1    el     2
+ Q_1            2    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_2            3    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_3            4    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_4            5    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_5            6    HO    35     -7.504      7.504   0.441413      7.504   1.0000
+ Q_6            7    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_7            8    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_8            9    HO    15     -4.500      4.500   0.642856      4.500   1.0000
+ Q_9           10    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_10          11    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_11          12    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_12          13    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_13          14    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_14          15    HO    15     -4.500      4.500   0.642856      4.500   1.0000
+ Q_15          16    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_16          17    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_17          18    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+ Q_18          19    HO    10     -3.436      3.436   0.763591      3.436   1.0000
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/butatriene/butatriene/oper
+                                                         Jun 14 14:41:25
+########################################################################
+
+ERROR in subroutine Heingabe:
+Op file not found: C4H4_linear.op neither in current dir nor in:
+/user/gworth/quantics2.1/operators
+------------------------------------

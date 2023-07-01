@@ -1,0 +1,910 @@
+
+                   ------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:02 2023
+
+ /user/mrecio/QUANTICS/h2o-4s-dd
+
+ PID = 26963
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+   water direct dynamics
+
+########################################################################
+
+******* OPTIONS ****** 
+-w
+
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/h2o-4s-dd
+input     : /user/mrecio/QUANTICS/h2o-4s-dd.inp
+DVR file  : /user/mrecio/QUANTICS/h2o-4s-dd
+OPER file : /user/mrecio/QUANTICS/h2o-4s-dd
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/h2o-4s-dd
+cross-ref : /user/mrecio/QUANTICS/h2o-4s-dd/restart
+
+overwrite enabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/h2o-4s-dd/dvr
+                                                         Jun 15 16:30:02
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :   14
+ Maximum no. of states (MAXSTA)    :    4
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):         315          0.002 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.003 /      0.005
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ 1A1            1    GWP  101    -10.000     10.000   0.200000
+ 2A1            2    GWP  101     -5.000     40.000   0.450000
+ 3B2            3    GWP  101    -20.000     20.000   0.400000
+ el             4    el     4
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/h2o-4s-dd/oper
+                                                         Jun 15 16:30:02
+########################################################################
+
+######    DIRECT DYNAMICS OPERATOR   ######
+          Internally generated           
+
+Operator labels taken from input file
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :   14
+ Maximum no. of states (MAXSTA)    :    4
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   18
+
+** Array dimensions **
+
+length of real         array (used):         620          0.005 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.005 /      0.203
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+*** Opening New SQL DB  ***
+
+Using new DB :/user/mrecio/QUANTICS/h2o-4s-dd_dddata
+
+Opening trafo file: /user/mrecio/QUANTICS/h2o-4s-dd_dddata/water-opt-nosym.out
+               Input file format: Molpro
+               Ab initio type:    5
+
+Before orthonormalisation
+off diagonal sum =  -2.669602132133E-06
+on diagonal sum  =   1.000000000000E+00
+After orthonormalisation
+off diagonal sum =   5.551115123126E-17
+on diagonal sum  =   1.000000000000E+00
+
+ Frequencies read (in cm-1)
+   1705.12   3835.80   3964.83
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       1A1             1.0000
+    2       2A1             1.0000
+    3       3B2             1.0000
+    4       el              1.0000
+
+Mode     DOFs
+   1    1=1A1       2=2A1       3=3B2     
+   2    4=el      
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+***** Direct Dynamics Calculation *****
+
+Quantum Chemistry Program : MOLPRO
+Quantum Chemistry Method : CAS
+Submission Command : /user/gworth/bin/run_molpro15  $job    $jobdir
+Maximum no. of records in DB:      10000
+
+*** Atom data *** 
+Name          Mass    
+o         29165.1220
+h          1837.2893
+h          1837.2893
+
+Normal mode Coordinates Used.
+Trafo File: water-opt-nosym.out
+
+
+********* MULTIDIMENSIONAL POTENTIALS *********
+
+-------  qchem1  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem1&2  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem1&3  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem1&4  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem2  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem2&3  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem2&4  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem3  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem3&4  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+-------  qchem4  ---------
+External QChem program used for potential
+Quantum chemistry program : Molpro
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 15 16:30:03
+########################################################################
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:03 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N    n      dof's
+
+   1      3    7       1   2   3
+   2      4    4       4
+
+ Total grid size       :       12     1.200E+01
+
+***** Length of psi vector *****
+
+Overall length of A-vector        :       28
+Length of phi vector for mode    1:       21
+Length of phi vector for mode    2:       16
+                                  --------
+Length of wavefunction vector   :       65
+
+workcdim   :        65
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :   14
+ Maximum no. of states (MAXSTA)    :    4
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   18
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):          65          0.001 MB
+length of complex      array (used):        2261          0.035 MB
+length of real         array (used):         492          0.004 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.040 /      0.126
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+  1  1A1       GWP sigma =  0.7076 xi = -2.1819 xf =  2.0181 dx =  0.7000
+  2  2A1       GWP sigma =  0.7326 xi = -1.9015 xf =  2.2985 dx =  0.7000
+  3  3B2       GWP sigma =  0.7810 xi = -2.1000 xf =  2.1000 dx =  0.7000
+  4  el        initial state:       2
+
+*** Frozen GWPs (diagonal) ***
+
+**** Initial GWP arranged in shells **** 
+mode state   shell subshell
+  1  1          1    1   Filled
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:03 2023
+
+
+*** Opening existing SQL DB  ***
+
+Using new DB :/user/mrecio/QUANTICS/h2o-4s-dd_dddata
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 15 16:30:04
+########################################################################
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:03 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+                                                           water direct dynamics
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:04 2023
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+  
+ hopsdim  =        134        0.001 MB
+ dgldim   =         65        0.001 MB
+ pmatdim  =        699      0.011 MB
+ hpsidim  =        160      0.002 MB
+ hlochdim =        650      0.010 MB
+ mfsumdim =          1        0.000 MB
+ intpsidim=        455      0.007 MB
+ workcdim =      10625      0.162 MB
+ workrdim =         84      0.001 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :   14
+ Maximum no. of states (MAXSTA)    :    4
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   18
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):          65          0.001 MB
+length of complex      array (used):       11954          0.182 MB
+length of real         array (used):        1229          0.009 MB
+length of integer      array (used):          91          0.000 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.194 /      0.363
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:03 2023
+
+
+*** Opening existing SQL DB  ***
+
+Using new DB :/user/mrecio/QUANTICS/h2o-4s-dd_dddata
+
+**** RSTINFO: Reading RESTART file ****
+                                                           water direct dynamics
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 16:30:04 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+G-MCTDH calculation
+Direct dynamics calculation
+Electronic states in single-set formalism.
+
+***** DD algorithm *****
+
+Using global diabatic picture
+DBmin parameter :   0.200000
+Storing DB in memory
+Using local DBs for each GWP. Size:    10
+Using Hessian updating
+Shepard Interpolation parameters :
+     Confidence radius defined by nearest     6 points
+     Power laws for inner and outer weights:    24    4
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are computed at each integration step 
+RK integrator with improved orthogonality
+RK5 integrator, accuracy: 1.00E-06  initial step: 0.00E+00 fs
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+GWPs propagated using diagonal FG
+Phaseless GWPs with non-propagated scalar parameters
+GWPs follow vMCG trajectories
+CX formulation uses dynamic uncorrelated GWPs
+GWP parameter coupling allocated dynamically. Eps =  0.1000E-05
+Using local harmonic approximation of PES
+Expansion around centre of GWP on RHS
+GWP EOMs solved using Tikhonov regularisation
+GWP overlap matrix inverted using SVD.
+Projector uses inverse of overlap matrix
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+Parameter used to regularise inverse C-matrix      :  1.000E-08
+Parameter used to regularise inverse overlap matrix:  1.000E-08
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Auto        file opened  (once)
+Steps       file opened
+Generating First DB Point
+
+ time[fs]        0.500
+ time[fs]        1.000
+DD Update requires new point at:     1.121413
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.09952143
+States flip :     3    4
+Projected transformation used for DB record:       2   from: 1
+DD Update requires new point at:     1.123768
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.09960029
+States flip :     3    4
+Projected transformation used for DB record:       3   from: 2
+DD Update requires new point at:     1.321793
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.04880975
+Propagating diabatic states to DB record:          4   from: 1
+ time[fs]        1.500
+DD Update requires new point at:     1.543883
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.00970245
+Propagating diabatic states to DB record:          5   from: 1
+DD Update requires new point at:     1.753907
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.01582235
+States flip :     3    4
+Projected transformation used for DB record:       6   from: 2
+DD Update requires new point at:     1.843657
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.07693347
+Propagating diabatic states to DB record:          7   from: 6
+DD Update requires new point at:     1.857007
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.07820836
+Propagating diabatic states to DB record:          8   from: 6
+ time[fs]        2.000
+DD Update requires new point at:     2.183038
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.07335458
+Propagating diabatic states to DB record:          9   from: 1
+DD Update requires new point at:     2.392467
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.05369588
+Propagating diabatic states to DB record:          10   from: 7
+ time[fs]        2.500
+DD Update requires new point at:     2.592305
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.36547315
+Propagating diabatic states to DB record:          11   from: 8
+DD Update requires new point at:     2.728432
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.07519040
+Propagating diabatic states to DB record:          12   from: 6
+DD Update requires new point at:     2.858989
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.04214516
+Propagating diabatic states to DB record:          13   from: 5
+DD Update requires new point at:     2.912714
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.04802220
+Propagating diabatic states to DB record:          14   from: 10
+ time[fs]        3.000
+DD Update requires new point at:     3.073414
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.11704838
+Propagating diabatic states to DB record:          15   from: 11
+DD Update requires new point at:     3.172711
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.17651132
+Intruder state: 3 4
+Projected transformation used for DB record:       16   from: 9
+DD Update requires new point at:     3.338700
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.04146817
+States near degeneracy :     3    4
+Extrapolated degenerate diab written to DB record: 17   from: 10
+ time[fs]        3.500
+DD Update requires new point at:     3.516914
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.03124188
+Propagating diabatic states to DB record:          18   from: 14
+DD Update requires new point at:     3.591284
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.03225331
+Propagating diabatic states to DB record:          19   from: 15
+DD Update requires new point at:     3.618498
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.07027224
+Propagating diabatic states to DB record:          20   from: 16
+DD Update requires new point at:     3.695859
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.07298969
+Propagating diabatic states to DB record:          21   from: 13
+ time[fs]        4.000
+DD Update requires new point at:     4.062707
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.01864189
+Propagating diabatic states to DB record:          22   from: 18
+DD Update requires new point at:     4.116464
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.09306545
+States flip :     3    4
+Projected transformation used for DB record:       23   from: 14
+DD Update requires new point at:     4.150849
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.14013183
+Propagating diabatic states to DB record:          24   from: 16
+DD Update requires new point at:     4.167084
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.03646623
+Propagating diabatic states to DB record:          25   from: 19
+DD Update requires new point at:     4.399277
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.05118621
+Propagating diabatic states to DB record:          26   from: 21
+ time[fs]        4.500
+DD Update requires new point at:     4.576895
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00922447
+Propagating diabatic states to DB record:          27   from: 22
+DD Update requires new point at:     4.588000
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.05917074
+Propagating diabatic states to DB record:          28   from: 20
+DD Update requires new point at:     4.694768
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.01391846
+Propagating diabatic states to DB record:          29   from: 25
+DD Update requires new point at:     4.788000
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.05310005
+Propagating diabatic states to DB record:          30   from: 18
+DD Update requires new point at:     4.809145
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.07917635
+Propagating diabatic states to DB record:          31   from: 24
+ time[fs]        5.000
+DD Update requires new point at:     5.011476
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.04177963
+Propagating diabatic states to DB record:          32   from: 26
+DD Update requires new point at:     5.074514
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00554480
+Propagating diabatic states to DB record:          33   from: 27
+DD Update requires new point at:     5.210287
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.11859220
+Propagating diabatic states to DB record:          34   from: 29
+DD Update requires new point at:     5.465729
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.03319849
+Propagating diabatic states to DB record:          35   from: 28
+ time[fs]        5.500
+DD Update requires new point at:     5.566464
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.06781510
+Propagating diabatic states to DB record:          36   from: 31
+DD Update requires new point at:     5.568349
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00397730
+Propagating diabatic states to DB record:          37   from: 33
+DD Update requires new point at:     5.575927
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.05190380
+States flip :     3    4
+Projected transformation used for DB record:       38   from: 25
+DD Update requires new point at:     5.723648
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.02306428
+Propagating diabatic states to DB record:          39   from: 34
+ time[fs]        6.000
+DD Update requires new point at:     6.048195
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00307799
+Propagating diabatic states to DB record:          40   from: 37
+DD Update requires new point at:     6.111933
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.03165524
+Propagating diabatic states to DB record:          41   from: 38
+DD Update requires new point at:     6.218641
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.00646824
+Propagating diabatic states to DB record:          42   from: 39
+DD Update requires new point at:     6.245533
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.06374585
+Propagating diabatic states to DB record:          43   from: 36
+DD Update requires new point at:     6.350322
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.02076117
+Propagating diabatic states to DB record:          44   from: 35
+ time[fs]        6.500
+DD Update requires new point at:     6.513080
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00302582
+Propagating diabatic states to DB record:          45   from: 40
+DD Update requires new point at:     6.605624
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01402473
+Propagating diabatic states to DB record:          46   from: 41
+DD Update requires new point at:     6.707393
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.00385664
+Propagating diabatic states to DB record:          47   from: 42
+DD Update requires new point at:     6.907462
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.14273961
+Propagating diabatic states to DB record:          48   from: 34
+DD Update requires new point at:     6.978440
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00286783
+Propagating diabatic states to DB record:          49   from: 45
+ time[fs]        7.000
+DD Update requires new point at:     7.090260
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01094894
+Propagating diabatic states to DB record:          50   from: 46
+DD Update requires new point at:     7.193305
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.00533489
+Propagating diabatic states to DB record:          51   from: 47
+DD Update requires new point at:     7.215279
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.01574079
+Propagating diabatic states to DB record:          52   from: 44
+DD Update requires new point at:     7.361230
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.08468535
+Propagating diabatic states to DB record:          53   from: 37
+DD Update requires new point at:     7.444605
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00263857
+Propagating diabatic states to DB record:          54   from: 49
+ time[fs]        7.500
+DD Update requires new point at:     7.564910
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01760976
+Propagating diabatic states to DB record:          55   from: 50
+DD Update requires new point at:     7.684894
+No. QC calculations :     1
+Generating DB Point for GWP :     4
+RMS(Ecalc - Emodel) / eV:    0.00250830
+Propagating diabatic states to DB record:          56   from: 51
+DD Update requires new point at:     7.812372
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.06275359
+Propagating diabatic states to DB record:          57   from: 53
+DD Update requires new point at:     7.911930
+No. QC calculations :     1
+Generating DB Point for GWP :     7
+RMS(Ecalc - Emodel) / eV:    0.00245577
+Propagating diabatic states to DB record:          58   from: 54
+DD Update requires new point at:     7.980151
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.21732319
+Propagating diabatic states to DB record:          59   from: 39
+ time[fs]        8.000
+DD Update requires new point at:     8.035661
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.02393693
+Propagating diabatic states to DB record:          60   from: 55
+DD Update requires new point at:     8.098258
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.00934092
+Propagating diabatic states to DB record:          61   from: 52
+DD Update requires new point at:     8.256669
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.04432008
+Propagating diabatic states to DB record:          62   from: 57
+DD Update requires new point at:     8.426137
+No. QC calculations :     1
+Generating DB Point for GWP :     1
+RMS(Ecalc - Emodel) / eV:    0.06019938
+Propagating diabatic states to DB record:          63   from: 47
+DD Update requires new point at:     8.500000
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01613550
+Propagating diabatic states to DB record:          64   from: 60
+ time[fs]        8.500
+DD Update requires new point at:     8.624256
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.08716252
+Propagating diabatic states to DB record:          65   from: 59
+DD Update requires new point at:     8.704162
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.03225052
+Propagating diabatic states to DB record:          66   from: 62
+DD Update requires new point at:     8.967538
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01560619
+Propagating diabatic states to DB record:          67   from: 64
+DD Update requires new point at:     8.978546
+No. QC calculations :     1
+Generating DB Point for GWP :     2
+RMS(Ecalc - Emodel) / eV:    0.00659986
+Propagating diabatic states to DB record:          68   from: 61
+ time[fs]        9.000
+DD Update requires new point at:     9.057610
+No. QC calculations :     1
+Generating DB Point for GWP :     1
+RMS(Ecalc - Emodel) / eV:    0.07247189
+Propagating diabatic states to DB record:          69   from: 63
+DD Update requires new point at:     9.154860
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.02195093
+Propagating diabatic states to DB record:          70   from: 66
+DD Update requires new point at:     9.276626
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.10232233
+Propagating diabatic states to DB record:          71   from: 65
+DD Update requires new point at:     9.427659
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01224279
+Propagating diabatic states to DB record:          72   from: 67
+ time[fs]        9.500
+DD Update requires new point at:     9.601281
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.01329366
+Propagating diabatic states to DB record:          73   from: 70
+DD Update requires new point at:     9.684141
+No. QC calculations :     1
+Generating DB Point for GWP :     1
+RMS(Ecalc - Emodel) / eV:    0.10943311
+Intruder state: 1 3
+Intruder state: 1 4
+Intruder state: 2 3
+Intruder state: 2 4
+Projected transformation used for DB record:       74   from: 69
+DD Update requires new point at:     9.889329
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.00919265
+States flip :     3    4
+Projected transformation used for DB record:       75   from: 72
+DD Update requires new point at:     9.945355
+No. QC calculations :     1
+Generating DB Point for GWP :     3
+RMS(Ecalc - Emodel) / eV:    0.07719977
+Propagating diabatic states to DB record:          76   from: 71
+ time[fs]       10.000
+DD Update requires new point at:    10.048127
+No. QC calculations :     1
+Generating DB Point for GWP :     6
+RMS(Ecalc - Emodel) / eV:    0.00535432
+Propagating diabatic states to DB record:          77   from: 73
+DD Update requires new point at:    10.346210
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.31882800
+Intruder state: 1 4
+Intruder state: 2 4
+Intruder state: 3 4
+Projected transformation used for DB record:       78   from: 75
+ time[fs]       10.500
+DD Update requires new point at:    10.820627
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.04508414
+Propagating diabatic states to DB record:          79   from: 78
+ time[fs]       11.000
+DD Update requires new point at:    11.322791
+No. QC calculations :     1
+Generating DB Point for GWP :     5
+RMS(Ecalc - Emodel) / eV:    0.01167214
+Propagating diabatic states to DB record:          80   from: 79
+ time[fs]       11.500
+
+***** Integration method *****
+
+Integration method used for the complete ODE:
+Runge-Kutta order 5 (RK5) from ODESIM
+with improved orthogonality
+
+Total number of RK5 steps:         662
+Number of accepted RK5 steps:      596
+Number of rejected RK5 steps:       66
+
+
+**** GWP basis dynamic coupling ****
+ mode      Ndyn /   N      Tmax Cmin
+    1         21 /   21      0.499  0.991373E-05
+
+Propagation was stopped.
+The stop-command reads:
+normstop
+
+
+*** DD DB Written ***
+No. Entries:      80
+
+***** Overall Timing *****
+
+Total cpu time     [s] :         27.89
+Total system time  [s] :       2923.77
+Total time      [h:m:s] :    0 : 48 : 43.77
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-15" ----------Thu Jun 15 17:18:46 2023
+

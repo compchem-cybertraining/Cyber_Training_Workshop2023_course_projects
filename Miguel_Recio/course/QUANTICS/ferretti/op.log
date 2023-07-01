@@ -1,0 +1,158 @@
+
+******* Array-Dimensions *******
+
+ k   :  minkoe, maxkoe      22      25
+ h   :  htmdim, maxhtm      32      32
+ hl  :  hopdim, maxhop      22      22
+ nh  :  minfac, maxfac       9       9
+ n   :    ndef, maxdef       2       2
+ n   :    npar, maxpar      14      14
+ n   :    nrdf, maxrdf       0       1
+ nham:  hamdim, maxham       1       1
+ muld: mulddim,maxmuld       1      32
+ LMR :    iLMR, maxLMR       0     120
+
+***** Operator details *****
+
+ndof   =   3 ,  nmode   =   2
+nopdof =   4 ,  nopmode =   4
+
+feb =  3,  meb =  4,   fpb =  0,  mpb =  0,  mkoe =  3
+leb = F,  lmult = T,  lmulpack = F
+DOF no.    label            mass
+    1       x           20000.0000
+    2       y            6667.0000
+    3       el              1.0000
+- - - - - - - - - - - - - - -
+    4       Koeff           0.0000
+
+Mode     DOFs
+   1    1=x       
+   2    2=y       
+- - - - - - - - - - - - - - -
+   3    4=Koeff   
+   4    3=el      
+
+                                            Information for Hamiltonian : system
+
+Total no. of terms      :     17
+No. of correlated terms :      5
+
+No. of uncorrelated terms for mode   1  state  1:     2
+No. of uncorrelated terms for mode   1  state  2:     2
+No. of uncorrelated terms for mode   1  state  3:     2
+No. of uncorrelated terms for mode   2  state  1:     2
+No. of uncorrelated terms for mode   2  state  2:     2
+No. of uncorrelated terms for mode   2  state  3:     2
+
+  Parameters  
+PI                      3.141592653590
+Kx                      0.020000000000
+Ky                      0.100000000000
+De0                     0.200000000000
+De                      0.010000000000
+X0                      2.000000000000
+X1                      4.000000000000
+X2                      3.000000000000
+X3                      3.000000000000
+al                      3.000000000000
+be                      1.500000000000
+ga                      0.030000000000
+mass_x              20000.000000000000
+mass_y               6667.000000000000
+
+  Operator Labels    [hl,hoplab,(deflabel),hopilab,hopfile]
+    hl  Label                       function no.  file no.
+     1  1                                       1       302
+     2  -1                                      2       302
+     3  I                                       1       101
+     4  KEdvr                                   5         3
+     5  0.5                                     0       301
+     6  Kx                                      2       301
+     7  S1&1                                   10         3
+     8  q^2                                     3       302
+     9  X0                                      6       301
+    10  q                                       3       302
+    11  Ky                                      3       301
+    12  De0                                     4       301
+    13  S2&2                                   10         3
+    14  X1                                      7       301
+    15  S3&3                                   10         3
+    16  X2                                      8       301
+    17  De                                      5       301
+    18  ga                                     12       301
+    19  S2&3                                   10         3
+    20  gauss[1]             gaal              12       302
+    21  gauss[2]             gabe              12       302
+    22  S3&2                                   10         3
+ 
+Hamiltonian Operator Terms [h,htmdof,htmadof,htmmode,htmmuld,htmtype,
+                            htmsym,string]
+   No.   f  af   m  md Typ Sym      Term 
+     1   1   1   0   0   1   1    1
+     2   2   2   0   0   1   1    1
+     4   K       0   0   1   1    1
+     5   1   1   0   0   8   1    KEdvr
+     6   2   2   0   0   8   1    KEdvr
+     8   3   3   0   0   2   1    S1&1
+    13   K       0   0   2   1    0.5*Ky
+    14   2   2   0   0   2   1    q^2
+    16   3   3   0   0   2   1    S2&2
+    17   K       0   0   2   1    0.5*Kx*X1*X1
+    19   3   3   0   0   2   1    S3&3
+    23   K       0   0   2   1    ga
+    24   3   3   0   0   8   1    S2&3
+    25   1   1   0   0   2   1    gauss[1]
+    26   2   2   0   0   2   1    q*gauss[2]
+    27   3   3   0   0   8   1    S3&2
+    28   1   1   0   0   2   1    q^2*0.5*Kx + q*-1*Kx*X0
+    29   1   1   0   0   2   1    q^2*0.5*Kx + q*-1*Kx*X1
+    30   1   1   0   0   2   1    q^2*0.5*Kx + q*-1*Kx*X2
+    31   K       0   0   2   1    0.5*Kx*X0*X0 + -1*De0
+    32   K       0   0   2   1    0.5*Kx*X2*X2 + De
+
+Arguments for operators
+  No.    Arguments
+    1    3.0000000        3.0000000        0.0000000        0.0000000    
+    2    1.5000000        0.0000000        0.0000000        0.0000000    
+
+Correlated Terms  
+    ki,kf: initial and final el. state.
+    Operator numbers are h=hamilton(f,k))
+         dof order =   K  |      x |     y |
+     k  ki  kf KE/PE  
+     1   1   1  PE    31       1       2
+     2   2   2  PE    17       1       2
+     3   3   3  PE    32       1       2
+     4   3   2  PE    23      25      26
+     5   2   3  PE    23      25      26
+
+Uncorrelated Terms
+     k   m   s  sym KE/PE   K     Operator
+     6   1   1   1   PE     4      28                                   
+     7   1   1   1   KE     4       5                                   
+     8   1   2   1   PE     4      29                                   
+     9   1   2   1   KE     4       5                                   
+    10   1   3   1   PE     4      30                                   
+    11   1   3   1   KE     4       5                                   
+    12   2   1   1   PE    13      14                                   
+    13   2   1   1   KE     4       6                                   
+    14   2   2   1   PE    13      14                                   
+    15   2   2   1   KE     4       6                                   
+    16   2   3   1   PE    13      14                                   
+    17   2   3   1   KE     4       6                                   
+
+**** Non-hermitian operators ****
+     Hermitian      =  1 
+     Anti-Hermitian = -1 
+     No Symmetry    =  0 
+
+     k  ki  kf coeff     hsym(m,k)  (Last column is sym of coeff)
+     4   2   3   23       0    0    0                                   
+     5   3   2   23       0    0    0                                   
+
+The operator is REAL and contains terms of unspecified symmetry
+(which may or may not add up to a hermitian sum)
+
+------------------------------------------------------------------------------
+

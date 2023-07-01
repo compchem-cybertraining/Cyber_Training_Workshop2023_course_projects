@@ -1,0 +1,4 @@
+
+ERROR in subroutine rddvrdef:
+No. of DOFs, ndof1 =  19 is .gt. maxdim =   1
+------------------------------------

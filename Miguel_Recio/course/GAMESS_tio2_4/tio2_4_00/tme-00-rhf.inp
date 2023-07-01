@@ -1,0 +1,34 @@
+ $contrl scftyp=rhf runtyp=energy dfttyp=bhhlyp icharg=0
+         maxit=500 mult=1
+ $end
+ $dft sg1=.true. $end
+ $scf
+ nconv=6
+ npunch=2
+ $end
+$reks
+ rexType=2
+ rexTarget=1
+wpps=0.95
+rexShift=0.7
+rexDIIS=no
+$end
+ $basis gbasis=n31 ngauss=6 ndfunc=1 $end
+!!!$guess guess=moread norb=106 $end
+ $system timlim=999999100 mwords=700 $end
+ $data
+TME planar S0 state
+ c1
+Ti 22.0 -1.616636    0.656520    0.857481  
+Ti 22.0 2.265088   -0.268274    0.514860  
+O  8.0 0.321234    0.190969    0.660789  
+O  8.0 -2.266158    1.033202    2.386633  
+O  8.0 3.258007   -0.282900    1.899051  
+O  8.0 1.540038   -1.778741   -0.255275  
+Ti 22.0 0.452557    1.355073   -0.993506  
+O  8.0 0.016948   -0.129841   -1.920700  
+Ti 22.0 -0.152286   -1.333916   -0.588040  
+O  8.0 -1.783296   -0.986980    0.038062  
+O  8.0 -1.130530    1.915066   -0.399532  
+O  8.0  2.192804    1.123305   -0.692866  
+ $end

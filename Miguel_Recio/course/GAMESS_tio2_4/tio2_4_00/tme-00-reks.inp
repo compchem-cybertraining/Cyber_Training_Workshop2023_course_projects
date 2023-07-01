@@ -1,0 +1,12 @@
+----- GAMESS execution script 'rungms' -----
+This job is running on host cpn-p27-19.compute.cbls.ccr.buffalo.edu
+under operating system Linux at Thu Jun 29 20:20:03 EDT 2023
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem                      1K-blocks    Used Available Use% Mounted on
+vast.cbls.ccr.buffalo.edu:/user  10742784 8305664   2437120  78% /user
+GAMESS temporary binary files will be written to /user/mrecio/work-dir/gam-scr
+GAMESS supplementary output files will be written to /user/mrecio/work-dir/gam-scr
+Copying input file tme-00-reks.out.inp to your run's scratch directory...
+Input file tme-00-reks.out.inp does not exist.
+This job expected the input file to be in directory /user/mrecio/WorkShop/mfilatov_resuelto/tio2_4_00
+Please fix your file name problem, and resubmit.

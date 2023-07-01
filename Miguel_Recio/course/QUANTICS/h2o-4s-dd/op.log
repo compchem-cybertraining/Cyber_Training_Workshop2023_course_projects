@@ -1,0 +1,187 @@
+
+******* Array-Dimensions *******
+
+ k   :  minkoe, maxkoe      14      18
+ h   :  htmdim, maxhtm      29      29
+ hl  :  hopdim, maxhop      28      28
+ nh  :  minfac, maxfac       2       3
+ n   :    ndef, maxdef       1       1
+ n   :    npar, maxpar       4       1
+ n   :    nrdf, maxrdf       0       1
+ nham:  hamdim, maxham       1       1
+ muld: mulddim,maxmuld       0      32
+ LMR :    iLMR, maxLMR       0     120
+
+***** Operator details *****
+
+ndof   =   4 ,  nmode   =   2
+nopdof =   5 ,  nopmode =   3
+
+feb =  4,  meb =  2,   fpb =  0,  mpb =  0,  mkoe =  3
+leb = T,  lmult = F,  lmulpack = F
+DOF no.    label            mass
+    1       1A1             1.0000
+    2       2A1             1.0000
+    3       3B2             1.0000
+    4       el              1.0000
+- - - - - - - - - - - - - - -
+    5       Koeff           0.0000
+
+Mode     DOFs
+   1    1=1A1       2=2A1       3=3B2     
+   2    4=el      
+- - - - - - - - - - - - - - -
+   3    5=Koeff   
+
+                                            Information for Hamiltonian : system
+
+Total no. of terms      :     14
+No. of correlated terms :     10
+
+No. of uncorrelated terms for mode   1:     4
+No. of uncorrelated terms for mode   2:     0
+
+  Parameters  
+PI                      3.141592653590
+freq0_1                 0.007769098366
+freq0_2                 0.017477190763
+freq0_3                 0.018065094700
+
+  Operator Labels    [hl,hoplab,(deflabel),hopilab,hopfile]
+    hl  Label                       function no.  file no.
+     1  1                                       1       302
+     2  -1                                      2       302
+     3  I                                       1       101
+     4  KEgwp                                  50         3
+     5  freq0_1                                 2       301
+     6  freq0_2                                 3       301
+     7  freq0_3                                 4       301
+     8  qchem1                                  3       205
+     9  qchem1&2                                3       205
+    10  qchem1&3                                3       205
+    11  qchem1&4                                3       205
+    12  qchem2                                  3       205
+    13  qchem2&3                                3       205
+    14  qchem2&4                                3       205
+    15  qchem3                                  3       205
+    16  qchem3&4                                3       205
+    17  qchem4                                  3       205
+    18  S1&1                                   10         3
+    19  S1&2                                   10         3
+    20  S1&3                                   10         3
+    21  S1&4                                   10         3
+    22  S2&2                                   10         3
+    23  S2&3                                   10         3
+    24  S2&4                                   10         3
+    25  S3&3                                   10         3
+    26  S3&4                                   10         3
+    27  S4&4                                   10         3
+    28  CAP[1]               capa               5       101
+ 
+Hamiltonian Operator Terms [h,htmdof,htmadof,htmmode,htmmuld,htmtype,
+                            htmsym,string]
+   No.   f  af   m  md Typ Sym      Term 
+     1   1   1   0   0 103   1    1
+     2   2   2   0   0 103   1    1
+     3   3   3   0   0 103   1    1
+     4   4   4   0   0   1   1    1
+     5   K       0   0   1   1    1
+     6   1   1   0   0 102   1    KEgwp*freq0_1
+     7   2   2   0   0 102   1    KEgwp*freq0_2
+     8   3   3   0   0 102   1    KEgwp*freq0_3
+     9   0   0   1   0 105   1    qchem1
+    10   0   0   1   0 105   1    qchem1&2
+    11   0   0   1   0 105   1    qchem1&3
+    12   0   0   1   0 105   1    qchem1&4
+    13   0   0   1   0 105   1    qchem2
+    14   0   0   1   0 105   1    qchem2&3
+    15   0   0   1   0 105   1    qchem2&4
+    16   0   0   1   0 105   1    qchem3
+    17   0   0   1   0 105   1    qchem3&4
+    18   0   0   1   0 105   1    qchem4
+    19   4   4   0   0   2   1    S1&1
+    20   4   4   0   0   8   1    S1&2
+    21   4   4   0   0   8   1    S1&3
+    22   4   4   0   0   8   1    S1&4
+    23   4   4   0   0   2   1    S2&2
+    24   4   4   0   0   8   1    S2&3
+    25   4   4   0   0   8   1    S2&4
+    26   4   4   0   0   2   1    S3&3
+    27   4   4   0   0   8   1    S3&4
+    28   4   4   0   0   2   1    S4&4
+    29   2   2   0   0 108  -1    CAP[1]
+
+Arguments for operators
+  No.    Arguments
+    1    10.000000       0.10000000E-01    3.0000000        1.0000000    
+
+Analytic derivatives used if htmderiv=1 :
+hterms   htmderiv
+    1      0
+    2      0
+    3      0
+    4      0
+    5      0
+    6      0
+    7      0
+    8      0
+    9      1
+   10      1
+   11      1
+   12      1
+   13      1
+   14      1
+   15      1
+   16      1
+   17      1
+   18      1
+   19      0
+   20      0
+   21      0
+   22      0
+   23      0
+   24      0
+   25      0
+   26      0
+   27      0
+   28      0
+   29      0
+
+QChem program used for potential
+Electronic representation : adiabatic
+External command : /user/gworth/bin/run_molpro15                                   
+Energy origin in hartree :   -76.1431910000
+Number of electronic states :  4
+Quantum chemistry method : CAS
+Highest electronic state :  0
+Database status : Read-write
+Read distance criterion :  0.2000
+
+Correlated Terms  
+    ki,kf: initial and final el. state.
+    Operator numbers are h=hamilton(f,k))
+         dof order =   K  |    1A1,    2A1,    3B2 |    el |
+     k  ki  kf KE/PE  
+     1   1   1  PE     5       9                      19
+     2   1   1  PE     5      10                      20
+     3   1   1  PE     5      11                      21
+     4   1   1  PE     5      12                      22
+     5   1   1  PE     5      13                      23
+     6   1   1  PE     5      14                      24
+     7   1   1  PE     5      15                      25
+     8   1   1  PE     5      16                      26
+     9   1   1  PE     5      17                      27
+    10   1   1  PE     5      18                      28
+
+Uncorrelated Terms
+     k   m  sym KE/PE   K     Operator
+    11   1   1   KE     5       6    2    3                         
+    12   1   1   KE     5       1    7    3                         
+    13   1   1   KE     5       1    2    8                         
+    14   1  -1   KE     5       1   29    3                         
+
+lcap is set
+The operator is COMPLEX and NON-HERMITIAN  (e.g. contains a CAP)
+
+------------------------------------------------------------------------------
+

@@ -1,0 +1,71 @@
+#######################################################################    
+###     Butatriene B2g-state, linear Vibronic Coupling model
+###     see: Cattarius et al. JCP 115, 2088-2100 (2001)
+#######################################################################
+
+RUN-SECTION                               
+                                                  
+name = butatriene_gwp
+                                                      
+propagation                                   
+tfinal = 100.0   tout = 1.00                            
+title  = Butatrien, B2u, linear coupling                 
+auto  gridpop  psi                     
+end-run-section                                  
+                                                     
+OPERATOR-SECTION                                 
+opname = C4H4_linear                   
+end-operator-section                               
+                                   
+SPF-BASIS-SECTION                                
+single-set                                             
+     Q_14, Q_5    = 50
+end-spf-basis-section                                           
+                                                        
+PRIMITIVE-BASIS-SECTION                       
+     el    el      2                       
+     Q_1    GWP      
+     Q_2    GWP   
+     Q_3    GWP      
+     Q_4    GWP         
+     Q_5    GWP            
+     Q_6    GWP       
+     Q_7    GWP                     
+     Q_8    GWP     
+     Q_9    GWP      
+     Q_10   GWP      
+     Q_11   GWP      
+     Q_12   GWP      
+     Q_13   GWP    
+     Q_14   GWP        
+     Q_15   GWP          
+     Q_16   GWP       
+     Q_17   GWP       
+     Q_18   GWP             
+end-primitive-basis-section                                
+                                                   
+INIT_WF-SECTION                                                  
+build                                                       
+    init_state =  2                                      
+    Q_1     HO    0.0  0.0     1.0    1.0                      
+    Q_2     HO    0.0  0.0     1.0    1.0                               
+    Q_3     HO    0.0  0.0     1.0    1.0          
+    Q_4     HO    0.0  0.0     1.0    1.0          
+    Q_5     HO    0.0  0.0     1.0    1.0              
+    Q_6     HO    0.0  0.0     1.0    1.0                 
+    Q_7     HO    0.0  0.0     1.0    1.0               
+    Q_8     HO    0.0  0.0     1.0    1.0               
+    Q_9     HO    0.0  0.0     1.0    1.0             
+    Q_10    HO    0.0  0.0     1.0    1.0        
+    Q_11    HO    0.0  0.0     1.0    1.0        
+    Q_12    HO    0.0  0.0     1.0    1.0              
+    Q_13    HO    0.0  0.0     1.0    1.0            
+    Q_14    HO    0.0  0.0     1.0    1.0           
+    Q_15    HO    0.0  0.0     1.0    1.0         
+    Q_16    HO    0.0  0.0     1.0    1.0           
+    Q_17    HO    0.0  0.0     1.0    1.0           
+    Q_18    HO    0.0  0.0     1.0    1.0     
+end-build                       
+end-init_wf-section                                 
+                                                            
+end-input               

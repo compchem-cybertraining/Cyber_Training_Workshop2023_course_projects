@@ -1,0 +1,50 @@
+# /user/mrecio/QUANTICS/h2o-4s-dd.inp
+                ### ------- INPUT FILE ------- ###
+
+RUN-SECTION
+name = h2o-4s-dd
+propagation     direct = nmodes       ngwp = 7
+title =  water direct dynamics
+tfinal = 100.0   tout = 0.5  tpsi= 0.5
+psi  gridpop   update  steps  auto   normstop = 1.0d-6
+end-run-section
+HAMILTONIAN-SECTION_system
+modes | 1A1 | 2A1 | 3B2
+1.0   |2 capa
+end-hamiltonian-section
+LABELS-SECTION
+capa=CAP[10.0,0.01,3,1]
+end-labels-section
+INITIAL-GEOMETRY-SECTION
+nstates = 4    init_state = 2
+cartesian = angst
+ O  0.0000000000  0.0000000000  0.1121548697
+ H  0.0000000000  0.7611532929 -0.4805424348
+ H  0.0000000000 -0.7611532929 -0.4805424348
+end-cartesian
+nmode
+1A1    -0.0819	1705.12,   cm-1 width = 0.7076
+2A1	0.1985	3835.80,   cm-1 width = 0.7326 grid 101 -5.0 40.0
+3B2	0.0000	3964.83,   cm-1 width = 0.7810 grid 101 -20.0 20.0
+end-nmode
+end-initial-geometry-section
+DIRDYN-SECTION
+data = h2o-4s-dd_dddata
+transfile = water-opt-nosym.out
+update = always
+qcprogram = molpro     method = cas
+ener0 = -76.143191
+ddlog
+dd_diab=global
+db = rdwr    dbmin = 0.20
+nbasis = 24
+subcmd = /user/gworth/bin/run_molpro15 , 2
+dbsave
+hess_upd
+end-dirdyn-section
+end-input
+ProgramVersion =   13.010
+
+ -w 
+
+#******************************************************************************#
