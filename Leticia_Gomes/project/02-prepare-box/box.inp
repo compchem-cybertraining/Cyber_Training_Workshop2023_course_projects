@@ -1,0 +1,18 @@
+title "Prepare QM/MM calculation of DBH+methanolbox"
+start DBH+methanolbox
+prepare
+periodic
+source dbh.pdb
+new_top new_seq
+new_rst
+center
+orient
+solvent name "MOH" model meoh
+solvate #box 5.3 5.3 5.3
+modify segment 1 quantum
+update lists
+ignore
+write DBH+methanolbox.rst
+write DBH+methanolbox.pdb
+end
+task prepare
