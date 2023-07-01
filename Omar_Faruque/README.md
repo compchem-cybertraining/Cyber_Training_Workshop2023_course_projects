@@ -1,5 +1,5 @@
-Md Omar Faruque
-University of Missouri-Kansas City
+Md Omar Faruque | 
+University of Missouri-Kansas City | 
 mfaruque@mail.umkc.edu
 
 
