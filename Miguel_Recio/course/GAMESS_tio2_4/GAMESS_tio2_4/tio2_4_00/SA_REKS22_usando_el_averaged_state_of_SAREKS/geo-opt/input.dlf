@@ -1,0 +1,39 @@
+# job type: "minimize", "neb_frozen", neb_free"
+job               minimize
+# coordinates in XYZ format; may contain more than one image
+coordinates       tme-00.xyz
+# type of coordinates; can be "cart" or "dlc"; other coordinates are NYI
+coord_type        dlc
+# what QC program to use. it's GAMESS-US only, for the moment
+interface         gamess
+# name of the QC input file; should contain all the necessary keywords
+inputfile        tme-00-reks.inp
+# tolerance for the gradient (default value)
+tolerance_g       4.5e-4
+# tolerance for the energy (default value)
+tolerance_e       1.0e-6
+# trust radius for the optimization (default value)
+trust_radius      0.5
+# neb force constant (default value)
+neb_constant      0.02
+# the number of neb images (default value)
+neb_images        17
+# max number of optimization cycles
+maxcycle          100
+# whether it's restart (yes) or not (no); default "no"
+restart           no
+# how many steps keep in the L-BFGS memory (default value = 3N-6)
+lbfgs_mem         100
+# print level: 0-nothing, 1-verbose, 4-very verbose
+printlevel        4
+# if "no", do not spawn the climbing image
+climb_img         no
+# temporary GAMESS input file that will be created from "inputfile"; default = temp_gms.inp
+tmp_input         tme_00_gms.inp
+# (yes/no) whether to update/not update the QC eigenvectors (in the tmp_input file)  during the geometry search
+vec_update        yes
+# set the name of the QC execution script. DO NOT CHANGE
+exe_script        gmsrun
+# QC execution script parameters. Default: no parameters
+parameters_script
+

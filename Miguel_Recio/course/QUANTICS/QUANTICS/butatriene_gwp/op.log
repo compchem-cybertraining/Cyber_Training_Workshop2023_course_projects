@@ -1,0 +1,226 @@
+
+******* Array-Dimensions *******
+
+ k   :  minkoe, maxkoe      47      49
+ h   :  htmdim, maxhtm      84      84
+ hl  :  hopdim, maxhop      39      39
+ nh  :  minfac, maxfac       6       6
+ n   :    ndef, maxdef       0       0
+ n   :    npar, maxpar      30      30
+ n   :    nrdf, maxrdf       0       1
+ nham:  hamdim, maxham       1       1
+ muld: mulddim,maxmuld       1      32
+ LMR :    iLMR, maxLMR       0     120
+
+***** Operator details *****
+
+ndof   =  19 ,  nmode   =   2
+nopdof =  20 ,  nopmode =   3
+
+feb =  1,  meb =  2,   fpb =  0,  mpb =  0,  mkoe =  3
+leb = T,  lmult = F,  lmulpack = F
+DOF no.    label            mass
+    1       el              1.0000
+    2       Q_1             1.0000
+    3       Q_2             1.0000
+    4       Q_3             1.0000
+    5       Q_4             1.0000
+    6       Q_5             1.0000
+    7       Q_6             1.0000
+    8       Q_7             1.0000
+    9       Q_8             1.0000
+   10       Q_9             1.0000
+   11       Q_10            1.0000
+   12       Q_11            1.0000
+   13       Q_12            1.0000
+   14       Q_13            1.0000
+   15       Q_14            1.0000
+   16       Q_15            1.0000
+   17       Q_16            1.0000
+   18       Q_17            1.0000
+   19       Q_18            1.0000
+- - - - - - - - - - - - - - -
+   20       Koeff           0.0000
+
+Mode     DOFs
+   1   15=Q_14      6=Q_5     
+   2    1=el      
+- - - - - - - - - - - - - - -
+   3   20=Koeff   
+
+                                            Information for Hamiltonian : system
+
+Total no. of terms      :      6
+No. of correlated terms :      2
+
+No. of uncorrelated terms for mode   1:     3
+No. of uncorrelated terms for mode   2:     1
+
+Analytic PES
+
+  Parameters  
+PI                      3.141592653590
+omega_1                 0.000918733135
+omega_2                 0.000970182191
+omega_3                 0.001087780032
+omega_4                 0.002227009119
+omega_5                 0.003351538476
+omega_6                 0.003663907742
+omega_7                 0.003674932540
+omega_8                 0.004002001536
+omega_9                 0.004623065135
+omega_10                0.004784762167
+omega_11                0.006519330326
+omega_12                0.006515655393
+omega_13                0.007548311437
+omega_14                0.009473976088
+omega_15                0.013645024520
+omega_16                0.014648281104
+omega_17                0.015137047131
+omega_18                0.015137047131
+E1                      0.327120445097
+E2                      0.347115753046
+kappa1_8                0.001951389179
+kappa2_8                0.002182909929
+kappa1_12               0.000422617242
+kappa2_12               0.000367493254
+kappa1_14               0.005982790175
+kappa2_14          -1.257561915118E-02
+kappa1_15               0.001480997814
+kappa2_15          -1.179653345275E-03
+lambda_5                0.010583805715
+
+  Operator Labels    [hl,hoplab,(deflabel),hopilab,hopfile]
+    hl  Label                       function no.  file no.
+     1  1                                       1       302
+     2  -1                                      2       302
+     3  I                                       1       101
+     4  omega_1                                 2       301
+     5  0.5                                     0       301
+     6  omega_2                                 3       301
+     7  omega_3                                 4       301
+     8  omega_4                                 5       301
+     9  omega_5                                 6       301
+    10  KEgwp                                  50         3
+    11  q^2                                     3       302
+    12  omega_6                                 7       301
+    13  omega_7                                 8       301
+    14  omega_8                                 9       301
+    15  omega_9                                10       301
+    16  omega_10                               11       301
+    17  omega_11                               12       301
+    18  omega_12                               13       301
+    19  omega_13                               14       301
+    20  omega_14                               15       301
+    21  omega_15                               16       301
+    22  omega_16                               17       301
+    23  omega_17                               18       301
+    24  omega_18                               19       301
+    25  E1                                     20       301
+    26  S1&1                                   10         3
+    27  E2                                     21       301
+    28  S2&2                                   10         3
+    29  lambda_5                               30       301
+    30  S1&2                                   10         3
+    31  q                                       3       302
+    32  kappa1_8                               22       301
+    33  kappa2_8                               23       301
+    34  kappa1_12                              24       301
+    35  kappa2_12                              25       301
+    36  kappa1_14                              26       301
+    37  kappa2_14                              27       301
+    38  kappa1_15                              28       301
+    39  kappa2_15                              29       301
+ 
+Hamiltonian Operator Terms [h,htmdof,htmadof,htmmode,htmmuld,htmtype,
+                            htmsym,string]
+   No.   f  af   m  md Typ Sym      Term 
+     1   1   1   0   0   1   1    1
+     2   2   2   0   0 103   1    1
+     3   3   3   0   0 103   1    1
+     4   4   4   0   0 103   1    1
+     5   5   5   0   0 103   1    1
+     6   6   6   0   0 103   1    1
+     7   7   7   0   0 103   1    1
+     8   8   8   0   0 103   1    1
+     9   9   9   0   0 103   1    1
+    10  10  10   0   0 103   1    1
+    11  11  11   0   0 103   1    1
+    12  12  12   0   0 103   1    1
+    13  13  13   0   0 103   1    1
+    14  14  14   0   0 103   1    1
+    15  15  15   0   0 103   1    1
+    16  16  16   0   0 103   1    1
+    17  17  17   0   0 103   1    1
+    18  18  18   0   0 103   1    1
+    19  19  19   0   0 103   1    1
+    20   K       0   0   1   1    1
+    30   6   6   0   0 102   1    KEgwp*omega_5
+    32   6   6   0   0 101   1    q^2*0.5*omega_5
+    50  15  15   0   0 102   1    KEgwp*omega_14
+    52  15  15   0   0 101   1    q^2*0.5*omega_14
+    66   1   1   0   0   8   1    S1&2
+    67   6   6   0   0 101   1    q*lambda_5
+    73  15  15   0   0 101   1    q
+    77   1   1   0   0   2   1    S1&1*E1 + S2&2*E2
+    78   1   1   0   0   2   1    S1&1*kappa1_14 + S2&2*kappa2_14
+    81   0   0   1   0 103   1    (15)
+    82   0   0   1   0 101   1    (67)
+    83   0   0   1   0 101   1    (73)
+    84   0   0   1   0 101   1    (32) + (52)
+
+Analytic derivatives used if htmderiv=1 :
+hterms   htmderiv
+    1      0
+    2      0
+    3      0
+    4      0
+    5      0
+    6      0
+    7      0
+    8      0
+    9      0
+   10      0
+   11      0
+   12      0
+   13      0
+   14      0
+   15      0
+   16      0
+   17      0
+   18      0
+   19      0
+   20      0
+   30      0
+   32      1
+   50      0
+   52      1
+   66      0
+   67      1
+   73      1
+   77      0
+   78      0
+   81      0
+   82      1
+   83      1
+   84      1
+
+Correlated Terms  
+    ki,kf: initial and final el. state.
+    Operator numbers are h=hamilton(f,k))
+         dof order =   K  |   Q_14,    Q_5 |    el |
+     k  ki  kf KE/PE  
+     1   1   1  PE    20      82              66
+     2   1   1  PE    20      83              78
+
+Uncorrelated Terms
+     k   m  sym KE/PE   K     Operator
+     3   1   1   KE    20      15   30                              
+     4   1   1   PE    20      84    6                              
+     5   1   1   KE    20      50    6                              
+     6   2   1   PE    20      77                                   
+
+The operator is REAL and HERMITIAN
+
+------------------------------------------------------------------------------
+

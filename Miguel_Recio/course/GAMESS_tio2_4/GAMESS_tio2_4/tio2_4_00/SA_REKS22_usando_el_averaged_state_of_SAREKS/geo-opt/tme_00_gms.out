@@ -1,0 +1,950 @@
+----- GAMESS execution script 'rungms' -----
+This job is running on host cpn-p27-17.compute.cbls.ccr.buffalo.edu
+under operating system Linux at Thu Jun 29 23:12:44 EDT 2023
+Available scratch disk space (Kbyte units) at beginning of the job is
+Filesystem                      1K-blocks    Used Available Use% Mounted on
+vast.cbls.ccr.buffalo.edu:/user  10742784 9074688   1668096  85% /user
+GAMESS temporary binary files will be written to /user/mrecio/work-dir/gam-scr
+GAMESS supplementary output files will be written to /user/mrecio/work-dir/gam-scr
+Copying input file tme_00_gms.inp to your run's scratch directory...
+cp tme_00_gms.inp /user/mrecio/work-dir/gam-scr/tme_00_gms.F05
+unset echo
+ 
+Assuming a single but multicore node.
+ 
+/projects/academic/cyberwksp21/Software/gamess-2018/qmmm-reks-2018-6.3/ddikick.x /projects/academic/cyberwksp21/Software/gamess-2018/qmmm-reks-2018-6.3/gamess.01.x tme_00_gms -ddi 1 12 cpn-p27-17.compute.cbls.ccr.buffalo.edu:cpus=12 -scr /user/mrecio/work-dir/gam-scr
+
+ Distributed Data Interface kickoff program.
+ Initiating 12 compute processes on 1 nodes to run the following command:
+ /projects/academic/cyberwksp21/Software/gamess-2018/qmmm-reks-2018-6.3/gamess.01.x tme_00_gms 
+
+          ******************************************************
+          *         GAMESS VERSION = 30 SEP 2018 (R3)         *
+          *             FROM IOWA STATE UNIVERSITY             *
+          * M.W.SCHMIDT, K.K.BALDRIDGE, J.A.BOATZ, S.T.ELBERT, *
+          *   M.S.GORDON, J.H.JENSEN, S.KOSEKI, N.MATSUNAGA,   *
+          *          K.A.NGUYEN, S.J.SU, T.L.WINDUS,           *
+          *       TOGETHER WITH M.DUPUIS, J.A.MONTGOMERY       *
+          *         J.COMPUT.CHEM.  14, 1347-1363(1993)        *
+          **************** 64 BIT INTEL VERSION ****************
+
+  SINCE 1993, STUDENTS AND POSTDOCS WORKING AT IOWA STATE UNIVERSITY
+  AND ALSO IN THEIR VARIOUS JOBS AFTER LEAVING ISU HAVE MADE IMPORTANT
+  CONTRIBUTIONS TO THE CODE:
+     IVANA ADAMOVIC, CHRISTINE AIKENS, YURI ALEXEEV, POOJA ARORA,
+     ANDREY ASADCHEV, ROB BELL, PRADIPTA BANDYOPADHYAY, JONATHAN BENTZ,
+     BRETT BODE, KURT BRORSEN, CALEB CARLIN, GALINA CHABAN, WEI CHEN,
+     CHEOL HO CHOI, PAUL DAY, ALBERT DEFUSCO, NUWAN DESILVA, TIM DUDLEY,
+     DMITRI FEDOROV, ALEX FINDLATER, GRAHAM FLETCHER, MARK FREITAG,
+     KURT GLAESEMANN, ANASTASIA GUNINA,
+     DAN KEMP, GRANT MERRILL, NORIYUKI MINEZAWA, JONATHAN MULLIN,
+     TAKESHI NAGATA, SEAN NEDD, HEATHER NETZLOFF, BOSILJKA NJEGIC, RYAN OLSON,
+     MIKE PAK, BUU PHAM,
+     SPENCER PRUITT, LUKE ROSKOP, JIM SHOEMAKER, LYUDMILA SLIPCHENKO,
+     TONY SMITH, SAROM SOK LEANG, JIE SONG, TETSUYA TAKETSUGU, SIMON WEBB,
+     PENG XU, SOOHAENG YOO, FEDERICO ZAHARIEV
+
+  ADDITIONAL CODE HAS BEEN PROVIDED BY COLLABORATORS IN OTHER GROUPS:
+     IOWA STATE UNIVERSITY:
+          JOE IVANIC, AARON WEST, LAIMUTIS BYTAUTAS, KLAUS RUEDENBERG
+     UNIVERSITY OF TOKYO: KIMIHIKO HIRAO, TAKAHITO NAKAJIMA,
+          TAKAO TSUNEDA, MUNEAKI KAMIYA, SUSUMU YANAGISAWA,
+          KIYOSHI YAGI, MAHITO CHIBA, SEIKEN TOKURA, NAOAKI KAWAKAMI
+     UNIVERSITY OF AARHUS: FRANK JENSEN
+     UNIVERSITY OF IOWA: VISVALDAS KAIRYS, HUI LI
+     NATIONAL INST. OF STANDARDS AND TECHNOLOGY: WALT STEVENS, DAVID GARMER
+     UNIVERSITY OF PISA: BENEDETTA MENNUCCI, JACOPO TOMASI
+     UNIVERSITY OF MEMPHIS: HENRY KURTZ, PRAKASHAN KORAMBATH
+     UNIVERSITY OF ALBERTA: TOBY ZENG, MARIUSZ KLOBUKOWSKI
+     UNIVERSITY OF NEW ENGLAND: MARK SPACKMAN
+     MIE UNIVERSITY: HIROAKI UMEDA
+     NAT. INST. OF ADVANCED INDUSTRIAL SCIENCE AND TECHNOLOGY: KAZUO KITAURA
+     MICHIGAN STATE UNIVERSITY:
+          KAROL KOWALSKI, MARTA WLOCH, JEFFREY GOUR, JESSE LUTZ,
+          WEI LI, JUN SHEN, J. EMILIANO DEUSTUA, PIOTR PIECUCH
+     UNIVERSITY OF MINNESOTA:
+          YINAN SHU
+     UNIVERSITY OF SILESIA: MONIKA MUSIAL, STANISLAW KUCHARSKI
+     FACULTES UNIVERSITAIRES NOTRE-DAME DE LA PAIX:
+          OLIVIER QUINET, BENOIT CHAMPAGNE
+     UNIVERSITY OF CALIFORNIA - SANTA BARBARA: BERNARD KIRTMAN
+     INSTITUTE FOR MOLECULAR SCIENCE:
+          KAZUYA ISHIMURA, MICHIO KATOUDA, AND SHIGERU NAGASE
+     UNIVERSITY OF NOTRE DAME: ANNA POMOGAEVA, DAN CHIPMAN
+     KYUSHU UNIVERSITY:
+          HARUYUKI NAKANO,
+          FENG LONG GU, JACEK KORCHOWIEC, MARCIN MAKOWSKI, AND YURIKO AOKI,
+          HIROTOSHI MORI AND EISAKU MIYOSHI
+     PENNSYLVANIA STATE UNIVERSITY:
+          TZVETELIN IORDANOV, CHET SWALINA, JONATHAN SKONE,
+          SHARON HAMMES-SCHIFFER
+     WASEDA UNIVERSITY:
+          MASATO KOBAYASHI, TOMOKO AKAMA, TSUGUKI TOUMA,
+          TAKESHI YOSHIKAWA, YASUHIRO IKABATA, JUNJI SEINO,
+          YUYA NAKAJIMA, HIROMI NAKAI
+     NANJING UNIVERSITY: SHUHUA LI
+     UNIVERSITY OF NEBRASKA:
+          PEIFENG SU, DEJUN SI, NANDUN THELLAMUREGE, YALI WANG, HUI LI
+     UNIVERSITY OF ZURICH: ROBERTO PEVERATI, KIM BALDRIDGE
+     N. COPERNICUS UNIVERSITY AND JACKSON STATE UNIVERSITY:
+          MARIA BARYSZ
+     UNIVERSITY OF COPENHAGEN: Jimmy Kromann, CASPER STEINMANN
+     TOKYO INSTITUTE OF TECHNOLOGY: HIROYA NAKATA
+     NAGOYA UNIVERSITY: YOSHIO NISHIMOTO, STEPHAN IRLE
+     MOSCOW STATE UNIVERSITY: VLADIMIR MIRONOV
+
+
+ PARALLEL VERSION RUNNING ON       12 PROCESSORS IN        1 NODES.
+
+ EXECUTION OF GAMESS BEGUN Thu Jun 29 23:12:45 2023
+
+            ECHO OF THE FIRST FEW INPUT CARDS -
+ INPUT CARD> $contrl scftyp=reks runtyp=gradient dfttyp=bhhlyp icharg=0                     
+ INPUT CARD>         maxit=500 mult=1                                                       
+ INPUT CARD> $end                                                                           
+ INPUT CARD> $dft sg1=.true. $end                                                           
+ INPUT CARD> $scf                                                                           
+ INPUT CARD> nconv=6                                                                        
+ INPUT CARD> npunch=2                                                                       
+ INPUT CARD> $end                                                                           
+ INPUT CARD>$reks                                                                           
+ INPUT CARD> rexType=0                                                                      
+ INPUT CARD> rexTarget=0                                                                    
+ INPUT CARD>wpps=0.5                                                                        
+ INPUT CARD>rexShift=0.0                                                                    
+ INPUT CARD>rexDIIS=no                                                                      
+ INPUT CARD>$end                                                                            
+ INPUT CARD> $basis gbasis=n31 ngauss=6 ndfunc=1 $end                                       
+ INPUT CARD> $guess guess=moread norb=106 $end                                              
+ INPUT CARD> $system timlim=999999100 mwords=700 $end                                       
+ INPUT CARD> $data                                                                          
+ INPUT CARD>Comment line                                                                    
+ INPUT CARD>C1                                                                              
+ INPUT CARD>Ti  22.0    -0.72625926    -0.05001797     0.92748113                           
+ INPUT CARD>Ti  22.0     1.58246127     0.25371517     0.63216557                           
+ INPUT CARD>O   8.0    -0.13003357     0.17575968     0.62585869                            
+ INPUT CARD>O   8.0    -0.80834423     0.55580690     2.80844728                            
+ INPUT CARD>O   8.0     2.32941033     0.23989623     2.98835402                            
+ INPUT CARD>O   8.0     0.85646966    -1.64884672    -0.51534150                            
+ INPUT CARD>Ti  22.0     0.95501116     0.80962042    -1.36393039                           
+ INPUT CARD>O   8.0    -0.01775306    -0.16979149    -2.08892633                            
+ INPUT CARD>Ti  22.0    -0.64491455    -0.80129287    -0.90225083                           
+ INPUT CARD>O   8.0    -1.80979762    -0.83099610     0.02256180                            
+ INPUT CARD>O   8.0    -0.81310437     1.74697721    -0.54485496                            
+ INPUT CARD>O   8.0     2.32462422     1.21265254    -1.08260748                            
+ INPUT CARD> $end                                                                           
+ INPUT CARD> $VEC                                                                           
+ INPUT CARD> 1  1 9.99312040e-01-3.23220817e-03-1.37630544e-04-2.09078429e-04-2.58320872e-04
+ INPUT CARD> 1  2 2.24840676e-02 2.00432029e-03 4.02940465e-04-8.57043150e-04-6.83226842e-04
+ INPUT CARD> 1  3 1.80243155e-03-4.12673968e-04-2.06058463e-03 8.26597351e-04-4.22096526e-04
+ INPUT CARD> 1  4-1.42267101e-04 1.74754800e-04 1.50551064e-02 1.41591059e-02 1.42527618e-02
+ INPUT CARD> 1  5 2.26895420e-04-4.75589434e-04-1.28124206e-04 5.62311257e-03 4.20746388e-03
+ INPUT CARD> 1  6 3.44256431e-03 1.91120172e-03 1.18606483e-03 5.90839990e-04 2.18976546e-03
+ INPUT CARD> 1  7 3.80368683e-04-8.71990080e-04 2.33138034e-04-5.69306567e-04 8.47579323e-04
+ INPUT CARD> 1  8-5.69344620e-04 5.48880732e-04 1.82693364e-04-2.78011722e-04-1.95488649e-05
+ INPUT CARD> 1  9-2.62749990e-05 1.63327266e-05-1.02156558e-06 8.15286150e-07-7.09410114e-04
+ INPUT CARD> 1 10 2.51927797e-04 3.40894522e-06 4.60807365e-05 3.50261194e-05 1.05212750e-03
+ INPUT CARD> 1 11 1.78540391e-05 2.53430426e-04-8.00187852e-04-1.05645264e-04 7.21801667e-05
+ INPUT CARD> 1 12 4.91986321e-05-5.88689852e-04-5.13415032e-04-5.07306558e-04-5.73808301e-06
+ INPUT CARD> 1 13 2.00639934e-05-2.43421956e-06-8.57699254e-04-2.36576036e-04-2.55177253e-04
+ INPUT CARD> 1 14 2.79623892e-05-2.25919718e-04 3.39966950e-05 3.82857593e-04-2.36549870e-05
+ INPUT CARD> 1 15-7.77767865e-06 5.19985680e-06 7.01102911e-05 2.19546779e-04-8.82913231e-06
+  700000000 WORDS OF MEMORY AVAILABLE
+
+ ERROR: MAXIT MUST BE BETWEEN 0 AND 200, NOT     500
+
+     BASIS OPTIONS
+     -------------
+     GBASIS=N31          IGAUSS=       6      POLAR=POPN31  
+     NDFUNC=       1     NFFUNC=       0     DIFFSP=       F
+     NPFUNC=       0      DIFFS=       F     BASNAM=        
+
+
+     RUN TITLE
+     ---------
+ Comment line                                                                    
+
+ THE POINT GROUP OF THE MOLECULE IS C1      
+ THE ORDER OF THE PRINCIPAL AXIS IS     0
+
+ ATOM      ATOMIC                      COORDINATES (BOHR)
+           CHARGE         X                   Y                   Z
+ TI         22.0    -1.3724309974       -0.0945202578        1.7526851945
+ TI         22.0     2.9904181865        0.4794521502        1.1946197062
+ O           8.0    -0.2457278165        0.3321376349        1.1827014311
+ O           8.0    -1.5275490985        1.0503227431        5.3071958102
+ O           8.0     4.4019472367        0.4533381402        5.6471702521
+ O           8.0     1.6184929742       -3.1158684966       -0.9738542251
+ TI         22.0     1.8047094076        1.5299607479       -2.5774547034
+ O           8.0    -0.0335484188       -0.3208593911       -3.9474983722
+ TI         22.0    -1.2187117850       -1.5142239602       -1.7050068409
+ O           8.0    -3.4200215950       -1.5703549259        0.0426356198
+ O           8.0    -1.5365444587        3.3013082337       -1.0296265775
+ O           8.0     4.3929028002        2.2915810189       -2.0458314895
+
+          INTERNUCLEAR DISTANCES (ANGS.)
+          ------------------------------
+
+                1 TI         2 TI         3 O          4 O          5 O     
+
+   1 TI      0.0000000    2.3472656 *  0.7052919 *  1.9778259 *  3.6970751  
+   2 TI      2.3472656 *  0.0000000    1.7142799 *  3.2470621    2.4717904 *
+   3 O       0.7052919 *  1.7142799 *  0.0000000    2.3169450 *  3.4109181  
+   4 O       1.9778259 *  3.2470621    2.3169450 *  0.0000000    3.1587450  
+   5 O       3.6970751    2.4717904 *  3.4109181    3.1587450    0.0000000  
+   6 O       2.6726431 *  2.3374298 *  2.3674279 *  4.3219989    4.2441473  
+   7 TI      2.9692112 *  2.1649765 *  2.3533725 *  4.5368027    4.5995585  
+   8 O       3.1008129    3.1850251    2.7389907 *  5.0135612    5.6085467  
+   9 TI      1.9796338 *  2.9032187 *  1.8854317 *  3.9544544    5.0067444  
+  10 O       1.6133385 *  3.6132583    2.0491783 *  3.2691420    5.2034389  
+  11 O       2.3247596 *  3.0584217    2.0750616 *  3.5585875    4.9628880  
+  12 O       3.8655767    2.1001936 *  3.1653354    5.0385757    4.1855711  
+
+                6 O          7 TI         8 O          9 TI        10 O     
+
+   1 TI      2.6726431 *  2.9692112 *  3.1008129    1.9796338 *  1.6133385 *
+   2 TI      2.3374298 *  2.1649765 *  3.1850251    2.9032187 *  3.6132583  
+   3 O       2.3674279 *  2.3533725 *  2.7389907 *  1.8854317 *  2.0491783 *
+   4 O       4.3219989    4.5368027    5.0135612    3.9544544    3.2691420  
+   5 O       4.2441473    4.5995585    5.6085467    5.0067444    5.2034389  
+   6 O       0.0000000    2.6026667 *  2.3298152 *  1.7669751 *  2.8402818 *
+   7 TI      2.6026667 *  0.0000000    1.5592104 *  2.3168841 *  3.5011642  
+   8 O       2.3298152 *  1.5592104 *  0.0000000    1.4833490 *  2.8472789 *
+   9 TI      1.7669751 *  2.3168841 *  1.4833490 *  0.0000000    1.4876536 *
+  10 O       2.8402818 *  3.5011642    2.8472789 *  1.4876536 *  0.0000000  
+  11 O       3.7841734    2.1623494 *  2.5866469 *  2.5787012 *  2.8215786 *
+  12 O       3.2657995    1.4551348 *  2.9000966 *  3.5925847    4.7425039  
+
+               11 O         12 O     
+
+   1 TI      2.3247596 *  3.8655767  
+   2 TI      3.0584217    2.1001936 *
+   3 O       2.0750616 *  3.1653354  
+   4 O       3.5585875    5.0385757  
+   5 O       4.9628880    4.1855711  
+   6 O       3.7841734    3.2657995  
+   7 TI      2.1623494 *  1.4551348 *
+   8 O       2.5866469 *  2.9000966 *
+   9 TI      2.5787012 *  3.5925847  
+  10 O       2.8215786 *  4.7425039  
+  11 O       0.0000000    3.2280058  
+  12 O       3.2280058    0.0000000  
+
+  * ... LESS THAN  3.000
+
+
+     ATOMIC BASIS SET
+     ----------------
+ THE CONTRACTED PRIMITIVE FUNCTIONS HAVE BEEN UNNORMALIZED
+ THE CONTRACTED BASIS FUNCTIONS ARE NOW NORMALIZED TO UNITY
+
+  SHELL TYPE  PRIMITIVE        EXPONENT          CONTRACTION COEFFICIENT(S)
+
+ TI        
+
+      1   S       1         43152.9500000    0.001791871976
+      1   S       2          6479.5710000    0.013723919819
+      1   S       3          1475.6750000    0.067628299108
+      1   S       4           415.6991000    0.233764196917
+      1   S       5           133.0006000    0.481069593655
+      1   S       6            45.2722200    0.346227995434
+
+      2   L       7           874.6826000    0.002431008053    0.004017679296
+      2   L       8           207.9785000    0.032330270707    0.031139662298
+      2   L       9            66.8791800    0.124252002716    0.134907709955
+      2   L      10            24.8734700   -0.039039050853    0.343167225322
+      2   L      11             9.9684410   -0.617178913492    0.462576034134
+      2   L      12             4.0638260   -0.447309709779    0.215460315899
+
+      3   L      13            33.6436300   -0.002940357957   -0.006311620001
+      3   L      14            10.8756500    0.071631028943   -0.026976380003
+      3   L      15             4.6282250    0.252891496268    0.053168470005
+      3   L      16             1.9501260   -0.296640095622    0.384554900038
+      3   L      17             0.8094520   -0.743221489032    0.512766200050
+      3   L      18             0.3204740   -0.185351997265    0.181113500018
+
+      4   L      19             1.2241480    0.063514607166   -0.211207009897
+      4   L      20             0.4842630    0.315140187469    0.077719983642
+      4   L      21             0.0840960   -1.162594215945    0.989821446382
+
+      5   L      22             0.0320360    1.000000000000    1.000000000000
+
+      6   D      23            13.6908500    0.085894178803
+      6   D      24             3.5131540    0.378467094726
+      6   D      25             1.0404340    0.716123890021
+
+      7   D      26             0.2869620    1.000000000000
+
+      8   F      27             0.8000000    1.000000000000
+
+ TI        
+
+      9   S      28         43152.9500000    0.001791871976
+      9   S      29          6479.5710000    0.013723919819
+      9   S      30          1475.6750000    0.067628299108
+      9   S      31           415.6991000    0.233764196917
+      9   S      32           133.0006000    0.481069593655
+      9   S      33            45.2722200    0.346227995434
+
+     10   L      34           874.6826000    0.002431008053    0.004017679296
+     10   L      35           207.9785000    0.032330270707    0.031139662298
+     10   L      36            66.8791800    0.124252002716    0.134907709955
+     10   L      37            24.8734700   -0.039039050853    0.343167225322
+     10   L      38             9.9684410   -0.617178913492    0.462576034134
+     10   L      39             4.0638260   -0.447309709779    0.215460315899
+
+     11   L      40            33.6436300   -0.002940357957   -0.006311620001
+     11   L      41            10.8756500    0.071631028943   -0.026976380003
+     11   L      42             4.6282250    0.252891496268    0.053168470005
+     11   L      43             1.9501260   -0.296640095622    0.384554900038
+     11   L      44             0.8094520   -0.743221489032    0.512766200050
+     11   L      45             0.3204740   -0.185351997265    0.181113500018
+
+     12   L      46             1.2241480    0.063514607166   -0.211207009897
+     12   L      47             0.4842630    0.315140187469    0.077719983642
+     12   L      48             0.0840960   -1.162594215945    0.989821446382
+
+     13   L      49             0.0320360    1.000000000000    1.000000000000
+
+     14   D      50            13.6908500    0.085894178803
+     14   D      51             3.5131540    0.378467094726
+     14   D      52             1.0404340    0.716123890021
+
+     15   D      53             0.2869620    1.000000000000
+
+     16   F      54             0.8000000    1.000000000000
+
+ O         
+
+     17   S      55          5484.6716600    0.001831074430
+     17   S      56           825.2349460    0.013950172200
+     17   S      57           188.0469580    0.068445078098
+     17   S      58            52.9645000    0.232714335992
+     17   S      59            16.8975704    0.470192897984
+     17   S      60             5.7996353    0.358520852987
+
+     18   L      61            15.5396162   -0.110777549525    0.070874268231
+     18   L      62             3.5999336   -0.148026262701    0.339752839147
+     18   L      63             1.0137618    1.130767015354    0.727158577316
+
+     19   L      64             0.2700058    1.000000000000    1.000000000000
+
+     20   D      65             0.8000000    1.000000000000
+
+ O         
+
+     21   S      66          5484.6716600    0.001831074430
+     21   S      67           825.2349460    0.013950172200
+     21   S      68           188.0469580    0.068445078098
+     21   S      69            52.9645000    0.232714335992
+     21   S      70            16.8975704    0.470192897984
+     21   S      71             5.7996353    0.358520852987
+
+     22   L      72            15.5396162   -0.110777549525    0.070874268231
+     22   L      73             3.5999336   -0.148026262701    0.339752839147
+     22   L      74             1.0137618    1.130767015354    0.727158577316
+
+     23   L      75             0.2700058    1.000000000000    1.000000000000
+
+     24   D      76             0.8000000    1.000000000000
+
+ O         
+
+     25   S      77          5484.6716600    0.001831074430
+     25   S      78           825.2349460    0.013950172200
+     25   S      79           188.0469580    0.068445078098
+     25   S      80            52.9645000    0.232714335992
+     25   S      81            16.8975704    0.470192897984
+     25   S      82             5.7996353    0.358520852987
+
+     26   L      83            15.5396162   -0.110777549525    0.070874268231
+     26   L      84             3.5999336   -0.148026262701    0.339752839147
+     26   L      85             1.0137618    1.130767015354    0.727158577316
+
+     27   L      86             0.2700058    1.000000000000    1.000000000000
+
+     28   D      87             0.8000000    1.000000000000
+
+ O         
+
+     29   S      88          5484.6716600    0.001831074430
+     29   S      89           825.2349460    0.013950172200
+     29   S      90           188.0469580    0.068445078098
+     29   S      91            52.9645000    0.232714335992
+     29   S      92            16.8975704    0.470192897984
+     29   S      93             5.7996353    0.358520852987
+
+     30   L      94            15.5396162   -0.110777549525    0.070874268231
+     30   L      95             3.5999336   -0.148026262701    0.339752839147
+     30   L      96             1.0137618    1.130767015354    0.727158577316
+
+     31   L      97             0.2700058    1.000000000000    1.000000000000
+
+     32   D      98             0.8000000    1.000000000000
+
+ TI        
+
+     33   S      99         43152.9500000    0.001791871976
+     33   S     100          6479.5710000    0.013723919819
+     33   S     101          1475.6750000    0.067628299108
+     33   S     102           415.6991000    0.233764196917
+     33   S     103           133.0006000    0.481069593655
+     33   S     104            45.2722200    0.346227995434
+
+     34   L     105           874.6826000    0.002431008053    0.004017679296
+     34   L     106           207.9785000    0.032330270707    0.031139662298
+     34   L     107            66.8791800    0.124252002716    0.134907709955
+     34   L     108            24.8734700   -0.039039050853    0.343167225322
+     34   L     109             9.9684410   -0.617178913492    0.462576034134
+     34   L     110             4.0638260   -0.447309709779    0.215460315899
+
+     35   L     111            33.6436300   -0.002940357957   -0.006311620001
+     35   L     112            10.8756500    0.071631028943   -0.026976380003
+     35   L     113             4.6282250    0.252891496268    0.053168470005
+     35   L     114             1.9501260   -0.296640095622    0.384554900038
+     35   L     115             0.8094520   -0.743221489032    0.512766200050
+     35   L     116             0.3204740   -0.185351997265    0.181113500018
+
+     36   L     117             1.2241480    0.063514607166   -0.211207009897
+     36   L     118             0.4842630    0.315140187469    0.077719983642
+     36   L     119             0.0840960   -1.162594215945    0.989821446382
+
+     37   L     120             0.0320360    1.000000000000    1.000000000000
+
+     38   D     121            13.6908500    0.085894178803
+     38   D     122             3.5131540    0.378467094726
+     38   D     123             1.0404340    0.716123890021
+
+     39   D     124             0.2869620    1.000000000000
+
+     40   F     125             0.8000000    1.000000000000
+
+ O         
+
+     41   S     126          5484.6716600    0.001831074430
+     41   S     127           825.2349460    0.013950172200
+     41   S     128           188.0469580    0.068445078098
+     41   S     129            52.9645000    0.232714335992
+     41   S     130            16.8975704    0.470192897984
+     41   S     131             5.7996353    0.358520852987
+
+     42   L     132            15.5396162   -0.110777549525    0.070874268231
+     42   L     133             3.5999336   -0.148026262701    0.339752839147
+     42   L     134             1.0137618    1.130767015354    0.727158577316
+
+     43   L     135             0.2700058    1.000000000000    1.000000000000
+
+     44   D     136             0.8000000    1.000000000000
+
+ TI        
+
+     45   S     137         43152.9500000    0.001791871976
+     45   S     138          6479.5710000    0.013723919819
+     45   S     139          1475.6750000    0.067628299108
+     45   S     140           415.6991000    0.233764196917
+     45   S     141           133.0006000    0.481069593655
+     45   S     142            45.2722200    0.346227995434
+
+     46   L     143           874.6826000    0.002431008053    0.004017679296
+     46   L     144           207.9785000    0.032330270707    0.031139662298
+     46   L     145            66.8791800    0.124252002716    0.134907709955
+     46   L     146            24.8734700   -0.039039050853    0.343167225322
+     46   L     147             9.9684410   -0.617178913492    0.462576034134
+     46   L     148             4.0638260   -0.447309709779    0.215460315899
+
+     47   L     149            33.6436300   -0.002940357957   -0.006311620001
+     47   L     150            10.8756500    0.071631028943   -0.026976380003
+     47   L     151             4.6282250    0.252891496268    0.053168470005
+     47   L     152             1.9501260   -0.296640095622    0.384554900038
+     47   L     153             0.8094520   -0.743221489032    0.512766200050
+     47   L     154             0.3204740   -0.185351997265    0.181113500018
+
+     48   L     155             1.2241480    0.063514607166   -0.211207009897
+     48   L     156             0.4842630    0.315140187469    0.077719983642
+     48   L     157             0.0840960   -1.162594215945    0.989821446382
+
+     49   L     158             0.0320360    1.000000000000    1.000000000000
+
+     50   D     159            13.6908500    0.085894178803
+     50   D     160             3.5131540    0.378467094726
+     50   D     161             1.0404340    0.716123890021
+
+     51   D     162             0.2869620    1.000000000000
+
+     52   F     163             0.8000000    1.000000000000
+
+ O         
+
+     53   S     164          5484.6716600    0.001831074430
+     53   S     165           825.2349460    0.013950172200
+     53   S     166           188.0469580    0.068445078098
+     53   S     167            52.9645000    0.232714335992
+     53   S     168            16.8975704    0.470192897984
+     53   S     169             5.7996353    0.358520852987
+
+     54   L     170            15.5396162   -0.110777549525    0.070874268231
+     54   L     171             3.5999336   -0.148026262701    0.339752839147
+     54   L     172             1.0137618    1.130767015354    0.727158577316
+
+     55   L     173             0.2700058    1.000000000000    1.000000000000
+
+     56   D     174             0.8000000    1.000000000000
+
+ O         
+
+     57   S     175          5484.6716600    0.001831074430
+     57   S     176           825.2349460    0.013950172200
+     57   S     177           188.0469580    0.068445078098
+     57   S     178            52.9645000    0.232714335992
+     57   S     179            16.8975704    0.470192897984
+     57   S     180             5.7996353    0.358520852987
+
+     58   L     181            15.5396162   -0.110777549525    0.070874268231
+     58   L     182             3.5999336   -0.148026262701    0.339752839147
+     58   L     183             1.0137618    1.130767015354    0.727158577316
+
+     59   L     184             0.2700058    1.000000000000    1.000000000000
+
+     60   D     185             0.8000000    1.000000000000
+
+ O         
+
+     61   S     186          5484.6716600    0.001831074430
+     61   S     187           825.2349460    0.013950172200
+     61   S     188           188.0469580    0.068445078098
+     61   S     189            52.9645000    0.232714335992
+     61   S     190            16.8975704    0.470192897984
+     61   S     191             5.7996353    0.358520852987
+
+     62   L     192            15.5396162   -0.110777549525    0.070874268231
+     62   L     193             3.5999336   -0.148026262701    0.339752839147
+     62   L     194             1.0137618    1.130767015354    0.727158577316
+
+     63   L     195             0.2700058    1.000000000000    1.000000000000
+
+     64   D     196             0.8000000    1.000000000000
+
+ TOTAL NUMBER OF BASIS SET SHELLS             =   64
+ NUMBER OF CARTESIAN GAUSSIAN BASIS FUNCTIONS =  276
+ NUMBER OF ELECTRONS                          =  152
+ CHARGE OF MOLECULE                           =    0
+ SPIN MULTIPLICITY                            =    1
+ NUMBER OF OCCUPIED ORBITALS (ALPHA)          =   76
+ NUMBER OF OCCUPIED ORBITALS (BETA )          =   76
+ TOTAL NUMBER OF ATOMS                        =   12
+ THE NUCLEAR REPULSION ENERGY IS     2258.7143619216
+ THE NUCLEAR REPULSION ENERGY IS     2258.7143619216
+
+     STANDARD GRID ONE (SG-1) PRUNED GRID OPTIONS
+     -------------------------------------------
+     DFTTYP=BHHLYP  
+     GRID HAS 50 RADIAL POINTS AND AT MOST
+      194 ANGULAR POINTS, BEFORE PRUNING
+     SWOFF =    5.00E-03 (PURE SCF -> DFT)
+     COARSE GRID SWITCHING IS NOT AVAILABLE
+     THRESH=    0.00E+00 GTHRE=    1.00E+00
+
+ GRIMME'S EMPIRICAL DISPERSION CORRECTION= F
+
+     $CONTRL OPTIONS
+     ---------------
+ SCFTYP=REKS         RUNTYP=GRADIENT     EXETYP=RUN     
+ MPLEVL=       0     CITYP =NONE         CCTYP =NONE         VBTYP =NONE    
+ DFTTYP=BHHLYP       TDDFT =NONE    
+ MULT  =       1     ICHARG=       0     NZVAR =       0     COORD =UNIQUE  
+ PP    =NONE         RELWFN=NONE         LOCAL =NONE         NUMGRD=       F
+ ISPHER=      -1     NOSYM =       0     MAXIT =     500     UNITS =ANGS    
+ PLTORB=       F     MOLPLT=       F     AIMPAC=       F     FRIEND=        
+ NPRINT=       7     IREST =       0     GEOM  =INPUT   
+ NORMF =       0     NORMP =       0     ITOL  =      20     ICUT  =       9
+ INTTYP=BEST         GRDTYP=BEST         QMTTOL= 1.0E-06
+
+     $SYSTEM OPTIONS
+     ---------------
+  REPLICATED MEMORY=   700000000 WORDS (ON EVERY NODE).
+ DISTRIBUTED MEMDDI=           0 MILLION WORDS IN AGGREGATE,
+ MEMDDI DISTRIBUTED OVER  12 PROCESSORS IS           0 WORDS/PROCESSOR.
+ TOTAL MEMORY REQUESTED ON EACH PROCESSOR=   700000000 WORDS.
+ TIMLIM=   999999100.00 MINUTES, OR  694443.8 DAYS.
+ PARALL= T  BALTYP=  DLB     KDIAG=    0  COREFL= F
+ MXSEQ2=     300 MXSEQ3=     150  mem10=         0
+
+          ----------------
+          PROPERTIES INPUT
+          ----------------
+
+     MOMENTS            FIELD           POTENTIAL          DENSITY
+ IEMOM =       1   IEFLD =       0   IEPOT =       0   IEDEN =       0
+ WHERE =COMASS     WHERE =NUCLEI     WHERE =NUCLEI     WHERE =NUCLEI  
+ OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH       OUTPUT=BOTH    
+ IEMINT=       0   IEFINT=       0                     IEDINT=       0
+                                                       MORB  =       0
+          EXTRAPOLATION IN EFFECT
+          DIIS IN EFFECT
+ ORBITAL PRINTING OPTION: NPREO=     1   276     2     1
+
+ =====> REKS control string found <=====
+ $REKS | REXTYPE=0 | REXTARGET=0 |WPPS=0.5 |REXSHIFT=0.0 |REXDIIS=NO |$END
+
+ ======> set rexType to   0
+ ======> set rexTarget to   0
+ ======> set WPPS to    0.50000000
+ ======> set REXSHIFT to    0.00000000
+ ======> set REXDIIS to F
+
+ =====> End of REKS control string <=====
+
+     -------------------------------
+     INTEGRAL TRANSFORMATION OPTIONS
+     -------------------------------
+     NWORD  =            0
+     CUTOFF = 1.0E-09     MPTRAN =       0
+     DIRTRF =       F     AOINTS =DUP     
+
+          ----------------------
+          INTEGRAL INPUT OPTIONS
+          ----------------------
+ NOPK  =       1 NORDER=       0 SCHWRZ=       T
+
+     ------------------------------------------
+     THE POINT GROUP IS C1 , NAXIS= 0, ORDER= 1
+     ------------------------------------------
+
+     DIMENSIONS OF THE SYMMETRY SUBSPACES ARE
+ A   =  276
+
+ ..... DONE SETTING UP THE RUN .....
+ CPU     0: STEP CPU TIME=     0.36 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    94.74%
+
+                    --------------------------------
+                    SINGLE POINT ENERGY AND GRADIENT
+                    --------------------------------
+
+          ********************
+          1 ELECTRON INTEGRALS
+          ********************
+ ...... END OF ONE-ELECTRON INTEGRALS ......
+ CPU     0: STEP CPU TIME=     0.00 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.4 SECONDS, CPU UTILIZATION IS    83.72%
+
+          -------------
+          GUESS OPTIONS
+          -------------
+          GUESS =MOREAD            NORB  =     106          NORDER=       0
+          MIX   =       F          PRTMO =       F          PUNMO =       F
+          TOLZ  = 1.0E-08          TOLE  = 1.0E-05
+          SYMDEN=       F          PURIFY=       F
+
+ INITIAL GUESS ORBITALS GENERATED BY MOREAD   ROUTINE.
+
+ SYMMETRIES FOR INITIAL GUESS ORBITALS FOLLOW.   BOTH SET(S).
+    76 ORBITALS ARE OCCUPIED (   44 CORE ORBITALS).
+     1=A        2=A        3=A        4=A        5=A        6=A        7=A   
+     8=A        9=A       10=A       11=A       12=A       13=A       14=A   
+    15=A       16=A       17=A       18=A       19=A       20=A       21=A   
+    22=A       23=A       24=A       25=A       26=A       27=A       28=A   
+    29=A       30=A       31=A       32=A       33=A       34=A       35=A   
+    36=A       37=A       38=A       39=A       40=A       41=A       42=A   
+    43=A       44=A       45=A       46=A       47=A       48=A       49=A   
+    50=A       51=A       52=A       53=A       54=A       55=A       56=A   
+    57=A       58=A       59=A       60=A       61=A       62=A       63=A   
+    64=A       65=A       66=A       67=A       68=A       69=A       70=A   
+    71=A       72=A       73=A       74=A       75=A       76=A       77=A   
+    78=A       79=A       80=A       81=A       82=A       83=A       84=A   
+    85=A       86=A       87=A       88=A       89=A       90=A       91=A   
+    92=A       93=A       94=A       95=A       96=A       97=A       98=A   
+    99=A      100=A      101=A      102=A      103=A      104=A      105=A   
+   106=A      107=A      108=A      109=A      110=A      111=A      112=A   
+   113=A      114=A      115=A      116=A      117=A      118=A      119=A   
+   120=A      121=A      122=A      123=A      124=A      125=A      126=A   
+   127=A      128=A      129=A      130=A      131=A      132=A      133=A   
+   134=A      135=A      136=A      137=A      138=A      139=A      140=A   
+   141=A      142=A      143=A      144=A      145=A      146=A      147=A   
+   148=A      149=A      150=A      151=A      152=A      153=A      154=A   
+   155=A      156=A      157=A      158=A      159=A      160=A      161=A   
+   162=A      163=A      164=A      165=A      166=A      167=A      168=A   
+   169=A      170=A      171=A      172=A      173=A      174=A      175=A   
+   176=A      177=A      178=A      179=A      180=A      181=A      182=A   
+   183=A      184=A      185=A      186=A      187=A      188=A      189=A   
+   190=A      191=A      192=A      193=A      194=A      195=A      196=A   
+   197=A      198=A      199=A      200=A      201=A      202=A      203=A   
+   204=A      205=A      206=A      207=A      208=A      209=A      210=A   
+   211=A      212=A      213=A      214=A      215=A      216=A      217=A   
+   218=A      219=A      220=A      221=A      222=A      223=A      224=A   
+   225=A      226=A      227=A      228=A      229=A      230=A      231=A   
+   232=A      233=A      234=A      235=A      236=A      237=A      238=A   
+   239=A      240=A      241=A      242=A      243=A      244=A      245=A   
+   246=A      247=A      248=A      249=A      250=A      251=A      252=A   
+   253=A      254=A      255=A      256=A      257=A      258=A      259=A   
+   260=A      261=A      262=A      263=A      264=A      265=A      266=A   
+   267=A      268=A      269=A      270=A      271=A      272=A      273=A   
+   274=A      275=A      276=A   
+ ...... END OF INITIAL ORBITAL SELECTION ......
+ CPU     0: STEP CPU TIME=     0.07 TOTAL CPU TIME=          0.4 (      0.0 MIN)
+ TOTAL WALL CLOCK TIME=          0.5 SECONDS, CPU UTILIZATION IS    82.69%
+
+                    ----------------------
+                    AO INTEGRAL TECHNOLOGY
+                    ----------------------
+     S,P,L SHELL ROTATED AXIS INTEGRALS, REPROGRAMMED BY
+        KAZUYA ISHIMURA (IMS) AND JOSE SIERRA (SYNSTAR).
+     S,P,D,L SHELL ROTATED AXIS INTEGRALS PROGRAMMED BY
+        KAZUYA ISHIMURA (INSTITUTE FOR MOLECULAR SCIENCE).
+     S,P,D,F,G SHELL TO TOTAL QUARTET ANGULAR MOMENTUM SUM 5,
+        ERIC PROGRAM BY GRAHAM FLETCHER (ELORET AND NASA ADVANCED
+        SUPERCOMPUTING DIVISION, AMES RESEARCH CENTER).
+     S,P,D,F,G,L SHELL GENERAL RYS QUADRATURE PROGRAMMED BY
+        MICHEL DUPUIS (PACIFIC NORTHWEST NATIONAL LABORATORY).
+
+          --------------------
+          2 ELECTRON INTEGRALS
+          --------------------
+
+ THE -PK- OPTION IS OFF, THE INTEGRALS ARE NOT IN SUPERMATRIX FORM.
+ STORING   15000 INTEGRALS/RECORD ON DISK, USING 16 BYTES/INTEGRAL.
+ TWO ELECTRON INTEGRAL EVALUATION REQUIRES  101180 WORDS OF MEMORY.
+ SCHWARZ INEQUALITY OVERHEAD:     36861 INTEGRALS, T=        0.00
+ II,JST,KST,LST =  1  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  2  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  3  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  4  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  5  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  6  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  7  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  8  1  1  1 NREC =         1 INTLOC =    1
+ II,JST,KST,LST =  9  1  1  1 NREC =         1 INTLOC = 7954
+ II,JST,KST,LST = 10  1  1  1 NREC =         1 INTLOC = 7954
+ II,JST,KST,LST = 11  1  1  1 NREC =         1 INTLOC = 7954
+ II,JST,KST,LST = 12  1  1  1 NREC =         1 INTLOC =14207
+ II,JST,KST,LST = 13  1  1  1 NREC =         2 INTLOC = 2601
+ II,JST,KST,LST = 14  1  1  1 NREC =         2 INTLOC = 2601
+ II,JST,KST,LST = 15  1  1  1 NREC =         6 INTLOC =10986
+ II,JST,KST,LST = 16  1  1  1 NREC =         6 INTLOC =10986
+ II,JST,KST,LST = 17  1  1  1 NREC =        26 INTLOC =14457
+ II,JST,KST,LST = 18  1  1  1 NREC =        26 INTLOC =14457
+ II,JST,KST,LST = 19  1  1  1 NREC =        26 INTLOC =14457
+ II,JST,KST,LST = 20  1  1  1 NREC =        39 INTLOC = 6589
+ II,JST,KST,LST = 21  1  1  1 NREC =        70 INTLOC = 9137
+ II,JST,KST,LST = 22  1  1  1 NREC =        70 INTLOC = 9137
+ II,JST,KST,LST = 23  1  1  1 NREC =        70 INTLOC = 9137
+ II,JST,KST,LST = 24  1  1  1 NREC =        73 INTLOC = 2096
+ II,JST,KST,LST = 25  1  1  1 NREC =       101 INTLOC =10618
+ II,JST,KST,LST = 26  1  1  1 NREC =       101 INTLOC =10618
+ II,JST,KST,LST = 27  1  1  1 NREC =       101 INTLOC =10618
+ II,JST,KST,LST = 28  1  1  1 NREC =       113 INTLOC = 4751
+ II,JST,KST,LST = 29  1  1  1 NREC =       127 INTLOC = 3183
+ II,JST,KST,LST = 30  1  1  1 NREC =       131 INTLOC = 8055
+ II,JST,KST,LST = 31  1  1  1 NREC =       145 INTLOC = 9415
+ II,JST,KST,LST = 32  1  1  1 NREC =       177 INTLOC = 5159
+ II,JST,KST,LST = 33  1  1  1 NREC =       197 INTLOC = 5412
+ II,JST,KST,LST = 34  1  1  1 NREC =       199 INTLOC =13140
+ II,JST,KST,LST = 35  1  1  1 NREC =       207 INTLOC = 8730
+ II,JST,KST,LST = 36  1  1  1 NREC =       230 INTLOC = 9746
+ II,JST,KST,LST = 37  1  1  1 NREC =       295 INTLOC = 9774
+ II,JST,KST,LST = 38  1  1  1 NREC =       295 INTLOC = 9774
+ II,JST,KST,LST = 39  1  1  1 NREC =       324 INTLOC =13181
+ II,JST,KST,LST = 40  1  1  1 NREC =       329 INTLOC = 5268
+ II,JST,KST,LST = 41  1  1  1 NREC =       442 INTLOC =12943
+ II,JST,KST,LST = 42  1  1  1 NREC =       442 INTLOC =12943
+ II,JST,KST,LST = 43  1  1  1 NREC =       442 INTLOC =12943
+ II,JST,KST,LST = 44  1  1  1 NREC =       442 INTLOC =12943
+ II,JST,KST,LST = 45  1  1  1 NREC =       485 INTLOC = 2408
+ II,JST,KST,LST = 46  1  1  1 NREC =       503 INTLOC = 7431
+ II,JST,KST,LST = 47  1  1  1 NREC =       559 INTLOC =   57
+ II,JST,KST,LST = 48  1  1  1 NREC =       645 INTLOC =13190
+ II,JST,KST,LST = 49  1  1  1 NREC =       751 INTLOC =11531
+ II,JST,KST,LST = 50  1  1  1 NREC =       914 INTLOC =10796
+ II,JST,KST,LST = 51  1  1  1 NREC =       993 INTLOC =11521
+ II,JST,KST,LST = 52  1  1  1 NREC =      1130 INTLOC = 1940
+ II,JST,KST,LST = 53  1  1  1 NREC =      1453 INTLOC = 1316
+ II,JST,KST,LST = 54  1  1  1 NREC =      1453 INTLOC = 1316
+ II,JST,KST,LST = 55  1  1  1 NREC =      1628 INTLOC = 8329
+ II,JST,KST,LST = 56  1  1  1 NREC =      1716 INTLOC = 9842
+ II,JST,KST,LST = 57  1  1  1 NREC =      1917 INTLOC = 3596
+ II,JST,KST,LST = 58  1  1  1 NREC =      1926 INTLOC = 6041
+ II,JST,KST,LST = 59  1  1  1 NREC =      2011 INTLOC =14309
+ II,JST,KST,LST = 60  1  1  1 NREC =      2102 INTLOC = 1713
+ II,JST,KST,LST = 61  1  1  1 NREC =      2360 INTLOC = 7384
+ II,JST,KST,LST = 62  1  1  1 NREC =      2378 INTLOC = 1318
+ II,JST,KST,LST = 63  1  1  1 NREC =      2430 INTLOC =12353
+ II,JST,KST,LST = 64  1  1  1 NREC =      2575 INTLOC =13858
+ SCHWARZ INEQUALITY TEST SKIPPED      808263 INTEGRAL BLOCKS.
+ TOTAL NUMBER OF NONZERO TWO-ELECTRON INTEGRALS =           480950349
+      32069 INTEGRAL RECORDS WERE STORED ON DISK FILE  8.
+  ...... END OF TWO-ELECTRON INTEGRALS .....
+ CPU     0: STEP CPU TIME=     3.66 TOTAL CPU TIME=          4.1 (      0.1 MIN)
+ TOTAL WALL CLOCK TIME=          4.3 SECONDS, CPU UTILIZATION IS    95.78%
+
+ ================================================================================
+
+          Performing a æÇeÙSA-REKS(2,2) calculation for the averaged state
+
+          Weights: WPPS =    0.500000, WOSS =    0.500000
+
+          Applying 0.000 orbital eigenvalue shift, not using DIIS
+
+ ================================================================================
+
+          -------------------
+          SA-REKS(2,2)-BHHLYP
+          -------------------
+
+     NUCLEAR ENERGY =      2258.7143619216
+     MAXIT =500     NPUNCH=  2     MULT=  1
+     EXTRAP=F  DAMP=F  SHIFT=F  RSTRCT=F  DIIS=F  SOSCF=F
+         DENSITY MATRIX CONVERGENCE THRESHOLD=  1.00E-06
+            FOCK MATRIX CONVERGENCE THRESHOLD=  1.00E-06
+     COARSE -> FINE DFT GRID SWITCH THRESHOLD=  3.00E-04 (SWITCH IN $DFT)
+                   HF -> DFT SWITCH THRESHOLD=  0.00E+00 (SWOFF IN $DFT)
+     MEMORY REQUIRED FOR REKS ITERS=   2569696 WORDS.
+
+     EXCHANGE FUNCTIONAL   =B88&HFX   
+     CORRELATION FUNCTIONAL=LYP88     
+     DFT THRESHOLD         =.859E-08
+ FOR AN EULER-MACLAURIN QUADRATURE USING  50 RADIAL POINTS:
+ SMALLEST GAUSSIAN PRIMITIVE EXPONENT=        0.0320360000 OF TYPE -P-
+ ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  1.000000
+  LARGEST GAUSSIAN PRIMITIVE EXPONENT=    43152.9500000000 OF TYPE -S-
+ ON ATOM NUMBER   1 HAS RADIAL NORMALIZATION=  0.998705
+
+          **************************************************
+          *                                                *
+          * WARNING: QUESTIONABLE SELECTION OF RADIAL GRID *
+          *                                                *
+          **************************************************
+
+ THIS RUN HAS REQUESTED NRAD=  50 IN $DFT OR $TDDFT
+ ATOM=    1 HAS LARGE EXPONENT=         43152.949999999997090
+ RECOMMEND NRAD ABOVE  50 FOR ZETA'S ABOVE 1E+4
+ RECOMMEND NRAD ABOVE  75 FOR ZETA'S ABOVE 1E+5
+ RECOMMEND NRAD ABOVE 125 FOR ZETA'S ABOVE 1E+6
+ ====================================================================================================================
+
+ ITER EX     NR/2           TOTAL ENERGY    OFFDIAG FOCK      E CHANGE    DENSITY CHANGE  DIIS ERROR     VIR. SHIFT
+
+ ====================================================================================================================
+   1  0   1.000000000    -2283.3433469766   2.548385970 -2283.3433469766  66.561464497   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+   2  1   1.000000000    -2031.3008840547   3.996530010   252.0424629219  66.549865510   0.000000000     0.000000000
+ DNR =   0.000000775<0.5; Swap the active orbitals
+   3  2   0.999999225    -2241.1374996129   2.608388572  -209.8366155583  66.403770139   0.000000000     0.000000000
+   4  3   1.000000000    -2033.8988177177   3.030599222   207.2386818952  66.403747615   0.000000000     0.000000000
+ DNR =   0.000001103<0.5; Swap the active orbitals
+   5  4   0.999998897    -2241.1382579440   2.648420218  -207.2394402263  66.397676352   0.000000000     0.000000000
+   6  5   1.000000000    -2034.1862027234   2.746094939   206.9520552206  66.397672254   0.000000000     0.000000000
+ DNR =   0.000000291<0.5; Swap the active orbitals
+   7  6   0.999999709    -2241.1357948132   2.687022931  -206.9495920899  66.395970947   0.000000000     0.000000000
+   8  7   1.000000000    -2034.4151537871   2.966476728   206.7206410261  66.395967725   0.000000000     0.000000000
+ DNR =   0.000000104<0.5; Swap the active orbitals
+   9  8   0.999999896    -2241.1325992364   2.721265350  -206.7174454493  66.394531428   0.000000000     0.000000000
+  10  9   1.000000000    -2034.6597150358   3.388470928   206.4728842006  66.394527755   0.000000000     0.000000000
+ DNR =   0.000000040<0.5; Swap the active orbitals
+  11 10   0.999999960    -2241.1285920209   2.757718063  -206.4688769851  66.392975291   0.000000000     0.000000000
+  12 11   1.000000000    -2035.0080383470   3.909190237   206.1205536739  66.392969809   0.000000000     0.000000000
+ DNR =   0.000000012<0.5; Swap the active orbitals
+  13 12   0.999999988    -2241.1219177752   2.809135729  -206.1138794282  66.390730262   0.000000000     0.000000000
+  14 13   1.000000000    -2035.7508983541   4.641431315   205.3710194211  66.390718123   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  15 14   1.000000000    -2241.1035823100   2.917499615  -205.3526839559  66.385877528   0.000000000     0.000000000
+  16 15   1.000000000    -2037.8866618390   4.327472005   203.2169204710  66.385841918   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  17 16   1.000000000    -2241.0113442604   3.224263997  -203.1246824214  66.371334689   0.000000000     0.000000000
+ DNR =   0.309430244<0.5; Swap the active orbitals
+  18 17   0.690569756    -2039.3499543594   2.080568607   201.6613899010  66.371326612   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  19 18   1.000000000    -2240.8890944774   3.448322580  -201.5391401180  66.359067443   0.000000000     0.000000000
+ DNR =   0.124825803<0.5; Swap the active orbitals
+  20 19   0.875174197    -2039.5164334815   2.090085732   201.3726609958  66.359067693   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  21 20   1.000000000    -2240.8589779410   3.492318570  -201.3425444594  66.356377005   0.000000000     0.000000000
+ DNR =   0.123441900<0.5; Swap the active orbitals
+  22 21   0.876558100    -2039.5302372100   2.091488646   201.3287407310  66.356377014   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  23 22   1.000000000    -2240.8548360299   3.498375736  -201.3245988199  66.355984346   0.000000000     0.000000000
+ DNR =   0.123222255<0.5; Swap the active orbitals
+  24 23   0.876777745    -2039.5318136126   2.091660911   201.3230224173  66.355984346   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  25 24   1.000000000    -2240.8542749736   3.499201716  -201.3224613611  66.355930346   0.000000000     0.000000000
+ DNR =   0.123201786<0.5; Swap the active orbitals
+  26 25   0.876798214    -2039.5320244438   2.091684165   201.3222505298  66.355930345   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  27 26   1.000000000    -2240.8541986481   3.499314365  -201.3221742043  66.355922969   0.000000000     0.000000000
+ DNR =   0.123199090<0.5; Swap the active orbitals
+  28 27   0.876800910    -2039.5320530656   2.091687325   201.3221455825  66.355922969   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  29 28   1.000000000    -2240.8541882505   3.499329724  -201.3221351849  66.355921963   0.000000000     0.000000000
+ DNR =   0.123198727<0.5; Swap the active orbitals
+  30 29   0.876801273    -2039.5320569675   2.091687756   201.3221312830  66.355921963   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  31 30   1.000000000    -2240.8541868330   3.499331818  -201.3221298655  66.355921826   0.000000000     0.000000000
+ DNR =   0.123198677<0.5; Swap the active orbitals
+  32 31   0.876801323    -2039.5320574994   2.091687815   201.3221293335  66.355921826   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  33 32   1.000000000    -2240.8541866397   3.499332104  -201.3221291403  66.355921807   0.000000000     0.000000000
+ DNR =   0.123198671<0.5; Swap the active orbitals
+  34 33   0.876801329    -2039.5320575721   2.091687823   201.3221290676  66.355921807   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  35 34   1.000000000    -2240.8541866133   3.499332143  -201.3221290412  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  36 35   0.876801330    -2039.5320575823   2.091687824   201.3221290310  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  37 36   1.000000000    -2240.8541866098   3.499332148  -201.3221290274  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  38 37   0.876801330    -2039.5320575834   2.091687824   201.3221290264  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  39 38   1.000000000    -2240.8541866091   3.499332149  -201.3221290258  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  40 39   0.876801330    -2039.5320575835   2.091687824   201.3221290256  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  41 40   1.000000000    -2240.8541866090   3.499332149  -201.3221290255  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  42 41   0.876801330    -2039.5320575837   2.091687824   201.3221290254  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  43 42   1.000000000    -2240.8541866092   3.499332149  -201.3221290255  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  44 43   0.876801330    -2039.5320575837   2.091687824   201.3221290255  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  45 44   1.000000000    -2240.8541866092   3.499332149  -201.3221290255  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  46 45   0.876801330    -2039.5320575836   2.091687824   201.3221290256  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  47 46   1.000000000    -2240.8541866091   3.499332149  -201.3221290255  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  48 47   0.876801330    -2039.5320575836   2.091687824   201.3221290256  66.355921804   0.000000000     0.000000000
+ DNR =   0.000000000<0.5; Swap the active orbitals
+  49 48   1.000000000    -2240.8541866092   3.499332149  -201.3221290256  66.355921804   0.000000000     0.000000000
+ DNR =   0.123198670<0.5; Swap the active orbitals
+  50 49   0.876801330    -2039.5320575835   2.091687824   201.3221290257  66.355921804   0.000000000     0.000000000
+ PRD: NODE   4 ENCOUNTERED I/O ERROR READING UNIT   8
+ PRD: NODE   6 ENCOUNTERED I/O ERROR READING UNIT   8
+ PRD: NODE   2 ENCOUNTERED I/O ERROR READING UNIT   8
+ DDI Process 4: error code 911
+ DDI Process 6: error code 911
+ ddikick.x: application process 4 quit unexpectedly.
+ ddikick.x: Fatal error detected.
+ The error is most likely to be in the application, so check for
+ input errors, disk space, memory needs, application bugs, etc.
+ ddikick.x will now clean up all processes, and exit...
+ DDI Process 0: terminated upon request.
+ DDI Process 1: terminated upon request.
+ DDI Process 2: terminated upon request.
+ DDI Process 3: terminated upon request.
+ DDI Process 7: terminated upon request.
+ DDI Process 5: terminated upon request.
+ DDI Process 8: terminated upon request.
+ DDI Process 11: terminated upon request.
+ DDI Process 9: terminated upon request.
+ DDI Process 10: terminated upon request.
+ ddikick.x: Sending kill signal to DDI processes.
+ ddikick.x: Execution terminated due to error(s).
+unset echo
+----- accounting info -----
+Files used on the master node cpn-p27-17.compute.cbls.ccr.buffalo.edu were:
+-rw-rw-r-- 1 mrecio mrecio 1913 Jun 29 23:14 /user/mrecio/work-dir/gam-scr/tme_00_gms.dat
+rm: No match.
+ls: No match.
+ls: No match.
+ls: No match.
+Thu Jun 29 23:14:56 EDT 2023
+0.272u 0.111s 2:12.08 0.2%	0+0k 0+2616io 0pf+0w

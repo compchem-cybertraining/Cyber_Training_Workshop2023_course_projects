@@ -1,0 +1,29 @@
+
+**** Reading OPER file ****
+Harmonic oscillator Hamiltonian for exercises
+
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 10:56:02 2023
+
+
+Program name: showsys
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :        497
+ real*8     :        497
+ integer    :        369
+ logical    :          1
+ complex*8  :        123
+ real*4     :          1
+ Total   :         14396 Bytes ,      0.01 MB

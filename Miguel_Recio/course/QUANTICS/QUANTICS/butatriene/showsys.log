@@ -1,0 +1,30 @@
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-15" ----------Wed Jun 14 15:04:52 2023
+
+
+Program name: showsys
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :       1869
+ real*8     :       5525
+ integer    :        439
+ logical    :          1
+ complex*8  :        929
+ real*4     :          1
+ Total   :         83300 Bytes ,      0.08 MB

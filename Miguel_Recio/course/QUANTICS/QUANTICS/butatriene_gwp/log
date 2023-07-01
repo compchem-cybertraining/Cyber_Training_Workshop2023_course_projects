@@ -1,0 +1,532 @@
+
+                   ------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+ /user/mrecio/QUANTICS/butatriene_gwp
+
+ PID = 20271
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+  Butatrien, B2u, linear coupling
+
+########################################################################
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/QUANTICS/butatriene_gwp
+input     : /user/mrecio/QUANTICS/butatriene_gwp.inp
+DVR file  : /user/mrecio/QUANTICS/butatriene_gwp
+OPER file : /user/mrecio/QUANTICS/butatriene_gwp
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/QUANTICS/butatriene_gwp
+cross-ref : /user/mrecio/QUANTICS/butatriene_gwp/restart
+
+overwrite disabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/QUANTICS/butatriene_gwp/dvr
+                                                         Jun 15 11:00:47
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+
+** Array dimensions **
+
+length of complex      array (used):           5          0.000 MB
+length of real         array (used):        1828          0.014 MB
+length of integer      array (used):           4          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.014 /      0.019
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ el             1    el     2
+ Q_1            2    GWP  101    -10.000     10.000   0.200000
+ Q_2            3    GWP  101    -10.000     10.000   0.200000
+ Q_3            4    GWP  101    -10.000     10.000   0.200000
+ Q_4            5    GWP  101    -10.000     10.000   0.200000
+ Q_5            6    GWP  101    -10.000     10.000   0.200000
+ Q_6            7    GWP  101    -10.000     10.000   0.200000
+ Q_7            8    GWP  101    -10.000     10.000   0.200000
+ Q_8            9    GWP  101    -10.000     10.000   0.200000
+ Q_9           10    GWP  101    -10.000     10.000   0.200000
+ Q_10          11    GWP  101    -10.000     10.000   0.200000
+ Q_11          12    GWP  101    -10.000     10.000   0.200000
+ Q_12          13    GWP  101    -10.000     10.000   0.200000
+ Q_13          14    GWP  101    -10.000     10.000   0.200000
+ Q_14          15    GWP  101    -10.000     10.000   0.200000
+ Q_15          16    GWP  101    -10.000     10.000   0.200000
+ Q_16          17    GWP  101    -10.000     10.000   0.200000
+ Q_17          18    GWP  101    -10.000     10.000   0.200000
+ Q_18          19    GWP  101    -10.000     10.000   0.200000
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/QUANTICS/butatriene_gwp/oper
+                                                         Jun 15 11:00:47
+########################################################################
+
+Opening operator file:/user/mrecio/QUANTICS/C4H4_linear.op
+
+Parameter values taken from .op file 
+
+Parameter values taken from .op file 
+
+***** Hamiltonian title *****
+
+Butatriene linear model with 5 modes                                            
+see: Cattarius et al. JCP 115, 2088-2100 (2001)                                 
+
+***** End Hamiltonian title *****
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   49
+
+** Array dimensions **
+
+length of real         array (used):        3646          0.028 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.028 /      0.323
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+WARNING: Mass for DOF   2 not set. Set to 1 by default.
+WARNING: Mass for DOF   3 not set. Set to 1 by default.
+WARNING: Mass for DOF   4 not set. Set to 1 by default.
+WARNING: Mass for DOF   5 not set. Set to 1 by default.
+WARNING: Mass for DOF   6 not set. Set to 1 by default.
+WARNING: Mass for DOF   7 not set. Set to 1 by default.
+WARNING: Mass for DOF   8 not set. Set to 1 by default.
+WARNING: Mass for DOF   9 not set. Set to 1 by default.
+WARNING: Mass for DOF  10 not set. Set to 1 by default.
+WARNING: Mass for DOF  11 not set. Set to 1 by default.
+WARNING: Mass for DOF  12 not set. Set to 1 by default.
+WARNING: Mass for DOF  13 not set. Set to 1 by default.
+WARNING: Mass for DOF  14 not set. Set to 1 by default.
+WARNING: Mass for DOF  15 not set. Set to 1 by default.
+WARNING: Mass for DOF  16 not set. Set to 1 by default.
+WARNING: Mass for DOF  17 not set. Set to 1 by default.
+WARNING: Mass for DOF  18 not set. Set to 1 by default.
+WARNING: Mass for DOF  19 not set. Set to 1 by default.
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       el              1.0000
+    2       Q_1             1.0000
+    3       Q_2             1.0000
+    4       Q_3             1.0000
+    5       Q_4             1.0000
+    6       Q_5             1.0000
+    7       Q_6             1.0000
+    8       Q_7             1.0000
+    9       Q_8             1.0000
+   10       Q_9             1.0000
+   11       Q_10            1.0000
+   12       Q_11            1.0000
+   13       Q_12            1.0000
+   14       Q_13            1.0000
+   15       Q_14            1.0000
+   16       Q_15            1.0000
+   17       Q_16            1.0000
+   18       Q_17            1.0000
+   19       Q_18            1.0000
+
+Mode     DOFs
+   1   15=Q_14      6=Q_5     
+   2    1=el      
+
+Analytic PES
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 15 11:00:47
+########################################################################
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N    n      dof's
+
+   1      2   50      15   6
+   2      2    2       1
+
+ Total grid size       :        4     4.000E+00
+
+***** Length of psi vector *****
+
+Overall length of A-vector        :      100
+Length of phi vector for mode    1:      100
+Length of phi vector for mode    2:        4
+                                  --------
+Length of wavefunction vector   :      204
+
+workcdim   :       204
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   49
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         204          0.003 MB
+length of complex      array (used):       12818          0.196 MB
+length of real         array (used):        2070          0.016 MB
+length of integer      array (used):           6          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.218 /      0.712
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+  1  el        initial state:       2
+  6  Q_5       GWP sigma =  0.7071 xi =-16.8000 xf = 17.5000 dx =  0.7000
+ 15  Q_14      GWP sigma =  0.7071 xi =-16.8000 xf = 17.5000 dx =  0.7000
+
+*** Frozen GWPs (diagonal) ***
+
+**** Initial GWP arranged in shells **** 
+mode state   shell subshell
+  1  1          4    1   Partially Filled. Filled =   53   (Nspf =    50)
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 15 11:00:47
+########################################################################
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+                                                 Butatrien, B2u, linear coupling
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+WARNING in subroutine Chkprop:
+Symmetric Hamiltonian and real initial state assumed when calculating
+autocorrelation function. Use "cross" if these conditions are not fulfilled.
+------------------------------------
+  
+ hopsdim  =         35        0.000 MB
+ dgldim   =        204        0.003 MB
+ pmatdim  =       7512      0.115 MB
+ hpsidim  =          8      0.000 MB
+ hlochdim =       5008      0.076 MB
+ mfsumdim =          1        0.000 MB
+ intpsidim=       1428      0.022 MB
+ workcdim =    1510362     23.046 MB
+ workrdim =        400      0.003 MB
+ workidim =        200      0.001 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :   24
+ Maximum no. of states (MAXSTA)    :    2
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :   49
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         204          0.003 MB
+length of complex      array (used):     1516937         23.147 MB
+length of real         array (used):        6271          0.048 MB
+length of integer      array (used):         357          0.001 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):     23.202 /     25.018
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+Butatriene linear model with 5 modes
+see: Cattarius et al. JCP 115, 2088-2100 (2001)
+
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+                                                 Butatrien, B2u, linear coupling
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:00:47 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+G-MCTDH calculation
+Electronic states in single-set formalism.
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are computed at each integration step 
+RK integrator with improved orthogonality
+RK5 integrator, accuracy: 1.00E-06  initial step: 0.00E+00 fs
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+GWPs propagated using diagonal FG
+Phaseless GWPs with non-propagated scalar parameters
+GWPs follow vMCG trajectories
+CX formulation uses dynamic uncorrelated GWPs
+GWP parameter coupling allocated dynamically. Eps =  0.1000E-05
+Using local harmonic approximation of PES
+GWP EOMs solved using Tikhonov regularisation
+GWP overlap matrix inverted using SVD.
+Projector uses inverse of overlap matrix
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+Parameter used to regularise inverse C-matrix      :  1.000E-08
+Parameter used to regularise inverse overlap matrix:  1.000E-08
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Auto        file opened  (once)
+
+ time[fs]        1.000
+ time[fs]        2.000
+ time[fs]        3.000
+ time[fs]        4.000
+ time[fs]        5.000
+ time[fs]        6.000
+ time[fs]        7.000
+ time[fs]        8.000
+ time[fs]        9.000
+ time[fs]       10.000
+ time[fs]       11.000
+ time[fs]       12.000
+ time[fs]       13.000
+ time[fs]       14.000
+ time[fs]       15.000
+ time[fs]       16.000
+ time[fs]       17.000
+ time[fs]       18.000
+ time[fs]       19.000
+ time[fs]       20.000
+ time[fs]       21.000
+ time[fs]       22.000
+ time[fs]       23.000
+ time[fs]       24.000
+ time[fs]       25.000
+ time[fs]       26.000
+ time[fs]       27.000
+ time[fs]       28.000
+ time[fs]       29.000
+ time[fs]       30.000
+ time[fs]       31.000
+ time[fs]       32.000
+ time[fs]       33.000
+ time[fs]       34.000
+ time[fs]       35.000
+ time[fs]       36.000
+ time[fs]       37.000
+ time[fs]       38.000
+ time[fs]       39.000
+ time[fs]       40.000
+ time[fs]       41.000
+ time[fs]       42.000
+ time[fs]       43.000
+ time[fs]       44.000
+ time[fs]       45.000
+ time[fs]       46.000
+ time[fs]       47.000
+ time[fs]       48.000
+ time[fs]       49.000
+ time[fs]       50.000
+ time[fs]       51.000
+ time[fs]       52.000
+ time[fs]       53.000
+ time[fs]       54.000
+ time[fs]       55.000
+ time[fs]       56.000
+ time[fs]       57.000
+ time[fs]       58.000
+ time[fs]       59.000
+ time[fs]       60.000
+ time[fs]       61.000
+ time[fs]       62.000
+ time[fs]       63.000
+ time[fs]       64.000
+ time[fs]       65.000
+ time[fs]       66.000
+ time[fs]       67.000
+ time[fs]       68.000
+ time[fs]       69.000
+ time[fs]       70.000
+ time[fs]       71.000
+ time[fs]       72.000
+ time[fs]       73.000
+ time[fs]       74.000
+ time[fs]       75.000
+ time[fs]       76.000
+ time[fs]       77.000
+ time[fs]       78.000
+ time[fs]       79.000
+ time[fs]       80.000
+ time[fs]       81.000
+ time[fs]       82.000
+ time[fs]       83.000
+ time[fs]       84.000
+ time[fs]       85.000
+ time[fs]       86.000
+ time[fs]       87.000
+ time[fs]       88.000
+ time[fs]       89.000
+ time[fs]       90.000
+ time[fs]       91.000
+ time[fs]       92.000
+ time[fs]       93.000
+ time[fs]       94.000
+ time[fs]       95.000
+ time[fs]       96.000
+ time[fs]       97.000
+ time[fs]       98.000
+ time[fs]       99.000
+ time[fs]      100.000
+
+***** Integration method *****
+
+Integration method used for the complete ODE:
+Runge-Kutta order 5 (RK5) from ODESIM
+with improved orthogonality
+
+Total number of RK5 steps:        5311
+Number of accepted RK5 steps:     5302
+Number of rejected RK5 steps:        9
+
+
+**** GWP basis dynamic coupling ****
+ mode      Ndyn /   N      Tmax Cmin
+    1        100 /  100     14.020  0.979161E-05
+
+
+***** Overall Timing *****
+
+Total cpu time     [s] :        278.89
+Total system time  [s] :        282.76
+Total time      [h:m:s] :    0 :  4 : 42.76
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-16" ----------Thu Jun 15 11:05:30 2023
+

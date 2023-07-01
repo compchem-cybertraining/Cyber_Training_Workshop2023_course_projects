@@ -1,0 +1,30 @@
+
+*******************************************************************************
+                               MCTDH version  2
+                                  Release     1
+*******************************************************************************
+
+ ------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+           
+ /user/mrecio/QUANTICS/but_stick
+------------------------------------------------------------------------------
+
+#    Order      CPU-time[s]        Delta-CPU         Real time
+#        2              0.1                          Jun 14 15:21:16 
+         4              0.1            0.010         Jun 14 15:21:16 
+         8              0.1            0.000         Jun 14 15:21:16 
+        16              0.1            0.000         Jun 14 15:21:16 
+        32              0.1            0.000         Jun 14 15:21:16 
+        50              0.1            0.010         Jun 14 15:21:16 
+Number of Lanczos iterations:      50
+Number of eigenvalues found:       30
+Length of Lanczos vectors:       1050
+
+Diagonalisation was successful.
+
+Total time     [h:m:s] :    0 :  0 :  0.99
+
+ ---------------------------------------------------------------------------
+ ------ Host: "cpn-p27-15" ----------Wed Jun 14 15:21:16 2023
+
+ /user/mrecio/QUANTICS/but_stick

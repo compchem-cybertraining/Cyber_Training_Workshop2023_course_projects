@@ -1,0 +1,30 @@
+# 
+# Henon-Heiles system
+#
+
+OPERATOR-SECTION
+opname = ho
+end-operator-section
+
+RUN-SECTION
+propagation    tout=0.5    tpsi=0.50  tfinal =  70.0
+name = results1
+output    psi     gridpop    
+end-run-section
+
+SBASIS-SECTION 
+x = 1
+end-sbasis-section
+
+PRIMITIVE-BASIS-SECTION
+#Label    DVR      N              Parameter 
+    x     fft     121             -10.5 10.5
+end-pbasis-section
+
+INIT_WF-SECTION 
+build                   
+   x      HO   2    0.000    20.0    20.0
+end-build
+end-init_wf-section 
+
+end-input

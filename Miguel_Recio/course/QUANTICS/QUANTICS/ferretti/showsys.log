@@ -1,0 +1,31 @@
+
+**** Reading OPER file ****
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+
+Created on:
+------ Host: "cpn-p27-15" ----------Thu Jun 15 14:52:08 2023
+
+
+Program name: showsys
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :      12171
+ real*8     :     147429
+ integer    :        711
+ logical    :          1
+ complex*8  :       6080
+ real*4     :          1
+ Total   :       1425660 Bytes ,      1.36 MB

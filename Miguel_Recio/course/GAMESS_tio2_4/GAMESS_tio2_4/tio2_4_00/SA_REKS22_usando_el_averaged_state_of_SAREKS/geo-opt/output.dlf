@@ -1,0 +1,495 @@
+ Input read from input.dlf
+ GAMESS-US scratch directory: /user/mrecio/work-dir/gam-scr
+ Minimisation requested, defaulting to 1 frame
+ Using QC run string: gmsrun tme_00_gms.inp >& tme_00_gms.out
+ The directory ./rundir does not exist
+ mkdir ./rundir
+ QC Interface: gamess
+ XYZ file: tme-00.xyz
+ Template QC Input: tme-00-reks.inp
+ Temporary QC Input: tme_00_gms.inp
+ QC execution script: gmsrun
+ QC execution script parameters: 
+ GAMESS-US scratch file: /user/mrecio/work-dir/gam-scr/tme_00_gms.dat
+ Optimisation in delocalised internal coordinates (DLC)
+ The QC eigenvectors will be updated during the geometry search
+
+***********************************************************************
+**                                                                   **
+**                       ---------------------                       **
+**                              DL-FIND                              **
+**                       Geometry Optimisation                       **
+**                       ---------------------                       **
+**                                                                   **
+**                 J. Kaestner, J.M. Carr, T.W. Keal,                **
+**                W. Thiel, A. Wander and P. Sherwood                **
+**                                                                   **
+**              J. Phys. Chem. A, 2009, 113 (43), 11856.             **
+**                                                                   **
+**   Please include this reference in published work using DL-FIND.  **
+**                                                                   **
+**               Copyright:  STFC Daresbury Laboratory               **
+**                           Revision: Unversioned directory         **
+**                                                                   **
+***********************************************************************
+
+Residue member list:
+    0 :     1    1    1    1    1    1    1    1    1    1
+   10 :     1    1
+
+Generating new HDLC for    1 residues
+
+Located a new residue for HDLC
+   Residue number is    1
+   Number of atoms it contains    12
+   Atoms:      1     2     3     4     5     6     7     8     9    10
+   Atoms:     11    12
+   Generating HDLC for residue    1
+
+   The Cartesian coordinates
+         1    -3.05499929938755     1.24064300190885     1.62040425565071
+         2     4.28039599084219    -0.50696438904237     0.97294439767683
+         3     0.60704428513250     0.36087911020461     1.24871024277760
+         4    -4.28241799780624     1.95246882175444     4.51008275387608
+         5     6.15674097471523    -0.53460352348750     3.58868630569975
+         6     2.91025005692698    -3.36133335444213    -0.48239983901828
+         7     0.85520879031083     2.56071686243470    -1.87745425311408
+         8     0.03202707852975    -0.24536393104680    -3.62959698678841
+         9    -0.28777883413863    -2.52073592660429    -1.11123455620922
+        10    -3.36994105698538    -1.86512190035947     0.07192675613638
+        11    -2.13639208698594     3.61895026974589    -0.75500606202194
+        12     4.14379902692642     2.12273881566322    -1.30932698799820
+
+   The primitive internal coordinates
+
+
+     The system has    21 stretches
+         1 Stre     3     1              =    3.78453487
+         2 Stre     3     2              =    3.78453589
+         3 Stre     4     1              =    3.21923818
+         4 Stre     5     2              =    3.21924528
+         5 Stre     6     2              =    3.48464473
+         6 Stre     7     1              =    5.40992943
+         7 Stre     7     2              =    5.40993051
+         8 Stre     7     3              =    3.83063653
+         9 Stre     8     7              =    3.40906464
+        10 Stre     9     1              =    5.40992894
+        11 Stre     9     2              =    5.40992597
+        12 Stre     9     3              =    3.83063351
+        13 Stre     9     6              =    3.36592126
+        14 Stre     9     7              =    5.26447298
+        15 Stre     9     8              =    3.40906774
+        16 Stre    10     1              =    3.48464439
+        17 Stre    10     9              =    3.36592103
+        18 Stre    11     1              =    3.48464616
+        19 Stre    11     7              =    3.36592093
+        20 Stre    12     2              =    3.48464637
+        21 Stre    12     7              =    3.36592025
+
+
+     The system has    82 bends and impropers
+        22 Bend     4     1     3        =  120.56373675 deg =    2.10423416
+        23 Bend     3     1     7        =   45.07601142 deg =    0.78672481
+        24 Bend     3     1     9        =   45.07597102 deg =    0.78672411
+        25 Bend     3     1    10        =   80.59706755 deg =    1.40668420
+        26 Bend     3     1    11        =   80.59712789 deg =    1.40668525
+        27 Bend     4     1     7        =  143.32136939 deg =    2.50142978
+        28 Bend     4     1     9        =  143.32168662 deg =    2.50143532
+        29 Bend     4     1    10        =  124.15928390 deg =    2.16698830
+        30 Bend     4     1    11        =  124.15893630 deg =    2.16698223
+        31 Bend     7     1     9        =   58.22900776 deg =    1.01628791
+        32 Bend     7     1    10        =   89.74157313 deg =    1.56628593
+        33 Bend     7     1    11        =   37.07716444 deg =    0.64711860
+        34 Bend     9     1    10        =   37.07716531 deg =    0.64711861
+        35 Bend     9     1    11        =   89.74154732 deg =    1.56628548
+        36 Bend    10     1    11        =  109.22076263 deg =    1.90626192
+        37 Bend     5     2     3        =  120.56339960 deg =    2.10422828
+        38 Bend     3     2     6        =   80.59716385 deg =    1.40668588
+        39 Bend     3     2     7        =   45.07599992 deg =    0.78672461
+        40 Bend     3     2     9        =   45.07600336 deg =    0.78672467
+        41 Bend     3     2    12        =   80.59708506 deg =    1.40668450
+        42 Bend     5     2     6        =  124.15906285 deg =    2.16698444
+        43 Bend     5     2     7        =  143.32141423 deg =    2.50143057
+        44 Bend     5     2     9        =  143.32125392 deg =    2.50142777
+        45 Bend     5     2    12        =  124.15928888 deg =    2.16698839
+        46 Bend     6     2     7        =   89.74158816 deg =    1.56628619
+        47 Bend     6     2     9        =   37.07721003 deg =    0.64711939
+        48 Bend     6     2    12        =  109.22072619 deg =    1.90626128
+        49 Bend     7     2     9        =   58.22901897 deg =    1.01628810
+        50 Bend     7     2    12        =   37.07713951 deg =    0.64711816
+        51 Bend     9     2    12        =   89.74153965 deg =    1.56628534
+        52 Bend     1     3     7        =   90.53524680 deg =    1.58013815
+        53 Bend     1     3     9        =   90.53528244 deg =    1.58013877
+        54 Bend     2     3     7        =   90.53525437 deg =    1.58013828
+        55 Bend     2     3     9        =   90.53520338 deg =    1.58013739
+        56 Bend     7     3     9        =   86.81049975 deg =    1.51512905
+        57 Bend     2     6     9        =  104.30252464 deg =    1.82042247
+        58 Bend     1     7     2        =   88.77310864 deg =    1.54938303
+        59 Bend     1     7     3        =   44.38874178 deg =    0.77472969
+        60 Bend     1     7     8        =   87.53160991 deg =    1.52771479
+        61 Bend     1     7     9        =   60.88549146 deg =    1.06265229
+        62 Bend     1     7    11        =   38.62024034 deg =    0.67405035
+        63 Bend     1     7    12        =  124.42278792 deg =    2.17158731
+        64 Bend     2     7     3        =   44.38874571 deg =    0.77472976
+        65 Bend     2     7     8        =   87.53159060 deg =    1.52771446
+        66 Bend     2     7     9        =   60.88544733 deg =    1.06265152
+        67 Bend     2     7    11        =  124.42281419 deg =    2.17158777
+        68 Bend     2     7    12        =   38.62022610 deg =    0.67405010
+        69 Bend     3     7     8        =   86.04935257 deg =    1.50184452
+        70 Bend     3     7     9        =   46.59472626 deg =    0.81323139
+        71 Bend     3     7    11        =   81.42079353 deg =    1.42106093
+        72 Bend     3     7    12        =   81.42077594 deg =    1.42106062
+        73 Bend     8     7     9        =   39.45462632 deg =    0.68861313
+        74 Bend     8     7    11        =  102.44875620 deg =    1.78806811
+        75 Bend     8     7    12        =  102.44875296 deg =    1.78806805
+        76 Bend     9     7    11        =   93.55245022 deg =    1.63279828
+        77 Bend     9     7    12        =   93.55240062 deg =    1.63279741
+        78 Bend    11     7    12        =  148.53892425 deg =    2.59249330
+        79 Bend     7     8     9        =  101.09079030 deg =    1.76436713
+        80 Bend     1     9     2        =   88.77316080 deg =    1.54938394
+        81 Bend     1     9     3        =   44.38874654 deg =    0.77472978
+        82 Bend     1     9     6        =  124.42288318 deg =    2.17158898
+        83 Bend     1     9     7        =   60.88550078 deg =    1.06265246
+        84 Bend     1     9     8        =   87.53158728 deg =    1.52771440
+        85 Bend     1     9    10        =   38.62021656 deg =    0.67404994
+        86 Bend     2     9     3        =   44.38879326 deg =    0.77473059
+        87 Bend     2     9     6        =   38.62026532 deg =    0.67405079
+        88 Bend     2     9     7        =   60.88553370 deg =    1.06265303
+        89 Bend     2     9     8        =   87.53163427 deg =    1.52771522
+        90 Bend     2     9    10        =  124.42280050 deg =    2.17158753
+        91 Bend     3     9     6        =   81.42086763 deg =    1.42106222
+        92 Bend     3     9     7        =   46.59477399 deg =    0.81323222
+        93 Bend     3     9     8        =   86.04935737 deg =    1.50184461
+        94 Bend     3     9    10        =   81.42075296 deg =    1.42106022
+        95 Bend     6     9     7        =   93.55250119 deg =    1.63279917
+        96 Bend     6     9     8        =  102.44879598 deg =    1.78806880
+        97 Bend     6     9    10        =  148.53888704 deg =    2.59249265
+        98 Bend     7     9     8        =   39.45458338 deg =    0.68861239
+        99 Bend     7     9    10        =   93.55246518 deg =    1.63279854
+       100 Bend     8     9    10        =  102.44879622 deg =    1.78806881
+       101 Bend     1    10     9        =  104.30261813 deg =    1.82042410
+       102 Bend     1    11     7        =  104.30259522 deg =    1.82042371
+       103 Bend     2    12     7        =  104.30263439 deg =    1.82042439
+
+
+     The system has   210 dihedrals
+       104 Dihe     4     1     3     7  = -136.59215510 deg =   -2.38398284
+       105 Dihe     4     1     3     9  =  136.59261526 deg =    2.38399087
+       106 Dihe     3     1     7     2  =   -0.70843560 deg =   -0.01236453
+       107 Dihe     3     1     9     2  =    0.70844754 deg =    0.01236474
+       108 Dihe     3     1    10     9  =  -14.50815236 deg =   -0.25321503
+       109 Dihe     3     1    10     7  =  -44.35304234 deg =   -0.77410662
+       110 Dihe     3     1    10     9  =  -14.50815236 deg =   -0.25321503
+       111 Dihe     3     1    11     7  =   14.50806030 deg =    0.25321342
+       112 Dihe     3     1    11     7  =   14.50806030 deg =    0.25321342
+       113 Dihe     3     1    11     9  =   44.35301670 deg =    0.77410617
+       114 Dihe     4     1     7     2  =   81.42995224 deg =    1.42122078
+       115 Dihe     4     1     7     3  =   82.13838784 deg =    1.43358531
+       116 Dihe     4     1     7     8  =  169.01162740 deg =    2.94980937
+       117 Dihe     4     1     7     9  =  138.39670236 deg =    2.41547813
+       118 Dihe     4     1     7    11  =  -77.43175201 deg =   -1.35143902
+       119 Dihe     4     1     7    12  =   65.59510369 deg =    1.14485053
+       120 Dihe     4     1     9     2  =  -81.42950178 deg =   -1.42121291
+       121 Dihe     4     1     9     3  =  -82.13794932 deg =   -1.43357766
+       122 Dihe     4     1     9     6  =  -65.59464714 deg =   -1.14484256
+       123 Dihe     4     1     9     7  = -138.39632415 deg =   -2.41547153
+       124 Dihe     4     1     9     8  = -169.01121890 deg =   -2.94980224
+       125 Dihe     4     1     9    10  =   77.43204672 deg =    1.35144416
+       126 Dihe     4     1    10     9  = -135.20601017 deg =   -2.35979005
+       127 Dihe     4     1    11     7  =  135.20588670 deg =    2.35978789
+       128 Dihe     7     1     9     2  =   56.96682237 deg =    0.99425861
+       129 Dihe     7     1     9     3  =   56.25837483 deg =    0.98189387
+       130 Dihe     7     1     9     6  =   72.80167701 deg =    1.27062896
+       131 Dihe     7     1    10     9  =   29.84488998 deg =    0.52089160
+       132 Dihe     7     1    10     2  =   44.96940664 deg =    0.78486421
+       133 Dihe     7     1    10     3  =   44.35304234 deg =    0.77410662
+       134 Dihe     7     1    10     8  =   -6.39807194 deg =   -0.11166742
+       135 Dihe     7     1    10     9  =   29.84488998 deg =    0.52089160
+       136 Dihe     7     1    10    11  =  -32.16658307 deg =   -0.56141278
+       137 Dihe     7     1    10    12  =   20.75443393 deg =    0.36223321
+       138 Dihe     9     1    11     7  =  -29.84495640 deg =   -0.52089275
+       139 Dihe     9     1    11     2  =  -44.96937387 deg =   -0.78486364
+       140 Dihe     9     1    11     3  =  -44.35301670 deg =   -0.77410617
+       141 Dihe     9     1    11     6  =  -20.75440315 deg =   -0.36223267
+       142 Dihe     9     1    11     7  =  -29.84495640 deg =   -0.52089275
+       143 Dihe     9     1    11     8  =    6.39803544 deg =    0.11166678
+       144 Dihe     9     1    11    10  =   32.16656703 deg =    0.56141250
+       145 Dihe    10     1    11     7  =  -62.01152343 deg =   -1.08230526
+       146 Dihe    10     1    11     9  =  -32.16656703 deg =   -0.56141250
+       147 Dihe     5     2     3     7  =  136.59250012 deg =    2.38398886
+       148 Dihe     5     2     3     9  = -136.59227088 deg =   -2.38398486
+       149 Dihe     3     2     6     9  =   14.50805812 deg =    0.25321338
+       150 Dihe     3     2     6     7  =   44.35304274 deg =    0.77410663
+       151 Dihe     3     2     6     9  =   14.50805812 deg =    0.25321338
+       152 Dihe     3     2     7     1  =    0.70843555 deg =    0.01236453
+       153 Dihe     3     2     9     1  =   -0.70844695 deg =   -0.01236473
+       154 Dihe     3     2    12     7  =  -14.50809349 deg =   -0.25321400
+       155 Dihe     3     2    12     7  =  -14.50809349 deg =   -0.25321400
+       156 Dihe     3     2    12     9  =  -44.35304471 deg =   -0.77410666
+       157 Dihe     5     2     6     9  =  135.20552241 deg =    2.35978153
+       158 Dihe     5     2     7     1  =  -81.42918874 deg =   -1.42120745
+       159 Dihe     5     2     7     3  =  -82.13762429 deg =   -1.43357198
+       160 Dihe     5     2     7     8  = -169.01088361 deg =   -2.94979639
+       161 Dihe     5     2     7     9  = -138.39597665 deg =   -2.41546546
+       162 Dihe     5     2     7    11  =  -65.59436622 deg =   -1.14483766
+       163 Dihe     5     2     7    12  =   77.43246617 deg =    1.35145148
+       164 Dihe     5     2     9     1  =   81.42937360 deg =    1.42121068
+       165 Dihe     5     2     9     3  =   82.13782055 deg =    1.43357541
+       166 Dihe     5     2     9     6  =  -77.43231723 deg =   -1.35144888
+       167 Dihe     5     2     9     7  =  138.39616778 deg =    2.41546880
+       168 Dihe     5     2     9     8  =  169.01104275 deg =    2.94979917
+       169 Dihe     5     2     9    10  =   65.59444793 deg =    1.14483909
+       170 Dihe     5     2    12     7  = -135.20555088 deg =   -2.35978203
+       171 Dihe     6     2     7     1  =   77.63232909 deg =    1.35493975
+       172 Dihe     6     2     7     3  =   76.92389354 deg =    1.34257522
+       173 Dihe     6     2     7     8  =   -9.94936578 deg =   -0.17364919
+       174 Dihe     6     2     7     9  =   20.66554118 deg =    0.36068174
+       175 Dihe     6     2     7    11  =   93.46715160 deg =    1.63130954
+       176 Dihe     6     2     7    12  = -123.50601601 deg =   -2.15558663
+       177 Dihe     6     2     7     9  =   20.66554118 deg =    0.36068174
+       178 Dihe     6     2     9     1  =  158.86169083 deg =    2.77265956
+       179 Dihe     6     2    12     7  =   62.01158731 deg =    1.08230637
+       180 Dihe     6     2    12     9  =   32.16663610 deg =    0.56141371
+       181 Dihe     7     2     9     1  =  -56.96679418 deg =   -0.99425812
+       182 Dihe     9     2    12     7  =   29.84495122 deg =    0.52089266
+       183 Dihe     9     2    12     1  =   44.96940195 deg =    0.78486413
+       184 Dihe     9     2    12     3  =   44.35304471 deg =    0.77410666
+       185 Dihe     9     2    12     6  =  -32.16663610 deg =   -0.56141371
+       186 Dihe     9     2    12     7  =   29.84495122 deg =    0.52089266
+       187 Dihe     9     2    12     8  =   -6.39803561 deg =   -0.11166679
+       188 Dihe     9     2    12    10  =   20.75443857 deg =    0.36223329
+       189 Dihe     7     3     9     1  =  -90.50626998 deg =   -1.57963240
+       190 Dihe     1     7     2     9  =   56.96678791 deg =    0.99425801
+       191 Dihe     1     7     2    12  = -158.86165490 deg =   -2.77265893
+       192 Dihe     1     7     2     4  =  -13.39632005 deg =   -0.23380989
+       193 Dihe     1     7     2     9  =   56.96678791 deg =    0.99425801
+       194 Dihe     1     7     2    10  =   32.33459578 deg =    0.56434516
+       195 Dihe     1     7     2    11  =  -15.83482252 deg =   -0.27636979
+       196 Dihe     1     7     8     9  =  -44.43868970 deg =   -0.77560145
+       197 Dihe     1     7     8     3  =  -44.43866018 deg =   -0.77560094
+       198 Dihe     1     7     8     4  =   -2.60192651 deg =   -0.04541218
+       199 Dihe     1     7     8     9  =  -44.43868970 deg =   -0.77560145
+       200 Dihe     1     7     8    10  =   -6.55274553 deg =   -0.11436698
+       201 Dihe     1     7     8    11  =   35.86782500 deg =    0.62601164
+       202 Dihe     1     7    12     2  =   25.91741754 deg =    0.45234427
+       203 Dihe     1     7    12     3  =   11.62093582 deg =    0.20282359
+       204 Dihe     1     7    12     4  =  -13.96542607 deg =   -0.24374267
+       205 Dihe     1     7    12     9  =   56.74015574 deg =    0.99030254
+       206 Dihe     1     7    12    10  =   38.77121773 deg =    0.67668540
+       207 Dihe     1     7    12    11  =  -45.99293681 deg =   -0.80272818
+       208 Dihe     2     7     3     1  =  178.98746429 deg =    3.12392057
+       209 Dihe     2     7     8     9  =   44.43863564 deg =    0.77560051
+       210 Dihe     2     7     8     3  =   44.43866517 deg =    0.77560102
+       211 Dihe     2     7     8     5  =    2.60210043 deg =    0.04541522
+       212 Dihe     2     7     8     6  =    6.55268069 deg =    0.11436585
+       213 Dihe     2     7     8     9  =   44.43863564 deg =    0.77560051
+       214 Dihe     2     7     8    12  =  -35.86780225 deg =   -0.62601124
+       215 Dihe     2     7    11     1  =  -25.91736426 deg =   -0.45234334
+       216 Dihe     2     7    11     3  =  -11.62091804 deg =   -0.20282328
+       217 Dihe     2     7    11     5  =   13.96532828 deg =    0.24374096
+       218 Dihe     2     7    11     6  =  -38.77123756 deg =   -0.67668575
+       219 Dihe     2     7    11     9  =  -56.74012851 deg =   -0.99030206
+       220 Dihe     2     7    11    12  =   45.99295041 deg =    0.80272842
+       221 Dihe     3     7     8     9  =   -0.00002953 deg =   -0.00000052
+       222 Dihe     3     7     8     1  =   44.43866018 deg =    0.77560094
+       223 Dihe     3     7     8     2  =  -44.43866517 deg =   -0.77560102
+       224 Dihe     3     7     8     9  =   -0.00002953 deg =   -0.00000052
+       225 Dihe     3     7    11     1  =  -14.29644622 deg =   -0.24952006
+       226 Dihe     3     7    11     1  =  -14.29644622 deg =   -0.24952006
+       227 Dihe     3     7    11     2  =   11.62091804 deg =    0.20282328
+       228 Dihe     3     7    11     9  =  -45.11921047 deg =   -0.78747878
+       229 Dihe     3     7    12     2  =   14.29648171 deg =    0.24952068
+       230 Dihe     3     7    12     1  =  -11.62093582 deg =   -0.20282359
+       231 Dihe     3     7    12     2  =   14.29648171 deg =    0.24952068
+       232 Dihe     3     7    12     9  =   45.11921991 deg =    0.78747894
+       233 Dihe     8     7     9     1  = -126.80680927 deg =   -2.21319634
+       234 Dihe     8     7    11     1  =   69.69604688 deg =    1.21642549
+       235 Dihe     8     7    11     9  =   38.87328263 deg =    0.67846677
+       236 Dihe     8     7    12     2  =  -69.69600777 deg =   -1.21642481
+       237 Dihe     8     7    12     9  =  -38.87326957 deg =   -0.67846655
+       238 Dihe     9     7    11     1  =   30.82276425 deg =    0.53795872
+       239 Dihe     9     7    11     1  =   30.82276425 deg =    0.53795872
+       240 Dihe     9     7    11     2  =   56.74012851 deg =    0.99030206
+       241 Dihe     9     7    11     3  =   45.11921047 deg =    0.78747878
+       242 Dihe     9     7    11     6  =   17.96889095 deg =    0.31361631
+       243 Dihe     9     7    11     8  =  -38.87328263 deg =   -0.67846677
+       244 Dihe     9     7    11    10  =    0.00003368 deg =    0.00000059
+       245 Dihe     9     7    12     2  =  -30.82273820 deg =   -0.53795827
+       246 Dihe     9     7    12     1  =  -56.74015574 deg =   -0.99030254
+       247 Dihe     9     7    12     2  =  -30.82273820 deg =   -0.53795827
+       248 Dihe     9     7    12     3  =  -45.11921991 deg =   -0.78747894
+       249 Dihe     9     7    12     6  =    0.00002652 deg =    0.00000046
+       250 Dihe     9     7    12     8  =   38.87326957 deg =    0.67846655
+       251 Dihe     9     7    12    10  =  -17.96893801 deg =   -0.31361713
+       252 Dihe    11     7    12     2  =   71.91035435 deg =    1.25507245
+       253 Dihe    11     7    12     1  =   45.99293681 deg =    0.80272818
+       254 Dihe     1     9     2    12  =  -77.63227819 deg =   -1.35493886
+       255 Dihe     1     9     2     4  =   13.39619210 deg =    0.23380766
+       256 Dihe     1     9     2    10  =   15.83492567 deg =    0.27637159
+       257 Dihe     1     9     2    11  =  -32.33462584 deg =   -0.56434568
+       258 Dihe     1     9     6     2  =  -25.91740465 deg =   -0.45234404
+       259 Dihe     1     9     6     3  =  -11.62094646 deg =   -0.20282378
+       260 Dihe     1     9     6     4  =   13.96526541 deg =    0.24373986
+       261 Dihe     1     9     6     7  =  -56.74021014 deg =   -0.99030349
+       262 Dihe     1     9     6    10  =   45.99306557 deg =    0.80273043
+       263 Dihe     1     9     6    11  =  -38.77130127 deg =   -0.67668686
+       264 Dihe     1     9     8     7  =   44.43869575 deg =    0.77560156
+       265 Dihe     1     9     8     3  =   44.43866623 deg =    0.77560104
+       266 Dihe     1     9     8     4  =    2.60199937 deg =    0.04541346
+       267 Dihe     1     9     8     7  =   44.43869575 deg =    0.77560156
+       268 Dihe     1     9     8    10  =  -35.86777399 deg =   -0.62601075
+       269 Dihe     1     9     8    11  =    6.55270579 deg =    0.11436629
+       270 Dihe     2     9     3     1  = -178.98744806 deg =   -3.12392029
+       271 Dihe     2     9     8     7  =  -44.43868096 deg =   -0.77560130
+       272 Dihe     2     9     8     3  =  -44.43871049 deg =   -0.77560181
+       273 Dihe     2     9     8     5  =   -2.60207648 deg =   -0.04541480
+       274 Dihe     2     9     8     6  =   35.86784783 deg =    0.62601204
+       275 Dihe     2     9     8     7  =  -44.43868096 deg =   -0.77560130
+       276 Dihe     2     9     8    12  =   -6.55270590 deg =   -0.11436629
+       277 Dihe     2     9    10     1  =   25.91755600 deg =    0.45234669
+       278 Dihe     2     9    10     3  =   11.62100860 deg =    0.20282486
+       279 Dihe     2     9    10     5  =  -13.96540069 deg =   -0.24374222
+       280 Dihe     2     9    10     6  =  -45.99303071 deg =   -0.80272982
+       281 Dihe     2     9    10     7  =   56.74025490 deg =    0.99030427
+       282 Dihe     2     9    10    12  =   38.77129601 deg =    0.67668677
+       283 Dihe     3     9     6     2  =  -14.29645819 deg =   -0.24952027
+       284 Dihe     3     9     6     1  =   11.62094646 deg =    0.20282378
+       285 Dihe     3     9     6     2  =  -14.29645819 deg =   -0.24952027
+       286 Dihe     3     9     6     7  =  -45.11926368 deg =   -0.78747971
+       287 Dihe     3     9     8     7  =    0.00002953 deg =    0.00000052
+       288 Dihe     3     9     8     1  =  -44.43866623 deg =   -0.77560104
+       289 Dihe     3     9     8     2  =   44.43871049 deg =    0.77560181
+       290 Dihe     3     9     8     7  =    0.00002953 deg =    0.00000052
+       291 Dihe     3     9    10     1  =   14.29654740 deg =    0.24952182
+       292 Dihe     3     9    10     1  =   14.29654740 deg =    0.24952182
+       293 Dihe     3     9    10     2  =  -11.62100860 deg =   -0.20282486
+       294 Dihe     3     9    10     7  =   45.11924630 deg =    0.78747940
+       295 Dihe     6     9     7     1  = -127.85916283 deg =   -2.23156337
+       296 Dihe     6     9     7     2  =  -21.47282331 deg =   -0.37477147
+       297 Dihe     6     9     7     3  =  -74.66601264 deg =   -1.30316776
+       298 Dihe     6     9     7    11  = -149.33195590 deg =   -2.60633431
+       299 Dihe     6     9     7    12  =   -0.00004476 deg =   -0.00000078
+       300 Dihe     6     9     7     2  =  -21.47282331 deg =   -0.37477147
+       301 Dihe     6     9     8     7  =  -80.30652880 deg =   -1.40161334
+       302 Dihe     6     9     8     2  =  -35.86784783 deg =   -0.62601204
+       303 Dihe     6     9    10     1  =   71.91058671 deg =    1.25507651
+       304 Dihe     6     9    10     2  =   45.99303071 deg =    0.80272982
+       305 Dihe     7     9    10     1  =  -30.82269890 deg =   -0.53795758
+       306 Dihe     7     9    10     1  =  -30.82269890 deg =   -0.53795758
+       307 Dihe     7     9    10     2  =  -56.74025490 deg =   -0.99030427
+       308 Dihe     7     9    10     3  =  -45.11924630 deg =   -0.78747940
+       309 Dihe     7     9    10     8  =   38.87323514 deg =    0.67846594
+       310 Dihe     7     9    10    11  =    0.00003369 deg =    0.00000059
+       311 Dihe     7     9    10    12  =  -17.96895889 deg =   -0.31361750
+       312 Dihe     8     9    10     1  =  -69.69593403 deg =   -1.21642352
+       313 Dihe     8     9    10     7  =  -38.87323514 deg =   -0.67846594
+
+
+   Residue      1 has internal coords      1 to     36
+
+DL-FIND Report:
+===============
+Optimisation algorithm: L-BFGS
+Number of steps in L-BFGS memory ...............        100
+ 
+Step length: simple scaled
+Maximum step length ............................  5.000E-01
+Scaling step by ................................  1.000E+00
+ 
+Coordinate system: Delocalised internal coordinates (DLC)
+ 
+Number of atoms ................................         12
+Number of input geometries .....................          2
+Variables to be optimised ......................         30
+Restart information is written every ...........         10 steps
+This run has not been restarted.
+Maximum number of steps ........................        100
+Maximum number of energy evaluations ...........      10000
+ 
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    1
+  Max grad  3.6042E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.2285E+01 Target: 3.0000E-04 converged?   no
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    2
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  1.0712E-02 Target: 1.8000E-03 converged?   no component    12
+  RMS step  3.6515E-03 Target: 1.2000E-03 converged?   no
+  Max grad  3.6009E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.2279E+01 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.01265
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    3
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.7539E-01 Target: 1.2000E-03 converged?   no
+  Max grad  3.3378E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.1192E+01 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.06095
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    4
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.7200E-01 Target: 1.2000E-03 converged?   no
+  Max grad  3.1619E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.0893E+01 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.01655
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    5
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.7496E-01 Target: 1.2000E-03 converged?   no
+  Max grad  3.0046E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.0190E+01 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.05258
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    6
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.6996E-01 Target: 1.2000E-03 converged?   no
+  Max grad  2.6200E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  8.0189E+00 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.20872
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    7
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.4902E-01 Target: 1.2000E-03 converged?   no
+  Max grad  2.2870E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  7.3991E+00 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.08681
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    8
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    12
+  RMS step  1.5711E-01 Target: 1.2000E-03 converged?   no
+  Max grad  3.6355E+01 Target: 4.5000E-04 converged?   no component    12
+  RMS grad  1.5106E+01 Target: 3.0000E-04 converged?   no
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle    9
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  2.2629E-01 Target: 1.8000E-03 converged?   no component    30
+  RMS step  9.9012E-02 Target: 1.2000E-03 converged?   no
+  Max grad  3.0521E+01 Target: 4.5000E-04 converged?   no component    26
+  RMS grad  1.3785E+01 Target: 3.0000E-04 converged?   no
+Scaling step back by    0.43521
+ Energy calculation finished, energy:  0.000000000E+00
+Testing convergence  in cycle   10
+    Energy  0.0000E+00 Target: 1.0000E-06 converged?  yes
+  Max step  5.0000E-01 Target: 1.8000E-03 converged?   no component    26
+  RMS step  1.9317E-01 Target: 1.2000E-03 converged?   no
+  Max grad  3.5230E+01 Target: 4.5000E-04 converged?   no component    10
+  RMS grad  1.5858E+01 Target: 3.0000E-04 converged?   no
+ Inverting BFGS direction
+Scaling step back by    0.19225
+
+DL-FIND ERROR:
+Failure to read GAMESS output file
+
+
+DL-FIND ERROR:
+Failure to read GAMESS output file
+
+Destroying all HDLC residues
+
+===> Energy not found

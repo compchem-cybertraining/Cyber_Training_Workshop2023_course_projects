@@ -1,0 +1,22 @@
+
+Program name: ddtraj
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :         89
+ real*8     :        103
+ integer    :         24
+ logical    :          1
+ complex*8  :         42
+ real*4     :          0
+ Total   :          3032 Bytes ,      0.00 MB

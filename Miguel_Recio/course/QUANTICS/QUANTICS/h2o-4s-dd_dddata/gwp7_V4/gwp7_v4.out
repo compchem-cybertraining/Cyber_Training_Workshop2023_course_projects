@@ -1,0 +1,2208 @@
+
+ Primary working directories    : /user/gworth/scratch/molpro-mrecio/gwp7_v4_1
+ Secondary working directories  : /user/gworth/scratch/molpro-mrecio/gwp7_v4_1
+ Wavefunction directory         : /user/gworth/scratch/molpro-mrecio/gwp7_v4_1/
+ Main file repository           : /user/gworth/scratch/molpro-mrecio/gwp7_v4_1/
+
+ SHA1      : 0b0b022c660e73fb8d4a354a6920c32f9035fdc5
+ NAME      : 2015.1.3
+ ARCHNAME  : linux/x86_64
+ FC        : /opt/intel/composer_xe_2015.1.133/bin/intel64/ifort
+ BLASLIB   : -Wl,-_start-group /opt/intel/mkl/lib/intel64/libmkl_intel_ilp64.a /opt/intel/mkl/lib/intel64/libmkl_intel_thread.a /opt/intel/mkl/lib/intel64/libmkl_core.a -Wl,-_end-group
+ id        : gwbham
+
+ Nodes                                  nprocs
+ cpn-p27-15.compute.cbls.ccr.buffalo.edu    1
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+ ***,
+ nosym
+ geomtyp=xyz
+ geometry={
+ 3
+ water geometry
+ o                  0.000000       0.060497       0.182776
+ h                  0.000000       0.978797      -0.667184
+ h                  0.000000      -1.939141      -1.414990
+ }
+ basis=6-31G**
+ 
+ {matrop;read,oldorbitals,file=gwp7_v4.orb;save,oldorbitals,2140.2,orbitals}
+ 
+                                                                                 ! State 1
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;
+ start,2140.2;
+ closed,1;
+ CPMCSCF,grad,1.1,accu=1.0d-8,record=5101.1;
+ wf,10,1,0;
+ state,4;
+ weight,0.25,0.25,0.25,0.25;
+ orbital,2141.2;
+ orbprint,100;
+ }
+ {Force;SAMC,5101.1}
+ 
+                                                                                 ! State 2
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;start,2141.2;closed,1;CPMCSCF,grad,2.1,accu=1.0d-8,record=5102.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5102.1}
+ 
+                                                                                 ! State 3
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;start,2141.2;closed,1;CPMCSCF,grad,3.1,accu=1.0d-8,record=5103.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5103.1}
+ 
+                                                                                 ! State 4
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;start,2141.2;closed,1;CPMCSCF,grad,4.1,accu=1.0d-8,record=5104.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5104.1}
+ 
+                                                                                 ! 2-1
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,2.1,1.1,accu=1.0d-10,record=5105.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5105.1}
+ 
+                                                                                 ! 3-1
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,3.1,1.1,accu=1.0d-10,record=5106.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5106.1}
+ 
+                                                                                 ! 4-1
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,4.1,1.1,accu=1.0d-10,record=5107.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5107.1}
+ 
+                                                                                 ! 3-2
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,3.1,2.1,accu=1.0d-10,record=5108.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5108.1}
+ 
+                                                                                 ! 4-2
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,4.1,2.1,accu=1.0d-10,record=5109.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5109.1}
+ 
+                                                                                 ! 4-3
+ {multi,gradient=1.0d-6,energy=1.0d-8;occ,9;closed,1;start,2141.2;cpmcscf,nacm,4.1,3.1,accu=1.0d-10,record=5110.1;wf,10,1,0;state,4;weight,0.25,0.25,0.25,0.25;}
+ {Force;SAMC,5110.1}
+ 
+ 
+
+ Variables initialized (889), CPU time= 0.01 sec
+ Commands  initialized (702), CPU time= 0.01 sec, 572 directives.
+ Default parameters read. Elapsed time= 0.47 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2015.1 linked Feb  5 2016 14:18:43
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  64 bit serial version                                                                  DATE: 15-Jun-23          TIME: 17:05:59  
+ **********************************************************************************************************************************
+
+ SHA1:             0b0b022c660e73fb8d4a354a6920c32f9035fdc5
+ **********************************************************************************************************************************
+
+ Variable memory set to    8000000 words,  buffer space   230000 words
+
+ SETTING GEOMTYP        =    XYZ
+ ZSYMEL=NOSYM
+ 
+ SETTING BASIS          =    6-31G**
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry O      S 6-31G                selected for orbital group  1
+ Library entry O      P 6-31G                selected for orbital group  1
+ Library entry O      D 6-31G*               selected for orbital group  1
+ Library entry H      S 6-31G                selected for orbital group  2
+ Library entry H      P 6-31G**              selected for orbital group  2
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  O       8.00    0.000000000    0.114322761    0.345396582
+   2  H       1.00    0.000000000    1.849658262   -1.260795035
+   3  H       1.00    0.000000000   -3.664445407   -2.673943569
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.364580472
+     ( 1.251282099)
+
+ NUCLEAR CHARGE:                   10
+ NUMBER OF PRIMITIVE AOS:          42
+ NUMBER OF SYMMETRY AOS:           41
+ NUMBER OF CONTRACTIONS:           24   (  24A   )
+ NUMBER OF CORE ORBITALS:           1   (   1A   )
+ NUMBER OF VALENCE ORBITALS:        6   (   6A   )
+
+
+ NUCLEAR REPULSION ENERGY    5.21289515
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 2 1 1 2 1 1 1   2 2 1 1 1 1 2 1 1 1   1 2 1 1
+
+ Eigenvalues of metric
+
+         1 0.956E-01 0.284E+00 0.298E+00 0.361E+00 0.480E+00 0.493E+00 0.563E+00 0.819E+00
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       19.11       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.18      0.00
+ REAL TIME  *         1.10 SEC
+ DISK USED  *        19.41 MB      
+ **********************************************************************************************************************************
+
+
+ PROGRAM * MATROP
+
+
+ READING MATRIX OLDORBITALS (OLDORBITALS) FROM FILE gwp7_v4.orb. SYMMETRY=1
+
+  Orbitals OLDORBITALS saved in record 2140.2 (set 1)
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       19.11       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        2.78       700     1000      520     2140   
+                                         GEOM     BASIS   MCVARS   MATROP    
+
+ PROGRAMS   *        TOTAL    MATROP       INT
+ CPU TIMES  *         0.19      0.01      0.00
+ REAL TIME  *         1.17 SEC
+ DISK USED  *        21.93 MB      
+ **********************************************************************************************************************************
+
+
+ Using spherical harmonics
+
+ Library entry O      S 6-31G                selected for orbital group  1
+ Library entry O      P 6-31G                selected for orbital group  1
+ Library entry O      D 6-31G*               selected for orbital group  1
+ Library entry H      S 6-31G                selected for orbital group  2
+ Library entry H      P 6-31G**              selected for orbital group  2
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  O       8.00    0.000000000    0.114322761    0.345396582
+   2  H       1.00    0.000000000    1.849658262   -1.260795035
+   3  H       1.00    0.000000000   -3.664445407   -2.673943569
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.364580472
+     ( 1.251282099)
+
+ NUCLEAR CHARGE:                   10
+ NUMBER OF PRIMITIVE AOS:          42
+ NUMBER OF SYMMETRY AOS:           41
+ NUMBER OF CONTRACTIONS:           24   (  24A   )
+ NUMBER OF CORE ORBITALS:           1   (   1A   )
+ NUMBER OF VALENCE ORBITALS:        6   (   6A   )
+
+
+ NUCLEAR REPULSION ENERGY    5.21289515
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 2 1 1 2 1 1 1   2 2 1 1 1 1 2 1 1 1   1 2 1 1
+
+ Eigenvalues of metric
+
+         1 0.956E-01 0.284E+00 0.298E+00 0.361E+00 0.480E+00 0.493E+00 0.563E+00 0.819E+00
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     0.262 MB (compressed) written to integral file ( 62.0%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:      45150.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:      45150      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.60 MW
+
+ SORT1 READ       59599. AND WROTE       21626. INTEGRALS IN      1 RECORDS. CPU TIME:     0.00 SEC, REAL TIME:     0.00 SEC
+ SORT2 READ       21626. AND WROTE       45150. INTEGRALS IN      1 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.01 SEC
+
+ FILE SIZES:   FILE 1:    19.4 MBYTE,  FILE 4:     4.2 MBYTE,   TOTAL:     23.6 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       19.23       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       4        2.78       700     1000      520     2140   
+                                         GEOM     BASIS   MCVARS   MATROP    
+
+ PROGRAMS   *        TOTAL       INT    MATROP       INT
+ CPU TIMES  *         0.23      0.04      0.01      0.00
+ REAL TIME  *         1.91 SEC
+ DISK USED  *        26.42 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2140.2  Type=MATROP/MATROP  
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2141.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   41   34    0     -75.80832866     -75.80838454   -0.00005589    0.01162740 0.00000000 0.00003088  0.13D-01      0.54
+   2   17   28    0     -75.80838455     -75.80838455   -0.00000000    0.00000783 0.00000000 0.00000002  0.43D-03      0.99
+   3   20   10    0     -75.80838455     -75.80838455    0.00000000    0.00000000 0.00000000 0.00000000  0.26D-07      1.17
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.12D-09
+
+ Solving MCSCF z-vector equations for state  1.1, requested accuracy=      0.10D-07
+ Convergence reached in  40 iterations ( 40 expansion vectors), accuracy=  0.70D-08
+
+ SA-Gradient information saved on record      5101.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932056
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485612
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787973
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment        -0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                  -0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332683
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment         0.00000000     0.43575699    -0.38305099
+ Dipole moment /Debye                   0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150654
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785405
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment        -0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                  -0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2141.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649702 au =     0.008653189590 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084358 au =    -0.221676822003 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639998 au =     0.123606286747 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044680 au =    -0.000254271558 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431455549 au =     0.997395938794 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756985042 au =     1.107511238043 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262900989 au =    -0.135371923897 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014489 au =     1.678988117466 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035487161 au =    -0.119544453460 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526593631 au =    -1.035761439840 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624163 au =    -1.081774281760 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989680 au =    -0.973554734350 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990234 au =    -0.245974087579 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663046 au =    -1.511433562744 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431149 au =    -0.048990050300 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993065 au =     0.799842833115 Debye
+
+
+ NATURAL ORBITALS (state averaged)
+ =================================
+
+   Orb     Occ        Energy       Coefficients
+
+                                   1 1s      1 1s      1 1s      1 2px     1 2py     1 2pz     1 2px     1 2py     1 2pz     1 3d0  
+                                   1 3d2-    1 3d1+    1 3d2+    1 3d1-    2 1s      2 1s      2 2px     2 2py     2 2pz     3 1s   
+                                   3 1s      3 2px     3 2py     3 2pz  
+
+   1.1  2.00000   -20.657495     0.998551  0.014274 -0.011817  0.000000  0.000210 -0.000293  0.000000 -0.000945  0.000919 -0.000065
+                                 0.000000  0.000000  0.000162  0.000282 -0.000612  0.001132  0.000000  0.000046 -0.000056 -0.000208
+                                 0.000251  0.000000  0.000018  0.000016
+
+   2.1  1.98995    -1.261177    -0.215629  0.532484  0.523853  0.000000  0.026158 -0.025879  0.000000  0.020718 -0.016701  0.001238
+                                 0.000000 -0.000000 -0.003520 -0.006239  0.077248  0.013573  0.000000 -0.009807  0.009590  0.002416
+                                 0.000438  0.000000  0.000571  0.000449
+
+   3.1  1.69226    -0.528845     0.044519 -0.107862 -0.190858 -0.000000  0.394207 -0.350794 -0.000000  0.241673 -0.217275  0.004104
+                                -0.000000  0.000000 -0.009726 -0.018273  0.253254  0.259269 -0.000000 -0.013084  0.012034 -0.012694
+                                -0.026632 -0.000000 -0.000099 -0.000788
+
+   4.1  1.53664    -0.406771    -0.002811  0.005646  0.013285 -0.000000  0.425574  0.478809 -0.000000  0.299390  0.336856 -0.011269
+                                -0.000000  0.000000 -0.005914  0.000912 -0.005634 -0.006178 -0.000000  0.008065  0.008696 -0.099351
+                                -0.169553 -0.000000 -0.002606 -0.001776
+
+   5.1  1.48812    -0.398959     0.000000 -0.000000  0.000000  0.671490  0.000000  0.000000  0.475282  0.000000  0.000000 -0.000000
+                                 0.010091 -0.009320 -0.000000 -0.000000  0.000000  0.000000  0.012550  0.000000  0.000000 -0.000000
+                                -0.000000  0.000684 -0.000000 -0.000000
+
+   6.1  0.95266    -0.169496     0.009592 -0.023957 -0.037103 -0.000000  0.153413  0.143398 -0.000000  0.106714  0.105560 -0.003948
+                                -0.000000  0.000000 -0.002722  0.001450  0.007165  0.018065 -0.000000  0.001555  0.002698  0.417060
+                                 0.645234 -0.000000 -0.001238 -0.001579
+
+   7.1  0.31891     0.131628     0.052427 -0.129759 -0.374654  0.000000 -0.384942  0.346513 -0.000000 -0.269626  0.252758  0.001638
+                                -0.000000  0.000000 -0.004794 -0.010526  0.372741  0.843798 -0.000000  0.014750 -0.013239 -0.012377
+                                -0.025320 -0.000000  0.000754  0.000137
+
+   8.1  0.01079     1.131371     0.000000 -0.000000  0.000000 -0.930324 -0.000000 -0.000000  1.029715  0.000000  0.000000 -0.000000
+                                 0.048308 -0.110488 -0.000000 -0.000000 -0.000000 -0.000000  0.055896  0.000000  0.000000  0.000000
+                                 0.000000  0.002658 -0.000000 -0.000000
+
+   9.1  0.01066     1.169591     0.046507 -0.680058  0.726238 -0.000000 -0.440492 -0.705087 -0.000000  0.533670  0.745511 -0.097203
+                                -0.000000  0.000000 -0.044497 -0.048669 -0.047232 -0.107733 -0.000000  0.030378  0.033062  0.035563
+                                 0.041152 -0.000000 -0.007656 -0.004707
+
+  10.1  0.00000     0.864749    -0.011168 -0.015203  0.423396 -0.000000 -0.277338  0.161732  0.000000  0.352750 -0.257078  0.028021
+                                 0.000000  0.000000 -0.069921 -0.139319  0.993917 -1.334602  0.000000  0.048078 -0.040545  0.361099
+                                -0.273289 -0.000000 -0.011198 -0.004845
+
+  11.1  0.00000     1.009218     0.035712 -0.443643  0.549115  0.000000  0.140518  0.035862 -0.000000 -0.053075  0.000113  0.009097
+                                 0.000000 -0.000000 -0.051111 -0.036540  0.418974 -0.580872  0.000000  0.005331  0.002429 -1.097171
+                                 1.001325  0.000000  0.000574  0.004988
+
+  12.1  0.00000     1.209822    -0.049549  0.509968 -0.387755  0.000000 -0.722040  0.211499 -0.000000  1.023549 -0.369996 -0.024420
+                                -0.000000 -0.000000  0.016281  0.084881 -0.310320 -0.125517  0.000000  0.080713 -0.028967 -0.464616
+                                 0.516674  0.000000 -0.030314 -0.033266
+
+  13.1  0.00000     1.434768    -0.060478  1.222171 -1.556104  0.000000  0.159267 -0.508276 -0.000000 -0.443651  0.850670  0.037305
+                                 0.000000 -0.000000 -0.100950 -0.138478  0.331847  0.524174  0.000000 -0.030657  0.063311 -0.244942
+                                 0.296742 -0.000000 -0.041508 -0.025516
+
+  14.1  0.00000     1.847425    -0.000000 -0.000000  0.000000  0.140522  0.000000  0.000000 -0.246198 -0.000000 -0.000000 -0.000000
+                                 0.564415 -0.538854 -0.000000  0.000000 -0.000000  0.000000  0.493467  0.000000  0.000000  0.000000
+                                -0.000000 -0.005745  0.000000  0.000000
+
+  15.1  0.00000     1.850435     0.003019 -0.040004  0.043579  0.000000 -0.083608 -0.101090 -0.000000  0.162852  0.179136  0.683266
+                                 0.000000 -0.000000  0.375207 -0.040630  0.009718 -0.021218  0.000000 -0.332999 -0.363464 -0.049584
+                                 0.075426  0.000000 -0.034983 -0.029036
+
+  16.1  0.00000     2.058382    -0.000000  0.000000 -0.000000 -0.043038 -0.000000  0.000000  0.045770  0.000000 -0.000000 -0.000000
+                                 0.686312  0.725646  0.000000 -0.000000 -0.000000 -0.000000  0.014271 -0.000000  0.000000 -0.000000
+                                 0.000000 -0.003693 -0.000000 -0.000000
+
+  17.1  0.00000     2.064186    -0.002552  0.048618 -0.057973  0.000000  0.005054  0.019599 -0.000000 -0.000638 -0.011809 -0.444978
+                                -0.000000 -0.000000  0.730408 -0.514702 -0.003097  0.007330  0.000000 -0.016107 -0.004511 -0.075590
+                                 0.093050 -0.000000 -0.035224 -0.027846
+
+  18.1  0.00000     2.151341     0.016922 -0.095401 -0.046415 -0.000000 -0.148396  0.190666  0.000000  0.099781 -0.149187  0.154408
+                                -0.000000 -0.000000 -0.346938 -0.611188 -0.508726  0.302758 -0.000000 -0.372335  0.326572 -0.004154
+                                -0.000076  0.000000  0.033458 -0.017269
+
+  19.1  0.00000     2.302685    -0.000000  0.000000  0.000000  0.004699  0.000000 -0.000000 -0.007665 -0.000000  0.000000 -0.000000
+                                 0.009874 -0.003829  0.000000  0.000000  0.000000 -0.000000 -0.004626  0.000000 -0.000000 -0.000000
+                                 0.000000  0.999942  0.000000 -0.000000
+
+  20.1  0.00000     2.302870    -0.000693  0.002692  0.006146 -0.000000  0.011521 -0.012773  0.000000 -0.011576  0.013211 -0.002649
+                                -0.000000  0.000000  0.010666  0.015563  0.029137 -0.022625  0.000000  0.018820 -0.011538 -0.001309
+                                 0.001119 -0.000000  0.628711 -0.776802
+
+  21.1  0.00000     2.317287    -0.005316  0.088600 -0.091050  0.000000 -0.047022 -0.035956 -0.000000  0.073219  0.053287  0.051318
+                                 0.000000 -0.000000  0.073378 -0.028872  0.024136 -0.017294  0.000000  0.039592  0.022704 -0.035716
+                                 0.051616  0.000000  0.771681  0.625661
+
+  22.1  0.00000     2.610211    -0.000000  0.000000 -0.000000  0.041830 -0.000000 -0.000000 -0.169572  0.000000  0.000000 -0.000000
+                                -0.475496  0.431708 -0.000000  0.000000 -0.000000  0.000000  0.905374 -0.000000 -0.000000 -0.000000
+                                 0.000000  0.008946  0.000000  0.000000
+
+  23.1  0.00000     2.613191     0.003259 -0.047547  0.048922  0.000000  0.042826  0.036722 -0.000000 -0.136035 -0.134309  0.551369
+                                 0.000000  0.000000  0.316445 -0.048994 -0.006474  0.000234  0.000000  0.608214  0.669663  0.021584
+                                -0.036810  0.000000 -0.062679 -0.045447
+
+  24.1  0.00000     3.477546     0.036400  0.400850 -1.016657  0.000000 -0.019995 -0.019646 -0.000000 -0.590434  0.588057 -0.184346
+                                -0.000000 -0.000000  0.431075  0.800962  0.587326  0.523068 -0.000000 -0.883296  0.817415  0.006000
+                                -0.005712 -0.000000  0.006266 -0.001145
+ 
+
+ Natural orbital dump (state averaged) at molpro section  2141.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      21       19.58       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101   
+                                        CPSAMC    
+
+              2       5        5.29       700     1000      520     2140     2141   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI       INT    MATROP       INT
+ CPU TIMES  *         3.01      2.78      0.04      0.01      0.00
+ REAL TIME  *         6.32 SEC
+ DISK USED  *        39.65 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5101.1
+ Orbitals from record         2141.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC GRADIENT FOR STATE 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000        -0.057605326         0.062791931
+   2        -0.000000000         0.064234231        -0.058111659
+   3        -0.000000000        -0.006628905        -0.004680272
+
+ Nuclear force contribution to virial =         0.243986828
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      21       19.58       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101   
+                                        CPSAMC    
+
+              2       5        5.29       700     1000      520     2140     2141   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         3.06      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *         6.43 SEC
+ DISK USED  *        39.65 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2141.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.17D-07      0.33
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.97D-09
+
+ Solving MCSCF z-vector equations for state  2.1, requested accuracy=      0.10D-07
+ Convergence reached in  36 iterations ( 36 expansion vectors), accuracy=  0.63D-08
+
+ SA-Gradient information saved on record      5102.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932486
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment        -0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                  -0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332903
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment         0.00000000     0.43575699    -0.38305099
+ Dipole moment /Debye                   0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150871
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785788
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2141.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649671 au =     0.008653189511 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084636 au =    -0.221676822709 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639648 au =     0.123606285857 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044720 au =    -0.000254271659 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456040 au =     0.997395940041 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756985037 au =     1.107511238031 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901456 au =    -0.135371925082 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014237 au =     1.678988116824 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486666 au =    -0.119544452199 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526592038 au =    -1.035761435793 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624512 au =    -1.081774282648 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989711 au =    -0.973554734430 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990119 au =    -0.245974087286 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663240 au =    -1.511433563237 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431070 au =    -0.048990050099 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993165 au =     0.799842833370 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2141.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22       19.61       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102   
+                                        CPSAMC   CPSAMC    
+
+              2       5        5.29       700     1000      520     2140     2141   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         4.86      1.77      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *         8.92 SEC
+ DISK USED  *        39.65 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5102.1
+ Orbitals from record         2141.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC GRADIENT FOR STATE 2.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000        -0.067726156         0.057624493
+   2         0.000000000         0.064669864        -0.060000646
+   3        -0.000000000         0.003056292         0.002376152
+
+ Nuclear force contribution to virial =         0.189873012
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      22       19.61       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102   
+                                        CPSAMC   CPSAMC    
+
+              2       5        5.29       700     1000      520     2140     2141   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         4.91      0.05      1.77      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *         9.03 SEC
+ DISK USED  *        39.65 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2142.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.22
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ Solving MCSCF z-vector equations for state  3.1, requested accuracy=      0.10D-07
+ Convergence reached in  35 iterations ( 35 expansion vectors), accuracy=  0.93D-08
+
+ SA-Gradient information saved on record      5103.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2142.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2142.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      23       19.63       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103   
+                                        CPSAMC   CPSAMC   CPSAMC    
+
+              2       6        7.81       700     1000      520     2140     2141     2142   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         6.52      1.61      0.05      1.77      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *        11.37 SEC
+ DISK USED  *        41.43 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5103.1
+ Orbitals from record         2142.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC GRADIENT FOR STATE 3.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000000000        -0.043198163         0.037743984
+   2         0.000000000         0.040412203        -0.039162714
+   3        -0.000000000         0.002785960         0.001418731
+
+ Nuclear force contribution to virial =         0.118220427
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      23       19.63       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103   
+                                        CPSAMC   CPSAMC   CPSAMC    
+
+              2       6        7.81       700     1000      520     2140     2141     2142   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         6.55      0.03      1.61      0.05      1.77      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *        11.46 SEC
+ DISK USED  *        41.43 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2143.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.21
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ Solving MCSCF z-vector equations for state  4.1, requested accuracy=      0.10D-07
+ Convergence reached in  39 iterations ( 39 expansion vectors), accuracy=  0.75D-08
+
+ SA-Gradient information saved on record      5104.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2143.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2143.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      24       19.66       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       7       10.32       700     1000      520     2140     2141     2142     2143   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI       INT    MATROP       INT
+ CPU TIMES  *         8.03      1.47      0.03      1.61      0.05      1.77      0.04      2.78      0.04      0.01      0.00
+ REAL TIME  *        13.59 SEC
+ DISK USED  *        44.61 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5104.1
+ Orbitals from record         2143.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC GRADIENT FOR STATE 4.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000         0.105047609        -0.091996861
+   2        -0.000000000        -0.101561009         0.094537302
+   3        -0.000000000        -0.003486599        -0.002540441
+
+ Nuclear force contribution to virial =        -0.307241941
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      24       19.66       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       7       10.32       700     1000      520     2140     2141     2142     2143   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI       INT    MATROP
+ CPU TIMES  *         8.09      0.06      1.47      0.03      1.61      0.05      1.77      0.04      2.78      0.04      0.01
+ REAL TIME  *        13.71 SEC
+ DISK USED  *        44.61 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2144.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.20
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 1.1 - 2.1
+ Convergence reached in  28 iterations ( 28 expansion vectors), accuracy=  0.54D-10
+
+ SA-Gradient information saved on record      5105.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2144.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2144.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      25       19.69       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       8       12.84       700     1000      520     2140     2141     2142     2143     2144   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI       INT
+ CPU TIMES  *         9.28      1.17      0.06      1.47      0.03      1.61      0.05      1.77      0.04      2.78      0.04
+ REAL TIME  *        15.55 SEC
+ DISK USED  *        45.42 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5105.1
+ Orbitals from record         2144.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 2.1 - 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.106341713         0.000000000         0.000000000
+   2         0.001672948         0.000000000        -0.000000000
+   3        -0.118308196        -0.000000000        -0.000000000
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      25       19.69       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       8       12.84       700     1000      520     2140     2141     2142     2143     2144   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *         9.31      0.03      1.17      0.06      1.47      0.03      1.61      0.05      1.77      0.04      2.78
+ REAL TIME  *        15.64 SEC
+ DISK USED  *        45.42 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2145.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.27
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 1.1 - 3.1
+ Convergence reached in  52 iterations ( 52 expansion vectors), accuracy=  0.64D-10
+
+ SA-Gradient information saved on record      5106.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2145.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2145.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      26       19.71       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       9       15.36       700     1000      520     2140     2141     2142     2143     2144     2145   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE
+ CPU TIMES  *        11.48      2.17      0.03      1.17      0.06      1.47      0.03      1.61      0.05      1.77      0.04
+ REAL TIME  *        18.68 SEC
+ DISK USED  *        51.75 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5106.1
+ Orbitals from record         2145.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 3.1 - 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000         0.262693656         0.266417583
+   2        -0.000000000        -0.250432350        -0.241315862
+   3         0.000000000         0.010311560         0.017159143
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      26       19.71       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2       9       15.36       700     1000      520     2140     2141     2142     2143     2144     2145   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *        11.52      0.04      2.17      0.03      1.17      0.06      1.47      0.03      1.61      0.05      1.77
+ REAL TIME  *        18.78 SEC
+ DISK USED  *        51.75 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2146.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.27
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 1.1 - 4.1
+ Convergence reached in  28 iterations ( 28 expansion vectors), accuracy=  0.61D-10
+
+ SA-Gradient information saved on record      5107.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2146.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2146.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      27       19.74       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      10       17.88       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE
+ CPU TIMES  *        12.94      1.42      0.04      2.17      0.03      1.17      0.06      1.47      0.03      1.61      0.05
+ REAL TIME  *        20.94 SEC
+ DISK USED  *        51.75 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5107.1
+ Orbitals from record         2146.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 4.1 - 1.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.131731717        -0.000000000         0.000000000
+   2        -0.184337826         0.000000000        -0.000000000
+   3         0.000612008         0.000000000         0.000000000
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      27       19.74       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      10       17.88       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *        12.99      0.05      1.42      0.04      2.17      0.03      1.17      0.06      1.47      0.03      1.61
+ REAL TIME  *        21.12 SEC
+ DISK USED  *        51.75 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2147.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.31
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 2.1 - 3.1
+ Convergence reached in  31 iterations ( 31 expansion vectors), accuracy=  0.21D-10
+
+ SA-Gradient information saved on record      5108.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2147.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2147.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      28       19.76       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      11       20.40       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147   
+                                         MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE
+ CPU TIMES  *        14.69      1.70      0.05      1.42      0.04      2.17      0.03      1.17      0.06      1.47      0.03
+ REAL TIME  *        23.63 SEC
+ DISK USED  *        53.53 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5108.1
+ Orbitals from record         2147.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 3.1 - 2.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.389073888         0.000000000        -0.000000000
+   2        -0.343038161        -0.000000000         0.000000000
+   3        -0.001979960        -0.000000000        -0.000000000
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      28       19.76       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      11       20.40       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147   
+                                         MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *        14.74      0.05      1.70      0.05      1.42      0.04      2.17      0.03      1.17      0.06      1.47
+ REAL TIME  *        23.76 SEC
+ DISK USED  *        53.53 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2148.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.30
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 2.1 - 4.1
+ Convergence reached in  52 iterations ( 52 expansion vectors), accuracy=  0.37D-10
+
+ SA-Gradient information saved on record      5109.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2148.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2148.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      29       19.79       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108     5109   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      12       22.92       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147     2148   
+                                         MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE
+ CPU TIMES  *        17.19      2.45      0.05      1.70      0.05      1.42      0.04      2.17      0.03      1.17      0.06
+ REAL TIME  *        27.20 SEC
+ DISK USED  *        59.39 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5109.1
+ Orbitals from record         2148.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 4.1 - 2.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1         0.000000000        -0.122480512        -0.129100395
+   2         0.000000000         0.154279289         0.150535576
+   3        -0.000000000         0.009660143         0.005566589
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      29       19.79       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108     5109   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      12       22.92       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147     2148   
+                                         MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *        17.24      0.04      2.45      0.05      1.70      0.05      1.42      0.04      2.17      0.03      1.17
+ REAL TIME  *        27.32 SEC
+ DISK USED  *        59.39 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * MULTI (Direct Multiconfiguration SCF)       Authors: P.J. Knowles, H.-J. Werner (1984)     S.T. Elbert (1988)
+
+
+ Number of closed-shell orbitals:   1 (   1 )
+ Number of active  orbitals:        8 (   8 )
+ Number of external orbitals:      15 (  15 )
+
+ State symmetry 1
+
+ Number of electrons:     8    Spin symmetry=Singlet   Space symmetry=1
+ Number of states:        4
+ Number of CSFs:       1764   (4900 determinants, 4900 intermediate states)
+
+ Molecular orbitals read from record     2141.2  Type=MCSCF/NATURAL (state averaged)
+
+ EXTRA SYMMETRY OF MOS IN SYMMETRY 1:   1 1 1 1 2 1 1 2 1 1   1 1 1 2 1 2 1 1 2 1   1 2 1 1
+
+ Wavefunction dump at record             2149.2
+
+ Convergence thresholds  0.10E-05 (gradient)  0.10E-07 (energy)  0.10E-02 (step length)
+
+ Weight factors for state symmetry  1:    0.25000   0.25000   0.25000   0.25000
+
+ Number of orbital rotations:      143   (     8 Core/Active     15 Core/Virtual   0 Active/Active    120 Active/Virtual)
+ Total number of variables:      19743
+
+
+ ITER. MIC  NCI  NEG     ENERGY(VAR)     ENERGY(PROJ)   ENERGY CHANGE     GRAD(0)  GRAD(ORB)   GRAD(CI)     STEP       TIME
+
+   1   24   18    0     -75.80838455     -75.80838455   -0.00000000    0.00000001 0.00000000 0.00000004  0.67D-08      0.26
+
+ ** WVFN ****  CONVERGENCE REACHED, FINAL GRADIENT:  0.98D-09
+
+ SOLVING CP-MCSCF NACM: 3.1 - 4.1
+ Convergence reached in  30 iterations ( 30 expansion vectors), accuracy=  0.18D-10
+
+ SA-Gradient information saved on record      5110.1
+
+
+
+ Results for state 1.1
+ =====================
+
+ !MCSCF STATE 1.1 Energy              -75.907410932443
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.48485611
+ One electron energy                 -114.80818581
+ Two electron energy                   33.68787972
+ Virial ratio                           2.00559788
+
+ !MCSCF STATE 1.1 Dipole moment         0.00000000     0.39243146    -0.42563062
+ Dipole moment /Debye                   0.00000000     0.99739594    -1.08177428
+
+ Results for state 2.1
+ =====================
+
+ !MCSCF STATE 2.1 Energy              -75.897160332767
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.55398521
+ One electron energy                 -114.81577709
+ Two electron energy                   33.70572160
+ Virial ratio                           2.00454212
+
+ !MCSCF STATE 2.1 Dipole moment        -0.00000000     0.43575698    -0.38305099
+ Dipole moment /Debye                  -0.00000000     1.10751124    -0.97355473
+
+ Results for state 3.1
+ =====================
+
+ !MCSCF STATE 3.1 Energy              -75.757936150708
+ Nuclear energy                         5.21289515
+ Kinetic energy                        75.57065127
+ One electron energy                 -114.96257654
+ Two electron energy                   33.99174523
+ Virial ratio                           2.00247828
+
+ !MCSCF STATE 3.1 Dipole moment         0.00000000     0.66060801    -0.59468266
+ Dipole moment /Debye                   0.00000000     1.67898812    -1.51143356
+
+ Results for state 4.1
+ =====================
+
+ !MCSCF STATE 4.1 Energy              -75.671030785733
+ Nuclear energy                         5.21289515
+ Kinetic energy                        76.06409979
+ One electron energy                 -114.10863069
+ Two electron energy                   33.22470475
+ Virial ratio                           1.99483240
+
+ !MCSCF STATE 4.1 Dipole moment         0.00000000    -0.40752659     0.31470299
+ Dipole moment /Debye                   0.00000000    -1.03576144     0.79984283
+
+ State-averaged charge density matrix saved on record  2149.2 (density set 1)
+
+ !MCSCF trans         <2.1|DMX|1.1>     0.003404649686 au =     0.008653189548 Debye
+ !MCSCF trans         <3.1|DMX|2.1>    -0.087220084670 au =    -0.221676822796 Debye
+ !MCSCF trans         <4.1|DMX|1.1>     0.048633639646 au =     0.123606285853 Debye
+ !MCSCF trans         <4.1|DMX|3.1>    -0.000100044718 au =    -0.000254271655 Debye
+
+ !MCSCF expec         <1.1|DMY|1.1>     0.392431456092 au =     0.997395940174 Debye
+ !MCSCF expec         <2.1|DMY|2.1>     0.435756984890 au =     1.107511237658 Debye
+ !MCSCF trans         <3.1|DMY|1.1>    -0.053262901487 au =    -0.135371925162 Debye
+ !MCSCF expec         <3.1|DMY|3.1>     0.660608014075 au =     1.678988116414 Debye
+ !MCSCF trans         <4.1|DMY|2.1>    -0.047035486570 au =    -0.119544451956 Debye
+ !MCSCF expec         <4.1|DMY|4.1>    -0.407526591893 au =    -1.035761435424 Debye
+
+ !MCSCF expec         <1.1|DMZ|1.1>    -0.425630624651 au =    -1.081774282999 Debye
+ !MCSCF expec         <2.1|DMZ|2.1>    -0.383050989763 au =    -0.973554734563 Debye
+ !MCSCF trans         <3.1|DMZ|1.1>    -0.096779990176 au =    -0.245974087432 Debye
+ !MCSCF expec         <3.1|DMZ|3.1>    -0.594682663349 au =    -1.511433563516 Debye
+ !MCSCF trans         <4.1|DMZ|2.1>    -0.019275431043 au =    -0.048990050032 Debye
+ !MCSCF expec         <4.1|DMZ|4.1>     0.314702993163 au =     0.799842833362 Debye
+
+
+ Natural orbital dump (state averaged) at molpro section  2149.2    (Orbital set 2)
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      30       19.82       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108     5109     5110   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      13       25.44       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147     2148     2149   
+                                         MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE
+ CPU TIMES  *        18.80      1.57      0.04      2.45      0.05      1.70      0.05      1.42      0.04      2.17      0.03
+ REAL TIME  *        29.72 SEC
+ DISK USED  *        59.39 MB      
+ **********************************************************************************************************************************
+
+1PROGRAM * FORCE (Gradient of the energy)
+
+ SA-MCSCF information from    5110.1
+ Orbitals from record         2149.2
+
+ Number of closed-shell orbitals:  1 (  1 )
+ Number of active orbitals:        8 (  8 )
+ Number of occupied orbitals:      9 (  9 )
+
+ Number of electrons= 10     Singlet     Space symmetry=1      Wavefunction type: SA-MCSCF
+
+
+ End of calculation of the energy gradient  ,IREST=   0
+
+
+ SA-MC NACME FOR STATES 4.1 - 3.1
+
+ Atom          dE/dx               dE/dy               dE/dz
+
+   1        -0.000160174        -0.000000000        -0.000000000
+   2        -0.000185379         0.000000000         0.000000000
+   3        -0.000150204        -0.000000000        -0.000000000
+
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      30       19.82       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700     1380   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER     JKOP   
+                                         5101     5102     5103     5104     5105     5106     5107     5108     5109     5110   
+                                        CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC   CPSAMC    
+
+              2      13       25.44       700     1000      520     2140     2141     2142     2143     2144     2145     2146   
+                                         GEOM     BASIS   MCVARS   MATROP    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF    MCSCF   
+                                         2147     2148     2149   
+                                         MCSCF    MCSCF    MCSCF   
+
+ PROGRAMS   *        TOTAL     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI     FORCE     MULTI
+ CPU TIMES  *        18.84      0.04      1.57      0.04      2.45      0.05      1.70      0.05      1.42      0.04      2.17
+ REAL TIME  *        29.83 SEC
+ DISK USED  *        59.39 MB      
+ **********************************************************************************************************************************
+
+ MULTI/6-31G** energy=    -75.671030785733
+
+        MULTI           MULTI           MULTI           MULTI   
+    -75.67103079    -75.75793615    -75.89716033    -75.90741093
+ **********************************************************************************************************************************
+ Variable memory released

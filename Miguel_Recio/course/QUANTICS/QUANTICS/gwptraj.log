@@ -1,0 +1,22 @@
+
+Program name: gwptraj
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+ complex*16 :        413
+ real*8     :       2174
+ integer    :         55
+ logical    :          2
+ complex*8  :        103
+ real*4     :          1
+ Total   :         25884 Bytes ,      0.02 MB

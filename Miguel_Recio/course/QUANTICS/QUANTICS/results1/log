@@ -1,0 +1,507 @@
+
+                   ------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:32 2023
+
+ /user/mrecio/new/results1
+
+ PID = 15230
+
+Program name: quantics
+
+--------------------------------------------------------------------------------
+****** Package version ******
+
+Program Version :     2
+Release         :     1
+
+ GIT version: 41a42b0
+
+Included surfaces:                                                              
+
+Default operator-path: /user/gworth/quantics2.1/operators                     
+--------------------------------------------------------------------------------
+
+Compiled: Wed Jun 14 10:30:54 EDT 2023 ; Host: srv-p22-13                       
+ Serial Code
+
+###############                 NEW RUN                  ###############
+
+Task: gendvr genoper geninwf propagation
+
+########################################################################
+
+ Paths and input files 
+
+########################################################################
+
+~.inp  file copied to input in name directory
+name      : /user/mrecio/new/results1
+input     : /user/mrecio/new/ho1.inp
+DVR file  : /user/mrecio/new/results1
+OPER file : /user/mrecio/new/results1
+.op file  : /user/gworth/quantics2.1/operators/.op
+INWF file : /user/mrecio/new/results1
+cross-ref : /user/mrecio/new/results1/restart
+
+overwrite disabled
+
+
+Timing file opened
+
+########################################################################
+
+ Creating DVR file: /user/mrecio/new/results1/dvr
+                                                         Jun 14 11:50:32
+########################################################################
+
+------------------------------------------------------------------------
+
+***** Memory used in DVR basis generation *****                                 
+ Maximum no. of dimension (MAXDIM) :    6
+ Maximum no. of states (MAXSTA)    :    1
+
+** Array dimensions **
+
+length of complex      array (used):         245          0.004 MB
+length of real         array (used):         250          0.002 MB
+length of integer      array (used):         124          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.006 /      0.007
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+
+****** Primitive Basis *********
+
+ mode      kappa    DVR    N        xi         xf         dx       p-max
+
+ x              1    FFT  121    -10.500     10.500   0.175000     17.804
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Creating OPER file: /user/mrecio/new/results1/oper
+                                                         Jun 14 11:50:32
+########################################################################
+
+Opening operator file:/user/mrecio/new/ho.op
+
+Parameter values taken from .op file 
+
+Parameter values taken from .op file 
+
+***** Hamiltonian title *****
+
+Harmonic oscillator Hamiltonian for exercises                                   
+
+***** End Hamiltonian title *****
+
+Assigning Operators From Library
+
+
+------------------------------------------------------------------------
+
+***** Memory used in OPERATOR generation *****                                  
+ Maximum no. of dimension (MAXDIM) :    6
+ Maximum no. of states (MAXSTA)    :    1
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :    3
+
+** Array dimensions **
+
+length of real         array (used):         370          0.003 MB
+length of integer      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.003 /      0.163
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+WARNING: Mass for DOF   1 not set. Set to 1 by default.
+
+***** Operator details *****
+
+DOF no.    label            Mass
+    1       x               1.0000
+    2       el              1.0000
+
+Mode     DOFs
+   1    1=x       
+
+GWP integrals set up with moments to order:  2
+
+***** Paths for spline data files *****
+
+  1 /user/gworth/quantics2.1/source/surfaces/splines
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+Creating RESTART file 
+                                                         Jun 14 11:50:33
+########################################################################
+
+**** Reading OPER file ****
+Harmonic oscillator Hamiltonian for exercises
+
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:32 2023
+
+
+
+********* SPF Basis ************
+
+ mode     N    n      dof's
+
+   1    121    1       1
+
+ Total grid size       :      121     1.210E+02
+
+***** Length of psi vector *****
+
+Number of MCTDH coefficients for state  1:         1
+
+
+Overall length of A-vector        :        1
+Length of phi vector for mode    1:      121
+                                  --------
+Length of wavefunction vector   :      122
+
+workcdim   :       122
+workrdim   :         1
+workidim   :         1
+
+------------------------------------------------------------------------
+
+***** Memory used in WAVEFUNCTION generation *****                              
+ Maximum no. of dimension (MAXDIM) :    6
+ Maximum no. of states (MAXSTA)    :    1
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :    3
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         122          0.002 MB
+length of complex      array (used):         493          0.008 MB
+length of real         array (used):         375          0.003 MB
+length of integer      array (used):         126          0.000 MB
+length of logical      array (used):           2          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.015 /      0.027
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+
+****** Initial SPF Functions *********
+
+  1  x          gauss   1  p0 =   0.00000  x0 =   2.00000  dx =  28.28427
+
+**** Reading OPER file ****
+Harmonic oscillator Hamiltonian for exercises
+
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:32 2023
+
+
+ GENINWF terminated normally.
+
+Timing file opened
+Timing file read
+
+########################################################################
+
+ Propagating Wavefunction 
+                                                         Jun 14 11:50:33
+########################################################################
+
+**** Reading OPER file ****
+Harmonic oscillator Hamiltonian for exercises
+
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:32 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:33 2023
+
+
+WARNING in subroutine Chkprop  (Check for consistency):
+There should be at least two MCTDH-modes
+------------------------------------
+  
+
+WARNING in subroutine Chkprop:
+Integrator chosen for SPFs doesn't support imp-ortho.Switching imp-ortho off.
+------------------------------------
+  
+ hopsdim  =        244        0.002 MB
+ dgldim   =        122        0.002 MB
+ pmatdim  =          1      0.000 MB
+ hpsidim  =          0      0.000 MB
+ hlochdim =          1      0.000 MB
+ mfsumdim =        121        0.002 MB
+ intpsidim=       1210      0.018 MB
+ intrdim  =         52        0.000 MB
+ workcdim =          1      0.000 MB
+ workrdim =        195      0.001 MB
+
+------------------------------------------------------------------------
+
+***** Memory used in wavefunction PROPAGATION *****                             
+ Maximum no. of dimension (MAXDIM) :    6
+ Maximum no. of states (MAXSTA)    :    1
+ Maximum no. of Hamiltonian coefficients (MAXKOE)    :    3
+
+** Array dimensions **
+
+length of psi/dtpsi    array (used):         122          0.002 MB
+length of complex      array (used):        1965          0.030 MB
+length of real         array (used):         998          0.008 MB
+length of integer      array (used):         129          0.000 MB
+length of logical      array (used):           3          0.000 MB
+ 
+Memory size (core / data) (in Mb):      0.042 /      0.060
+ 
+Dynamically allocated memory in mb    (Max):         0.0
+
+------------------------------------------------------------------------
+
+**** Reading OPER file ****
+Harmonic oscillator Hamiltonian for exercises
+
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:32 2023
+
+
+**** RSTINFO: Reading RESTART file ****
+Type : wavefunction, file-version = 13.01000
+Created on:
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:33 2023
+
+
+***** Calculation type *****
+
+Wavefunction propagation.
+
+***** Integrator algorithm *****
+
+Mean-fields etc. are kept constant.
+CMF stepsize is adaptive (error control for A and phi).
+CMF accuracy: 1.00E-06,      Initial stepsize:  0.500 fs
+For SPFs, For spfs, BS integrator
+order:  8,  accuracy: 1.00E-06,  initial step:  0.250 fs
+For A-coefficients, SIL integrator
+order:  12,  accuracy: 1.00E-06,  initial step:  0.250 fs
+error criterion: standard
+Standard-SIL (real) used.
+The working equation for the spfs reads:
+i dphi/dt = (1-P)(h + ...) phi
+Using standard orbitals.
+Using operator symmetries
+
+***** Numerical parameters *****
+
+Machine precision:                                    2.220E-16
+Parameter used to regularise inverse density matrix:  1.000E-08
+Parameter used to regularise SVD singular values   :  1.000E-16
+
+******** Flags  ********
+
+
+***** Output files *****
+
+Stop        file created
+Output      file opened
+Psi         file opened  (single)
+Check       file opened
+Gridpop     file opened
+Speed       file opened
+Update      file opened
+
+ time[fs]        0.500
+ time[fs]        1.000
+ time[fs]        1.500
+ time[fs]        2.000
+ time[fs]        2.500
+ time[fs]        3.000
+ time[fs]        3.500
+ time[fs]        4.000
+ time[fs]        4.500
+ time[fs]        5.000
+ time[fs]        5.500
+ time[fs]        6.000
+ time[fs]        6.500
+ time[fs]        7.000
+ time[fs]        7.500
+ time[fs]        8.000
+ time[fs]        8.500
+ time[fs]        9.000
+ time[fs]        9.500
+ time[fs]       10.000
+ time[fs]       10.500
+ time[fs]       11.000
+ time[fs]       11.500
+ time[fs]       12.000
+ time[fs]       12.500
+ time[fs]       13.000
+ time[fs]       13.500
+ time[fs]       14.000
+ time[fs]       14.500
+ time[fs]       15.000
+ time[fs]       15.500
+ time[fs]       16.000
+ time[fs]       16.500
+ time[fs]       17.000
+ time[fs]       17.500
+ time[fs]       18.000
+ time[fs]       18.500
+ time[fs]       19.000
+ time[fs]       19.500
+ time[fs]       20.000
+ time[fs]       20.500
+ time[fs]       21.000
+ time[fs]       21.500
+ time[fs]       22.000
+ time[fs]       22.500
+ time[fs]       23.000
+ time[fs]       23.500
+ time[fs]       24.000
+ time[fs]       24.500
+ time[fs]       25.000
+ time[fs]       25.500
+ time[fs]       26.000
+ time[fs]       26.500
+ time[fs]       27.000
+ time[fs]       27.500
+ time[fs]       28.000
+ time[fs]       28.500
+ time[fs]       29.000
+ time[fs]       29.500
+ time[fs]       30.000
+ time[fs]       30.500
+ time[fs]       31.000
+ time[fs]       31.500
+ time[fs]       32.000
+ time[fs]       32.500
+ time[fs]       33.000
+ time[fs]       33.500
+ time[fs]       34.000
+ time[fs]       34.500
+ time[fs]       35.000
+ time[fs]       35.500
+ time[fs]       36.000
+ time[fs]       36.500
+ time[fs]       37.000
+ time[fs]       37.500
+ time[fs]       38.000
+ time[fs]       38.500
+ time[fs]       39.000
+ time[fs]       39.500
+ time[fs]       40.000
+ time[fs]       40.500
+ time[fs]       41.000
+ time[fs]       41.500
+ time[fs]       42.000
+ time[fs]       42.500
+ time[fs]       43.000
+ time[fs]       43.500
+ time[fs]       44.000
+ time[fs]       44.500
+ time[fs]       45.000
+ time[fs]       45.500
+ time[fs]       46.000
+ time[fs]       46.500
+ time[fs]       47.000
+ time[fs]       47.500
+ time[fs]       48.000
+ time[fs]       48.500
+ time[fs]       49.000
+ time[fs]       49.500
+ time[fs]       50.000
+ time[fs]       50.500
+ time[fs]       51.000
+ time[fs]       51.500
+ time[fs]       52.000
+ time[fs]       52.500
+ time[fs]       53.000
+ time[fs]       53.500
+ time[fs]       54.000
+ time[fs]       54.500
+ time[fs]       55.000
+ time[fs]       55.500
+ time[fs]       56.000
+ time[fs]       56.500
+ time[fs]       57.000
+ time[fs]       57.500
+ time[fs]       58.000
+ time[fs]       58.500
+ time[fs]       59.000
+ time[fs]       59.500
+ time[fs]       60.000
+ time[fs]       60.500
+ time[fs]       61.000
+ time[fs]       61.500
+ time[fs]       62.000
+ time[fs]       62.500
+ time[fs]       63.000
+ time[fs]       63.500
+ time[fs]       64.000
+ time[fs]       64.500
+ time[fs]       65.000
+ time[fs]       65.500
+ time[fs]       66.000
+ time[fs]       66.500
+ time[fs]       67.000
+ time[fs]       67.500
+ time[fs]       68.000
+ time[fs]       68.500
+ time[fs]       69.000
+ time[fs]       69.500
+ time[fs]       70.000
+
+***** Integration method *****
+
+Integration method used for the MCTDH-coefficients:
+Short iterative Lanczos (real) with variable order.
+Maximum order employed:   1
+Maximum order allowed:   12
+
+Integration method used for the single-particle functions:
+Bulirsch-Stoer (BS) with polynomial extrapolation.
+Optimal column:  8
+
+Number of succesful large BS steps:             2567
+Number of failed but fixed large BS steps:        41
+Total number of small BS steps:               137526
+
+Number of successful Lanczos steps:             420
+Number of failed but fixed Lanczos steps:         0
+
+***** Update times *****
+
+Number of successful update steps:   140
+Number of failed update steps:         0
+Mean update time (in fs):        0.50000
+Standard deviation (in fs):      0.00000
+
+
+***** Overall Timing *****
+
+Total cpu time     [s] :          9.47
+Total system time  [s] :         13.57
+Total time      [h:m:s] :    0 :  0 : 13.57
+
+***** God's final message *****
+
+Program terminated normally.
+
+------ Host: "cpn-p27-17" ----------Wed Jun 14 11:50:46 2023
+

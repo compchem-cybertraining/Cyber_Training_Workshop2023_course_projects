@@ -1,0 +1,87 @@
+# /user/mrecio/QUANTICS/ferretti.inp
+                ### ------- INPUT FILE ------- ###
+
+RUN-SECTION
+name = ferretti
+propagate
+tfinal = 80.0  tout = 0.5  tpsi = 1.0
+psi auto steps gridpop
+end-run-section
+SBASIS-SECTION
+multi-set
+x = 1,8,8
+y = 1,8,8
+END-SBASIS-SECTION
+OPERATOR-SECTION
+opname = ferretti
+end-operator-section
+PRIMITIVE-BASIS-SECTION
+  x  HO  250   2.0    20000   0.00100
+  y  HO  100   0.0     6667   0.00387
+  el  el  3
+end-primitive-basis-section
+INIT_WF-SECTION
+build
+init_state = 3
+  x  HO   0.0  0  0.001   20000
+  y  HO   0.0  0  0.00387 6667
+end-build
+end-init_wf-section
+end-input
+ProgramVersion =   13.010
+
+#******************************************************************************#
+                ### ------ OPERATOR FILE ------ ###
+
+OP_DEFINE-SECTION
+title
+Conical intersection model
+Ferreti et al.,JCP, 104, 5517 (1996)
+coupling parameter gamma=0.03
+end-title
+end-op_define-section
+PARAMETER-SECTION
+Kx = 0.02
+Ky = 0.1
+De0 = 0.2
+De = 0.01
+X0 = 2
+X1 = 4
+X2 = 3
+X3 = 3
+al = 3
+be = 1.5
+ga = 0.03
+mass_x = 20000
+mass_y = 6667
+end-parameter-section
+HAMILTONIAN-SECTION
+-------------------------------------------------
+modes        |  el    | x        |   y
+-------------------------------------------------
+1            |  1     | KE       |  1
+1            |  1     | 1        |  KE
+0.5*Kx       | S1&1   | q^2      |  1
+0.5*Kx*X0*X0 | S1&1   | 1        |  1
+-Kx*X0       | S1&1   | q        |  1
+0.5*Ky       | S1&1   | 1        |  q^2
+-De0         | S1&1   | 1        |  1
+0.5*Kx       | S2&2   | q^2      |  1
+0.5*Kx*X1*X1 | S2&2   | 1        |  1
+-Kx*X1       | S2&2   | q        |  1
+0.5*Ky       | S2&2   | 1        |  q^2
+0.5*Kx       | S3&3   | q^2      |  1
+0.5*Kx*X2*X2 | S3&3   | 1        |  1
+-Kx*X2       | S3&3   | q        |  1
+0.5*Ky       | S3&3   | 1        |  q^2
+De           | S3&3   | 1        |  1
+ga           | S2&3  | gaal      | q*gabe
+-------------------------------------------------
+end-hamiltonian-section
+LABELS-SECTION
+ gaal=gauss[al,X3]
+ gabe=gauss[be,0.0]
+end-labels-section
+end-operator
+
+#******************************************************************************#
