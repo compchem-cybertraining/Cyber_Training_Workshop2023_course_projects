@@ -1,0 +1,65 @@
+ Input read from input.dlf
+ GAMESS-US scratch directory: /user/mofaruque/work-dir/gam-scr
+ Minimisation requested, defaulting to 1 frame
+ Using QC run string: gmsrun tme_00_gms.inp >& tme_00_gms.out
+ The directory ./rundir does not exist
+ mkdir ./rundir
+ QC Interface: gamess
+ XYZ file: geo.xyz
+ Template QC Input: tme-00-ssr-bhhlyp-6-31gs.inp
+ Temporary QC Input: tme_00_gms.inp
+ QC execution script: gmsrun
+ QC execution script parameters: 
+ GAMESS-US scratch file: /user/mofaruque/work-dir/gam-scr/tme_00_gms.dat
+ Optimisation in delocalised internal coordinates (DLC)
+ The QC eigenvectors will be updated during the geometry search
+
+***********************************************************************
+**                                                                   **
+**                       ---------------------                       **
+**                              DL-FIND                              **
+**                       Geometry Optimisation                       **
+**                       ---------------------                       **
+**                                                                   **
+**                 J. Kaestner, J.M. Carr, T.W. Keal,                **
+**                W. Thiel, A. Wander and P. Sherwood                **
+**                                                                   **
+**              J. Phys. Chem. A, 2009, 113 (43), 11856.             **
+**                                                                   **
+**   Please include this reference in published work using DL-FIND.  **
+**                                                                   **
+**               Copyright:  STFC Daresbury Laboratory               **
+**                           Revision: Unversioned directory         **
+**                                                                   **
+***********************************************************************
+
+Residue member list:
+    0 :     1    1    1    1    1    1    1    1    1    1
+   10 :     1    1    1    1
+
+Generating new HDLC for    1 residues
+
+Located a new residue for HDLC
+   Residue number is    1
+   Number of atoms it contains    14
+   Atoms:      1     2     3     4     5     6     7     8     9    10
+   Atoms:     11    12    13    14
+     Adding inter fragment connction    11    3
+     Adding inter fragment connction    13    7
+   Generating HDLC for residue    1
+forrtl: error (65): floating invalid
+Image              PC                Routine            Line        Source             
+find.x             00000000005E4ADB  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B3730E49630  Unknown               Unknown  Unknown
+find.x             0000000000556D8C  dlfhdlc_primitive         732  dlf_hdlc_primitive_d.F90
+find.x             000000000056E2F1  dlfhdlc_hdlclib_m         230  dlf_hdlc_hdlclib_d.F90
+find.x             00000000005A3EF5  dlf_hdlc_create_          494  dlf_hdlc_interface_d.F90
+find.x             000000000051EF5D  dlf_coords_init_          182  dlf_coords_d.F90
+find.x             000000000040CA5E  dlf_run_                  379  dl-find_d.F90
+find.x             0000000000465BD1  dlf_task_                 101  dlf_task_d.F90
+find.x             000000000040ADAD  dl_find_                  101  dl-find_d.F90
+find.x             0000000000407B30  MAIN__                    320  main_d.F90
+find.x             0000000000405BE2  Unknown               Unknown  Unknown
+libc-2.17.so       00002B373157E555  __libc_start_main     Unknown  Unknown
+find.x             0000000000405AE9  Unknown               Unknown  Unknown
+/var/spool/slurmd/job13764272/slurm_script: line 2: 24592 Aborted                 $@

@@ -1,0 +1,14 @@
+start dbh  
+
+prepare  
+source dbh.pdb  
+new_top new_seq  
+new_rst  
+modify segment 1 quantum   
+update lists  
+ignore  
+write dbh_ref.pdb  
+write dbh_ref.rst  
+end  
+
+task prepare
